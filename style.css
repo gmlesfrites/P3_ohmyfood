@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
-  margin: 0; }
+  margin: 0;
+  fav-color: #fcca46; }
 
 body {
   width: 900px;
