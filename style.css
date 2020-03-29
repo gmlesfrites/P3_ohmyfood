@@ -1,27 +1,73 @@
 @charset "UTF-8";
+/*Configuration desktop classique 1024px*/
+html {
+  margin: 0; }
+
+body {
+  width: 100%; }
+
+.h1-logo {
+  width: 100%;
+  height: 36em;
+  color: #fcca46;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #579c87; }
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+  align-items: space-between; }
+
+.main-container__box {
+  width: 100px;
+  height: auto; }
+
+/*Media queries pour les téléphones et tablettes
+@media all and (min-width: 320px) and (max-width: 768px) {
+    body {
+        width:100%;
+    }
+
+    .main-container {
+       display: block;
+    }
+}
+
+
+/*Media queries pour les ordinateurs au-delà 1024px
+@media all and (min-width: 1024px) and (max-width:2560px) {
+    body {
+        width: 100%;
+    }
+
+    .main-container {
+        display: inline-block;
+    }
+    
+    .main-contenair-box {
+        width:25%;
+    }
+}*/
 /*La note enchantée*/
-/*Titre
-font-family: 'Ma Shan Zheng', cursive;*/
-/*Texte
-font-family: 'Short Stack', cursive; */
+/*Titre   font-family: 'Ma Shan Zheng', cursive;*/
+/*Texte  font-family: 'Short Stack', cursive; */
 /*Le chic à la française*/
 /* appétit #c67412; */
 /*papilles  #a56799 */
 /* gourmandises #6e4ccc */
 /* titre #db8528 à  #8f5bfe */
-/*Titre
-font-family: 'croissant-one', cursive;
-
-Texte
-font-family: 'TeX-Gyre-Schola', serif; */
+/*Titre   font-family: 'croissant-one', cursive;*/
+/*Texte  font-family: 'TeX-Gyre-Schola', serif; */
 /*Le délice des papilles*/
-/*Titre 
-font-family: font-family: 'Dancing Script', cursive;
-
-Texte 
-font-family: 'Short Stack', cursive;*/
+/*Titre   font-family: font-family: 'Dancing Script', cursive;*/
+/*Texte    font-family: 'Short Stack', cursive;*/
 /*La palette du goût*/
-/*Titre et texte :
-font-family: 'Short Stack', cursive; */
+/*Titre et texte :   font-family: 'Short Stack', cursive; */
 
 /*# sourceMappingURL=style.css.map */
