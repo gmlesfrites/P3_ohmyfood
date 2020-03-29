@@ -1,8 +1,9 @@
 .h1-logo {
+    font-size: 24em;
+}
+
+.logo {
     color: $logo-color;
     font-family: $logo-font;
     font-weight: $logo-font-weight;
-    font-size: 24em;
-    text-align: center;
-    vertical-align: middle;
 }
