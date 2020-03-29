@@ -1,14 +1,17 @@
 @charset "UTF-8";
+/*$header-witdh: 100%;
+$header-height: 50px;*/
 html {
   margin: 0;
   fav-color: #fcca46; }
 
 body {
-  width: 900px;
+  margin: 0;
+  width: 100%;
   border: solid 1px black; }
 
 .h1-logo {
-  font-size: 24em; }
+  font-size: 24px; }
 
 .logo {
   color: #fcca46;
@@ -16,8 +19,8 @@ body {
   font-weight: bold; }
 
 .header {
-  width: 100%;
-  height: 100px;
+  /*width: $header-witdh;
+  height: $header-height;*/
   background: #579c87;
   text-align: center;
   vertical-align: middle; }
@@ -32,12 +35,6 @@ body {
 .main-container__box {
   width: 100px;
   height: auto; }
-
-html {
-  margin: 0; }
-
-body {
-  width: 100%; }
 
 /*La note enchantée*/
 /*Titre   font-family: 'Ma Shan Zheng', cursive;*/
