@@ -1,11 +1,12 @@
-.h1-logo {
-    font-size: $h1-font-size;
-    margin:0;
-}
-
 .logo {
     color: $logo-color;
     font-family: $logo-font;
     font-weight: $logo-font-weight;
+    font-size: $p-font-size;
     
+}
+
+.h1-logo {
+    font-size: $h1-font-size;
+    text-align: center;
 }
