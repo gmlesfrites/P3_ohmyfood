@@ -12,12 +12,12 @@
 /*dégradés dans les hr du menu palette*/
 /*contenu global*/
 html {
-  width: 900px;
+  width: 100%;
   margin: 0;
   padding: 0;
   /*$fav-color: $color-secondary;*/ }
 
-/*contenu body*/
+/**************contenu body****************/
 .body {
   width: 900px;
   border: solid 1px black; }
@@ -63,12 +63,12 @@ h4 {
 
 .logo {
   color: #fcca46;
-  font-family: "Montserrat", "sans-serif"; }
+  font-family: "Montserrat", "sans-serif";
+  letter-spacing: -1px; }
 
 .h1-logo {
   font-size: 3rem;
-  text-align: center;
-  font-weight: bold; }
+  text-align: center; }
 
 /*Liens sur les images de la page d'accueil vers chaque page de menu*/
 .lien-page:hover {
@@ -79,7 +79,8 @@ h4 {
 /*Liens contenus dans le footer*/
 .footer-link {
   color: #fcca46;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 200px; }
 
 /*Ajout d'animations sur les images des menus en page d'accueil*/
 .img-note_titre {
@@ -118,11 +119,12 @@ h4 {
 
 .footer {
   background: #579c87;
+  position: fixed;
+  bottom: 0px;
   width: 100%;
-  height: 90px;
+  height: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-content: space-around; }
 
 .suspension {
@@ -131,7 +133,29 @@ h4 {
 .suspension-1, .suspension-2, .suspension-3 {
   width: 5px;
   height: 5px;
+  color: #fcca46;
   border-radius: 50%; }
+
+.h2-mentions-legales {
+  font-size: 1.5em; }
+
+.h3-mentions-legales {
+  font-size: 1.25em; }
+
+.h4-mentions-legales {
+  font-size: 1em; }
+
+.h2-mentions-legales, .h3-mentions-legales, .h4-mentions-legales {
+  text-align: center; }
+
+.p-mentions-legales, .li-mentions-legales {
+  font-size: 0.7em; }
+
+.li-mentions-legales {
+  list-style-type: square; }
+
+.hr-mentions-legales {
+  border-style: 2px dotted #579c87; }
 
 .h2-titre-menu {
   font-family: 'Montserrat', sans-serif; }

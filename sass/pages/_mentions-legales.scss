@@ -1,5 +1,27 @@
-.h2-mentions-legales {}
-.hr-mentions-legales {}
-.h3-mentions-legales {}
-.p-mentions-legales {}
-.h4-mentions-legales {}
+.h2-mentions-legales {
+font-size: 1.5em;
+}
+
+.h3-mentions-legales {
+    font-size: 1.25em;
+}
+
+.h4-mentions-legales {
+    font-size: 1em;
+}
+
+.h2-mentions-legales,.h3-mentions-legales, .h4-mentions-legales {
+    text-align: center;
+}
+
+.p-mentions-legales, .li-mentions-legales {
+    font-size: 0.7em;
+}
+
+.li-mentions-legales {
+    list-style-type: square;
+}
+
+.hr-mentions-legales {
+    border-style: 2px dotted #579c87;
+}
