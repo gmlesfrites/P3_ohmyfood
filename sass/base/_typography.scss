@@ -1,20 +1,26 @@
-h1 {
-    font-size: 2rem;
-}
 
-h2 {
-    font-size: 1.75rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.25rem;
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: $base-font-size;
 }
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+
+
+
