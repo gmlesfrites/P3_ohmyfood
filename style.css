@@ -1,14 +1,29 @@
 @charset "UTF-8";
 /*$header-witdh: 100%;
 $header-height: 50px;*/
-html {
+html, body {
   margin: 0;
+  padding: 0;
   fav-color: #fcca46; }
 
 body {
-  margin: 0;
-  width: 100%;
+  width: 900px;
   border: solid 1px black; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.75rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
 
 .h1-logo {
   font-size: 24px; }
