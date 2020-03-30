@@ -6,9 +6,11 @@
 .main-container {
     margin:100px 50px;
     display: flex;
-    -ms-flex-wrap: column wrap;
-    flex-wrap: column wrap;
-    align-items: space-between;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
 }
 
 .main-container__box {
