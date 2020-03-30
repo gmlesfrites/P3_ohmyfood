@@ -2,14 +2,12 @@
 $menu2-text1: #c67412;
 $menu2-text2: #a56799;
 $menu2-text3: #6e4ccc;
-$menu2-background: #fff5fe;
-$menu2-gradient1: #db8528;
-$menu2-gradient2: #8f5bfe;
+
+
 
 .h2-menu_chic {
     font-family:'croissant-one', cursive;
-    font-size: $h2-font-size;
-    background: linear-gradient(#db8528, #8f5bfe);
+    background: linear-gradient($menu-chic-gradient1, $menu-chic-gradient2)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

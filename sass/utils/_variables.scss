@@ -1,17 +1,25 @@
+/*couleurs principales*/
 $color-primary: #579c87;
 $color-secondary: #fcca46;
 $color-main-text: #000;
 
+/*Variables sur le logo*/
 $logo-font:'Montserrat', 'sans-serif';
 $logo-font-weight: bold;
 $logo-color: $color-secondary;
 
-/*$header-witdh: 100%;
-$header-height: 50px;*/
-$header-background-color: $color-primary;
+/*Couleurs des header-footer*/
+$header-color: $color-primary;
+$footer-color:  $color-primary;
+
+/*Couleur des backgrounds*/
+$menu-note-background: #fcdfdb;
+$menu-chic-background: #fff5fe;
+$menu-delice-background: #edefef;
+$menu-palette-background: #fdfffd;
 
 
-
+/*Taille de textes*/
 $base-font-size: 16px !default;
 $line-height:1.5rem;
 $h1-font-size: 3rem;
@@ -20,3 +28,12 @@ $h3-font-size: 1.5rem;
 $h4-font-size: 1.25rem;
 $p-font-size: 0.75rem;
 $li-font-size: 1rem;
+
+/*Couleurs des textes*/
+$menu-note-text: #3d1319;
+
+
+
+/*Dégradés linéaires texte du menu chic à la française*/
+$menu-chic-gradient1: #db8528;
+$menu-chic-gradient2: #8f5bfe;

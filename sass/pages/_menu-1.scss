@@ -1,23 +1,28 @@
 /*La note enchantée*/
-$menu1-text: #3d1319;
-$menu1-background: #fcdfdb;
 
 /*Titre 2 et titre 3*/
 .h2-menu_note, .h3-rappel-menu_note {
     font-family:'Ma Shan Zheng', cursive;
 }
-.h2-menu_note {
-    font-size: $h2-font-size;
-}
+
 .h3-rappel-menu_note{
     font-size: $h3-font-size;
 }
 
+/*Contenu des menus*/
 .li-prix_note, .li-menu_note {
     font-family: 'Short Stack', cursive;
 }
 
-.li-prix-note {
+.li-prix_note {
     font-weight: 700;
 }
+
+/*Couleur de police*/
+.h2-menu_note, .h3-rappel-menu_note, .h3-rappel-menu_note, .hr-menu_note, .li-prix_note, .li-menu_note {
+    color: $menu-note-text;
+}
+
+
+
 /*.hr-menu_note {}*/

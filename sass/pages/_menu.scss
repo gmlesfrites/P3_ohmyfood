@@ -1,8 +1,16 @@
+
 .h2-titre-menu {}
-.h2-menu {}
-.hr-menu {}
-.ul-menu {}
-.li-menu {}
+
+.h2-menu {
+        font-size: $h2-font-size;
+}
+
+.li-menu, .li-prix {
+    list-style-type: none;
+}
+
+
+/*à traiter
 .ul-prix {}
-.li-prix {}
-.h3-rappel-menu{}
+.hr-menu {}
+.ul-menu {}*/

@@ -8,4 +8,7 @@
 }
 
 /*Liens contenus dans le footer*/
-.footer-link{}
+.footer-link{
+  color: $color-secondary;
+  text-decoration: none;
+}

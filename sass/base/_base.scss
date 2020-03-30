@@ -7,7 +7,24 @@ html {
 }
 
 /*contenu body*/
-body {
+.body {
     width: 900px;
     border: solid 1px black;
+}
+
+/*Body personnalisé pour les menus*/
+.body-menu-note {
+    background-color: $menu-note-background;
+}
+
+.body-menu-chic {
+    background-color: $menu-chic-background;
+}
+
+.body-menu-delice {
+    background-color: $menu-delice-background;
+}
+
+.body-menu-palette {
+    background-color: $menu-palette-background;
 }
