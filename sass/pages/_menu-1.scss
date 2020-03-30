@@ -3,12 +3,22 @@ $menu1-text: #3d1319;
 $menu1-background: #fcdfdb;
 
 
-/*Titre   font-family: 'Ma Shan Zheng', cursive;*/
+
 
 /*Texte  font-family: 'Short Stack', cursive; */
 
-.h2-menu_nomdemenu {}
-.hr-menu_nomdemenu {}
-.li-menu_nomdemenu {}
-.li-prix_nomdemenu {}
-.h3-rappel-menu_nomdemenu{}
+.h2-menu_nomdemenu {
+    font-family: devonshire-regular.ttf, 'Ma Shan Zheng', cursive;;
+    &:::before {
+        .img-note {
+            width: 90px;
+            height:90px;
+}
+.hr-menu_note {}
+
+.li-prix_note, .li-menu_note {
+    font-family: Short Stack', cursive;
+}
+.h3-rappel-menu_nomdemenu{
+    
+}

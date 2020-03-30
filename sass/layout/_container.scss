@@ -1,19 +1,26 @@
-.main-menu {}
+
+.main-menu {
+    margin: 100px 60px;
+}
 
 .main-container {
-    width:100%;
-    margin:50px 100px;
+    margin:100px 50px;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap:row wrap;
     align-items: space-between;
 }
 
 .main-container__box {
-    width: 100px;
-    height: auto;
+    width: 370px;
+    height:520px;
+    margin:60px;
 }
 
-.section-menu {}
-.main-mentions-legales {}
-.section-mentions-legales {}
+.section-menu {
+
+}
+.main-mentions-legales {
+
+}
+.section-mentions-legales {
+margin: 50px;
+}
