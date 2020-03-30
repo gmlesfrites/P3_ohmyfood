@@ -7,9 +7,7 @@ $menu2-text3: #6e4ccc;
 
 .h2-menu_chic {
     font-family:'croissant-one', cursive;
-    background: linear-gradient($menu-chic-gradient1, $menu-chic-gradient2)
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /*background-color: linear-gradient(to right, $menu-chic-gradient1, $menu-chic-gradient2);*/
 }
 
 .li-prix_chic, .li-menu_chic {
