@@ -1,10 +1,11 @@
 /*La note enchantée*/
 
-/*Titre 2 et titre 3*/
+/*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h3-rappel-menu_note {
     font-family:'Ma Shan Zheng', cursive;
 }
 
+/*Particularité taille h3*/
 .h3-rappel-menu_note{
     font-size: $h3-font-size;
 }

@@ -1,8 +1,10 @@
 
-.h2-titre-menu {}
+.h2-titre-menu {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .h2-menu {
-        font-size: $h2-font-size;
+    font-size: $h2-font-size;
 }
 
 .li-menu, .li-prix {

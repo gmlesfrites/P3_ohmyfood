@@ -1,15 +1,12 @@
 /*Le chic à la française*/
-$menu2-text1: #c67412;
-$menu2-text2: #a56799;
-$menu2-text3: #6e4ccc;
 
-
-
+/*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
     font-family:'croissant-one', cursive;
     /*background-color: linear-gradient(to right, $menu-chic-gradient1, $menu-chic-gradient2);*/
 }
 
+/*Texte à l'intérieur des entrées plats et desserts*/
 .li-prix_chic, .li-menu_chic {
     font-family: 'TeX-Gyre-Schola', serif;
 }
