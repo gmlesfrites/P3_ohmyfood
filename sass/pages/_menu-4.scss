@@ -6,7 +6,13 @@ $menu4-gradient2: b2f478;
 
 /*Titre et texte :   font-family: 'Short Stack', cursive; */
 
-.h2-menu_nomdemenu {}
-.hr-menu_nomdemenu {}
-.li-menu_nomdemenu {}
-.li-prix_nomdemenu {}
+.h2-menu_palette {
+    font-family:'Short Stack', cursive;
+    font-size: $h2-font-size;
+}
+
+.li-prix_delice, .li-menu_delice {
+    font-family: 'Short Stack', cursive;
+}
+
+/*.hr-menu_note {}*/

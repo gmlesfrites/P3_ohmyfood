@@ -6,6 +6,8 @@
 .main-container {
     margin:100px 50px;
     display: flex;
+    -ms-flex-wrap: column wrap;
+    flex-wrap: column wrap;
     align-items: space-between;
 }
 

@@ -6,21 +6,19 @@ $menu2-background: #fff5fe;
 $menu2-gradient1: #db8528;
 $menu2-gradient2: #8f5bfe;
 
+.h2-menu_chic {
+    font-family:'croissant-one', cursive;
+    font-size: $h2-font-size;
+    background: linear-gradient(#db8528, #8f5bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.li-prix_chic, .li-menu_chic {
+    font-family: 'TeX-Gyre-Schola', serif;
+}
+
+/*.hr-menu_nomdemenu {}*/
 /* appétit #c67412; */
 /*papilles  #a56799 */
 /* gourmandises #6e4ccc */
-/* titre #db8528 à  #8f5bfe */
-
-/*Titre   font-family: 'croissant-one', cursive;*/
-
-/*Texte  font-family: 'TeX-Gyre-Schola', serif; */
-
-.h2-menu_nomdemenu {
-
-        }
-    }
-}
-.hr-menu_nomdemenu {}
-.li-menu_nomdemenu {}
-.li-prix_nomdemenu {}
