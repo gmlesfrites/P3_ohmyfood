@@ -18,11 +18,22 @@
 }
 
 .section-menu {
-
+width: 100%;
+display:flex;
 }
+
+.ul-menu {
+    width: 85%;
+}
+
+.ul-prix {
+    width: 15%;
+}
+
 .main-mentions-legales {
-
+margin: 20px;
 }
+
 .section-mentions-legales {
-margin: 50px;
+margin: 20px;
 }
