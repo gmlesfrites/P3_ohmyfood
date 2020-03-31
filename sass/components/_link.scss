@@ -9,6 +9,9 @@
 /*Liens contenus dans le footer*/
 .footer-link{
   color: $color-secondary;
-  text-decoration: none;
   width: 200px;
+}
+
+.page-menu-link, .footer-link {
+  text-decoration: none;
 }
