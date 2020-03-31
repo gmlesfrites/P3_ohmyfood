@@ -1,263 +1,80 @@
-@charset "UTF-8";
-/*couleurs principales*/
-/*Variables sur le logo*/
-/*Couleurs des header-footer*/
-/*Couleur des backgrounds*/
-/*Taille de textes*/
-/******************Couleurs des textes**********************/
-/*La note enchantée*/
-/*Le chic à la française*/
-/*Dégradés linéaires texte du menu chic à la française*/
-/*Le délice des papilles*/
-/*dégradés dans les hr du menu palette*/
-/*favicon jaune*/
-/*contenu global*/
-* {
-  margin: 0;
-  padding: 0; }
+/*
+Error: Invalid CSS after "...y: 'Short Stack": expected ";", was "', cursive;"
+        on line 10 of sass/pages/_menu-4.scss
+        from line 27 of sass\main.scss
 
-html {
-  width: 100%; }
+5:     font-family: Short Stack', cursive;
+6: }
+7: 
+8: /*Texte des entrées, plats et desserts*\/
+9: .li-prix_delice, .li-menu_delice {
+10:     font-family: 'Short Stack', cursive;
+11: }
+12: 
+13: /*.hr-menu_note {}*\/
 
-.favicon {
-  color: #fcca46; }
-
-/**************contenu body****************/
-.body {
-  width: 100%;
-  border: solid 1px black; }
-
-/*Body personnalisé pour les menus*/
-.body-menu-note {
-  background-color: #fcdfdb; }
-
-.body-menu-chic {
-  background-color: #fff5fe; }
-
-.body-menu-delice {
-  background-color: #edefef; }
-
-.body-menu-palette {
-  background-color: #fdfffd; }
-
-/*Typo pour tout le corps des pages*/
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.5rem; }
-
-/*Typo pour tous les titres du site*/
-h1 {
-  font-size: 3rem; }
-
-h2 {
-  font-size: 1.75rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 1.25rem; }
-
-/*Bouton prochainement sur la page d'accueil*/
-.button-prochainement {
-  width: 150px;
-  height: 40px;
-  background: #579c87;
-  border-radius: 10px;
-  margin-bottom: 100px; }
-
-.logo {
-  color: #fcca46;
-  font-family: "Montserrat", "sans-serif";
-  letter-spacing: -1px; }
-
-.h1-logo {
-  font-size: 3rem;
-  text-align: center; }
-
-/*Liens sur les images de la page d'accueil vers chaque page de menu*/
-.lien-page:hover {
-  transform: scale(1.3, 0);
-  opacity: 0.8; }
-
-/*Liens contenus dans le footer*/
-.footer-link {
-  color: #fcca46;
-  text-decoration: none;
-  width: 200px; }
-
-/*Ajout d'animations sur les images des menus en page d'accueil*/
-.img-note_titre {
-  width: 3rem;
-  height: 3rem; }
-
-.img-note_rappel {
-  width: 1.25rem;
-  height: 1.25rem; }
-
-.header {
-  background: #579c87;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 165px; }
-
-.main-menu {
-  margin: 100px 60px; }
-
-.main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-.main-container__box {
-  width: 27em;
-  height: 41em;
-  margin: 3em;
-  border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.bouton-index {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-bottom: 70px; }
-
-.section-menu {
-  width: 100%;
-  display: flex; }
-
-.ul-menu {
-  width: 85%; }
-
-.ul-prix {
-  width: 15%; }
-
-.main-mentions-legales {
-  margin: 20px; }
-
-.section-mentions-legales {
-  padding: 30px; }
-
-.footer {
-  background: #579c87;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch; }
-
-.suspension {
-  content: ''; }
-
-.suspension-1, .suspension-2, .suspension-3 {
-  width: 5px;
-  height: 5px;
-  color: #fcca46;
-  border-radius: 50%; }
-
-.h2-mentions-legales {
-  font-size: 1.5em; }
-
-.h3-mentions-legales {
-  font-size: 1.25em; }
-
-.h4-mentions-legales {
-  font-size: 1em; }
-
-.h2-mentions-legales, .h3-mentions-legales, .h4-mentions-legales {
-  text-align: center; }
-
-.p-mentions-legales, .li-mentions-legales {
-  font-size: 0.7em; }
-
-.li-mentions-legales {
-  list-style-type: square; }
-
-.hr-mentions-legales {
-  border: 0.01em dashed  #fcca46;
-  margin: 20px; }
-
-.h2-titre-menu {
-  font-family: 'Montserrat', sans-serif; }
-
-.h2-menu {
-  font-size: 1.75rem; }
-
-.li-menu, .li-prix {
-  list-style-type: none; }
-
-/*à traiter
-.p-couverture
-.ul-prix {}
-.hr-menu {}
-.ul-menu {}*/
-/*La note enchantée*/
-/*Titre 2 et titre 3 à l'intérieur de la carte*/
-.h2-menu_note, .h3-rappel-menu_note {
-  font-family: 'Ma Shan Zheng', cursive; }
-
-/*Particularité taille h3*/
-.h3-rappel-menu_note {
-  font-size: 1.5rem; }
-
-/*Contenu des menus*/
-.li-prix_note, .li-menu_note {
-  font-family: 'Short Stack', cursive; }
-
-.li-prix_note {
-  font-weight: 700; }
-
-/*Couleur de police*/
-.h2-menu_note, .h3-rappel-menu_note, .h3-rappel-menu_note, .hr-menu_note, .li-prix_note, .li-menu_note {
-  color: #3d1319; }
-
-/*.hr-menu_note {}
-.span-couverture-note
-.p-couverture-note*/
-/*Le chic à la française*/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_chic {
-  font-family: 'croissant-one', cursive;
-  /*background-color: linear-gradient(to right, $menu-chic-gradient1, $menu-chic-gradient2);*/ }
-
-/*Texte à l'intérieur des entrées plats et desserts*/
-.li-prix_chic, .li-menu_chic {
-  font-family: 'TeX-Gyre-Schola', serif; }
-
-/*.hr-menu_nomdemenu {}*/
-/* appétit #c67412; */
-/*papilles  #a56799 */
-/* gourmandises #6e4ccc */
-/*Le délice des papilles*/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_delice {
-  font-family: 'Dancing Script', cursive; }
-
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
-
-/*.hr-menu_note {}*/
-/*La palette du goût*/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_palette {
-  font-family: 'Short Stack', cursive; }
-
-/*Texte des entrées, plats et desserts*/
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
-
-/*.hr-menu_note {}*/
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+sass/pages/_menu-4.scss:10
+sass\main.scss:27
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...y: 'Short Stack\": expected \";\", was \"', cursive;\"\A         on line 10 of sass/pages/_menu-4.scss\A         from line 27 of sass\main.scss\A \A 5:     font-family: Short Stack', cursive;\A 6: }\A 7: \A 8: /*Texte des entrées, plats et desserts*/\A 9: .li-prix_delice, .li-menu_delice {\A 10:     font-family: 'Short Stack', cursive;\A 11: }\A 12: \A 13: /*.hr-menu_note {}*/"; }
