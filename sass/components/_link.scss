@@ -1,9 +1,6 @@
 /*Liens sur les images de la page d'accueil vers chaque page de menu*/
 .page-menu-link{
-    &:hover {
-        transform: scale(1.3,0);
-        opacity: 0.8;
-    }
+
 }
 
 /*Liens contenus dans le footer*/
@@ -13,6 +10,6 @@
 }
 
 /*Tous les liens sont sans effet de souligné*/
-.page-menu-link, .footer-link {
+.page-menu-link, .footer-link, .header_home-link {
   text-decoration: none;
 }
