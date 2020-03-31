@@ -22,7 +22,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
         <!--Favicon-->
-        <link rel="icon" type="image/svg" href="images/fav.svg">
+        <link href="images/fav.svg" type="image/svg" rel="icon" class="favicon" >
 
         <!--Titre page-->
         <title>Accueil - ohmyfood</title>
@@ -36,34 +36,45 @@
         <header class="header">
             <h1 class="h1-logo logo">ohmyfood</h1>
         </header>
- 
+
         <!--CONTENEUR PRINCPAL-->
         <main class="main-container">
 
             <!--MENU 1-->
-            <div class="main-container__box">
-                <a href="menu-1.html" class="lien-page"><img class="img-menu" src="images/menu-1.png" alt="Couverture du menu 1 : La note enchantée"></a>
+            <div class="main-container__box body-menu-note">
+                <a href="menu-1.html" class="lien-page"></a>
+                <p class="p-couverture p-couverture-note"><img src="images/Notes.png" alt="Couverture du menu 1 : notes de musiques illustrant le menu"></p>
+                <p class="p-couverture p-couverture-note">La note enchantée</p>
+                <p class="p-couverture p-couverture-note"><span class="span-couverture-note">Menu</span></p>
             </div>
 
             <!--MENU 2-->
-            <div class="main-container__box">
-                <a href="menu-2.html" class="lien-page"><img class="img-menu" src="images/menu-2.png" alt="Couverture du menu 2 : Le chic à la française"></a>
+            <div class="main-container__box body-menu-chic">
+                <a href="menu-2.html" class="lien-page"></a>
+                <p class="p-couverture p-couverture-chic">Le chic à la française</p>
+                <p class="p-couverture p-couverture-chic">Menu</p>
             </div>
 
             <!--MENU 3-->
-            <div class="main-container__box">
-                <a href="menu-3.html" class="lien-page"><img class="img-menu" src="images/menu-3.png" alt="Couverture du menu 3 : Le délice des papilles"></a>
+            <div class="main-container__box body-menu-delice">
+                <a href="menu-3.html" class="lien-page"></a>
+                <p class="p-couverture p-couverture-delice">Le délice des papilles</p>
+                <p>Menu</p>
             </div>
 
             <!--MENU 4-->
-            <div class="main-container__box">
-                <a href="menu-4.html" class="lien-page"><img class="img-menu" src="images/menu-4.png" alt="Couverture du menu 4 : La palette du goût"></a>
+            <div class="main-container__box body-menu-palette">
+                <a href="menu-4.html" class="lien-page"></a>
+                <p class="p-couverture p-couverture-palette">La palette du goût</p>
+                <p class="p-couverture p-couverture-palette">Menu</p>
             </div>
         </main>
 
         <!--Bouton prochainement-->
-        <button class="button-prochainement" type="button">Prochainement <span class="suspension"><span class="suspension supension-1"></span> <span class="suspension supension-2"></span><span class="suspension supension-3"></span></span></button>
-        <!--FOOTER-->
+        <div class="bouton-index">
+            <button class="button-prochainement" type="button">Prochainement <span class="suspension"><span class="suspension supension-1"></span> <span class="suspension supension-2"></span><span class="suspension supension-3"></span></span></button>
+        </div>
+            <!--FOOTER-->
         <footer class="footer">
             <a class="footer-link"  target="_blank" href="mentions-legales.html">Mentions légales</a>
             <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
