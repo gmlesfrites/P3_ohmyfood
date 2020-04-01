@@ -4,6 +4,7 @@
 /*Couleurs des header-footer*/
 /*Couleur des backgrounds*/
 /*Taille de textes*/
+/*Margin*/
 /******************Couleurs des textes**********************/
 /*La note enchantée*/
 /*Le chic à la française*/
@@ -13,7 +14,7 @@
 /*favicon jaune*/
 /*Couleur des ombres utilisées avec propriété box-shadow*/
 /*contenu global*/
-html, body {
+* {
   margin: 0;
   padding: 0; }
 
@@ -52,13 +53,17 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 1.75rem; }
+  font-size: 2rem;
+  padding-bottom: 1rem; }
 
 h3 {
   font-size: 1.5rem; }
 
 h4 {
   font-size: 1.25rem; }
+
+h2, h3, h4, hr, p, ul, li {
+  margin: 0.5rem; }
 
 .span-menu-note {
   text-transform: uppercase; }
@@ -75,7 +80,8 @@ h4 {
 .logo {
   color: #fcca46;
   font-family: "Montserrat", "sans-serif";
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  background-color: #579c87; }
 
 .h1-logo {
   font-size: 3rem;
@@ -144,11 +150,11 @@ h4 {
 .ul-prix {
   width: 15%; }
 
-.main-mentions-legales {
-  margin: 20px; }
+.main-mentions-legales, .section-mentions-legales {
+  margin: 1rem; }
 
 .section-mentions-legales {
-  padding: 30px; }
+  padding-bottom: 2em; }
 
 .footer {
   background: #579c87;
@@ -189,14 +195,17 @@ h4 {
   list-style-type: square; }
 
 .hr-mentions-legales {
-  border: 0.01em dashed  #fcca46;
-  margin: 20px; }
+  height: 0.01em;
+  border-style: dashed;
+  border-width: 0.02rem;
+  color: #fcca46;
+  margin: 1rem; }
 
 .h2-titre-menu {
   font-family: 'Montserrat', sans-serif; }
 
 .h2-menu {
-  font-size: 1.75rem; }
+  font-size: 2rem; }
 
 .h2-menu, .h3-menu {
   text-align: center; }
@@ -204,10 +213,29 @@ h4 {
 .li-menu, .li-prix {
   list-style-type: none; }
 
-/*à traiter
-.ul-prix {}
-.hr-menu {}
-.ul-menu {}*/
+.hr-menu {
+  line-height: 2em;
+  font-size: 1.5rem;
+  position: relative;
+  outline: 0;
+  border: 1px solid green;
+  /*à ôter à la fin du travail, permet de délimiter la zone hr dans son entier*/
+  text-align: center;
+  height: auto;
+  opacity: 0.9; }
+  .hr-menu::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    height: 1px; }
+  .hr-menu::after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    padding: 0.5em; }
+
 /*La note enchantée*/
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h3-menu_note {
@@ -228,9 +256,9 @@ h4 {
 .h2-menu_note, .h3-rappel-menu_note, .h3-rappel-menu_note, .hr-menu_note, .li-prix_note, .li-menu_note {
   color: #3d1319; }
 
-/*.hr-menu_note {}
-.span-couverture-note
-.p-couverture-note*/
+.hr-menu {
+  color: #3d1319; }
+
 /*Le chic à la française*/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic, .h3-menu_chic {

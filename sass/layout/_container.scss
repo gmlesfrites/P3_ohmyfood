@@ -41,10 +41,10 @@ display:flex;
     width: 15%;
 }
 
-.main-mentions-legales {
-margin: 20px;
+.main-mentions-legales, .section-mentions-legales {
+margin: $margin;
 }
 
 .section-mentions-legales {
-padding: 30px;
+    padding-bottom: 2em;
 }

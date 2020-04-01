@@ -23,6 +23,9 @@ font-size: 1.5em;
 }
 
 .hr-mentions-legales {
-    border: 0.01em dashed  #fcca46;
-    margin: 20px;
+    height: 0.01em;
+    border-style: dashed;
+    border-width: 0.02rem;
+    color: #fcca46;
+    margin: $margin;
 }

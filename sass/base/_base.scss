@@ -1,5 +1,5 @@
 /*contenu global*/
-html, body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -34,3 +34,4 @@ html {
 .body-menu_palette {
     background-color: $menu-palette-background;
 }
+
