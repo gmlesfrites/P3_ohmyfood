@@ -1,9 +1,12 @@
+* {
+    line-height: $line-height;
+
+}
 
 /*Typo pour tout le corps des pages*/
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: $base-font-size;
-    line-height: $line-height;
 }
 
 /*Typo pour tous les titres du site*/

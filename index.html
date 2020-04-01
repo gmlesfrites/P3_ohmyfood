@@ -48,13 +48,15 @@
         <main class="main-container">
 
             <!--MENU 1-->
-            <section class="main-container__box body-menu_note">
-                <a href="menu-1.html" class="page-menu-link">
-                <p><img src="images/Notes.png" alt="Couverture du menu 1 : notes de musiques illustrant le menu"></p>
-                <h2 class="h2-menu h2-menu_note">La note enchantée</h2>
-                <h3 class="h3-menu h3-menu_note"><span class="span-menu-note">Menu</span></h3>
-                </a>
-            </section>
+            <!--Lien encadrant la section pour grandir la zone de clic-->
+            <a href="menu-1.html" class="page-menu-link">
+                <!--Section contenant les écrits du menu-->
+                <section class="main-container__box body-menu_note">
+                    <p><img src="images/Notes.png" alt="Couverture du menu 1 : notes de musiques illustrant le menu"></p>
+                    <h2 class="h2-menu h2-menu_note">La note enchantée</h2>
+                    <h3 class="h3-menu h3-menu_note"><span class="span-menu-note">Menu</span></h3>
+                </section>
+            </a>
 
             <!--MENU 2-->
             <section class="main-container__box body-menu_chic">
@@ -87,8 +89,8 @@
         </div>
             <!--FOOTER-->
         <footer class="footer">
-            <a class="footer-link"  target="_blank" href="mentions-legales.html">Mentions légales</a>
-            <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
+            <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>
+            <a href="mailto:ohmyfood@mail.com" class="footer-link">Contactez-nous</a>
         </footer>
     </body>
 </html>
