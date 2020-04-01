@@ -158,6 +158,9 @@ h2, h3, h4, hr, p, ul, li {
 .section-mentions-legales {
   padding-bottom: 2em; }
 
+.container-note {
+  text-align: center; }
+
 .footer {
   background: #579c87;
   position: fixed;
