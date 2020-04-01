@@ -15,6 +15,7 @@
     height:41em;
     margin: 3em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: $box-shadow;
