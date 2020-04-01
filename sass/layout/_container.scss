@@ -1,8 +1,8 @@
 
-.main-menu {
-    margin: 100px 60px;
-}
-
+/*****************************************************/
+/***        Particularités page d'accueil          ***/
+/*****************************************************/
+/*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
 .main-container {
     display: flex;
     flex-direction:row;
@@ -10,6 +10,7 @@
     flex-wrap: wrap;
 }
 
+/*Gestion des visuels sur la page d'accueil*/
 .main-container__box {
     width: 27em;
     height:41em;
@@ -21,6 +22,7 @@
     box-shadow: $box-shadow;
 }
 
+/*Bouton prochainement*/
 .bouton-index {
     width: 100%;
     display:flex;
@@ -29,11 +31,21 @@
     padding-bottom: 70px;
 }
 
+/*****************************************************/
+/***        Particularités pages menu              ***/
+/*****************************************************/
+/*Disposition Desktop flex de chaque page de menus*/
+.main-menu {
+    margin: 100px 60px;
+}
+
+/*Affichage des menus*/
 .section-menu {
 width: 100%;
 display:flex;
 }
 
+/*Affichage en colonnes pour les entrées, plats, desserts et prix en face*/
 .ul-menu {
     width: 85%;
 }
@@ -42,14 +54,25 @@ display:flex;
     width: 15%;
 }
 
+/*Marges blanc tournant autour de l'intégralité des textes*/
 .main-mentions-legales, .section-mentions-legales {
 margin: $margin;
 }
 
+
+/*****************************************************/
+/***             Mentions légales                  ***/
+/*****************************************************/
+/*Un peu de blanc tournant en bas de sections et gestion du footer fixe*/
 .section-mentions-legales {
     padding-bottom: 2em;
 }
 
+
+/*****************************************************/
+/***           Particularité menu 1                 **/
+/*****************************************************/
+/*Affichage des notes de musique au centre du menu*/
 .container-note {
     text-align: center;
 }

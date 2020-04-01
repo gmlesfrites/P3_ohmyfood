@@ -1,24 +1,28 @@
+/***********************************************************************************/
 /*couleurs principales*/
 $color-primary: #579c87;
 $color-secondary: #fcca46;
 $color-main-text: #000;
 
+/************************************************************************************/
 /*Variables sur le logo*/
 $logo-font:'Montserrat', 'sans-serif';
 $logo-weight: bolder;
 $logo-color: $color-secondary;
 
+/************************************************************************************/
 /*Couleurs des header-footer*/
 $header-color: $color-primary;
 $footer-color:  $color-primary;
 
+/************************************************************************************/
 /*Couleur des backgrounds*/
 $menu-note-background: #fcdfdb;
 $menu-chic-background: #fff5fe;
 $menu-delice-background: #edefef;
 $menu-palette-background: #fdfffd;
 
-
+/*************************************************************************************/
 /*Taille de textes*/
 $base-font-size: 16px !default;
 $line-height:1.5rem;
@@ -30,9 +34,12 @@ $hr-font-size: 1.5rem;
 $p-font-size: 0.75rem;
 $li-font-size: 1rem;
 
+/**************************************************************************************/
 /*Margin*/
 $margin: 1rem;
 
+
+/**************************************************************************************/
 /******************Couleurs des textes**********************/
 /*La note enchantée*/
 $menu-note-text: #3d1319;
@@ -55,8 +62,7 @@ $menu-delice-dessert: #229df9;
 $menu-palette-gradient1: #41963c;
 $menu-palette-gradient2: #b2f478;
 
-/*favicon jaune*/
-$fav-color: $color-secondary;
 
+/**************************************************************************************/
 /*Couleur des ombres utilisées avec propriété box-shadow*/
 $box-shadow: 4px 4px 4px #efefef;

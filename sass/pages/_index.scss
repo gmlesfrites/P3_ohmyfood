@@ -1,7 +1,14 @@
+
+/*****************************************************/
+/***     Particularités de la page d'accueil       ***/
+/*****************************************************/
+
+/*Animation des points de suspension du bouton prochainement*/
 .suspension {
     content:'';
 }
 
+/*Propriétés des points de suspension du bouton prochainement*/
 .suspension-1, .suspension-2, .suspension-3 {
     width: 5px;
     height:5px;

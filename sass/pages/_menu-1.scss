@@ -1,4 +1,6 @@
-/*La note enchantée*/
+/*****************************************************/
+/***     Particularités La note enchantée          ***/
+/*****************************************************/
 
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h3-menu_note {
@@ -6,8 +8,13 @@
 }
 
 /*Particularité taille h3*/
-.h3-rappel-menu_note{
+.h3-rappel-menu_note {
     font-size: $h3-font-size;
+    text-align: center;
+        &::before {
+            content:'images/Notes.png';
+        }
+
 }
 
 /*Contenu des menus*/
