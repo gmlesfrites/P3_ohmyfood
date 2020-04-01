@@ -20,7 +20,9 @@
 /*dégradés dans les hr du menu palette*/
 /**************************************************************************************/
 /*Couleur des ombres utilisées avec propriété box-shadow*/
-/*contenu global*/
+/*****************************************************/
+/***                 Contenu global                ***/
+/*****************************************************/
 * {
   margin: 0;
   padding: 0; }
@@ -28,10 +30,9 @@
 html {
   width: 100%; }
 
-.favicon {
-  color: #fcca46; }
-
-/**************contenu body****************/
+/*****************************************************/
+/***        Contenu du corps de chaque page        ***/
+/*****************************************************/
 .body {
   width: 100%;
   border: solid 1px black; }
@@ -49,15 +50,16 @@ html {
 .body-menu_palette {
   background-color: #fdfffd; }
 
+/*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
 * {
-  line-height: 1.5rem; }
-
-/*Typo pour tout le corps des pages*/
-body {
-  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
   font-size: 16px; }
 
-/*Typo pour tous les titres du site*/
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
 h1 {
   font-size: 3rem; }
 
@@ -71,13 +73,15 @@ h3 {
 h4 {
   font-size: 1.25rem; }
 
+/*****************************************************/
+/***  Margin applicable partout sauf h1 - logo     ***/
+/*****************************************************/
 h2, h3, h4, hr, p, ul, li {
   margin: 0.5rem; }
 
-.span-menu-note {
-  text-transform: uppercase; }
-
-/*Bouton prochainement sur la page d'accueil*/
+/*****************************************************/
+/***     Bouton prochainement - page d'accueil     ***/
+/*****************************************************/
 .button-prochainement {
   width: 150px;
   height: 40px;
@@ -106,11 +110,6 @@ h2, h3, h4, hr, p, ul, li {
 .page-menu-link, .footer-link, .header_home-link {
   text-decoration: none; }
 
-/*Image des notes de musique en petit format sur le bas du menu la note enchantée*/
-/*.img-menu_rappel {
-    width: 1.25rem;
-    height: 1.25rem;
-}*/
 .header {
   background: #579c87;
   width: 100%;
@@ -293,7 +292,7 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h3-menu_note {
-  font-family: 'devonshire-regular', cursive; }
+  font-family: "devonshire-regular", cursive; }
 
 /*Particularité taille h3*/
 .h3-rappel-menu_note {
@@ -315,6 +314,9 @@ h2, h3, h4, hr, p, ul, li {
 
 .hr-menu {
   color: #3d1319; }
+
+.span-menu-note {
+  text-transform: uppercase; }
 
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/

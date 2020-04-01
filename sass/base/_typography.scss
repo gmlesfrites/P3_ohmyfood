@@ -1,15 +1,14 @@
+/*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
 * {
     line-height: $line-height;
-
-}
-
-/*Typo pour tout le corps des pages*/
-body {
-    font-family: 'Montserrat', sans-serif;
     font-size: $base-font-size;
 }
 
-/*Typo pour tous les titres du site*/
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
 h1 {
     font-size: $h1-font-size;
 }
@@ -27,12 +26,14 @@ h4 {
     font-size: $h4-font-size;
 }
 
+/*****************************************************/
+/***  Margin applicable partout sauf h1 - logo     ***/
+/*****************************************************/
 h2, h3, h4, hr, p, ul, li {
     margin: 0.5rem;
 }
 
-.span-menu-note {
-    text-transform: uppercase;
-}
+
+
 
 
