@@ -10,7 +10,9 @@
     flex-wrap: wrap;
 }
 
-/*Gestion des visuels sur la page d'accueil*/
+/*****************************************************/
+/***           Visuels page d'accueil              ***/
+/*****************************************************/
 .main-container__box {
     width: 27em;
     height:41em;
@@ -22,14 +24,18 @@
     box-shadow: $box-shadow;
 }
 
-/*Bouton prochainement*/
+
+/*****************************************************/
+/***       Container bouton prochainement          ***/
+/*****************************************************/
 .bouton-index {
     width: 100%;
     display:flex;
     justify-content: center;
     align-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 3rem;
 }
+
 
 /*****************************************************/
 /***        Particularités pages menu              ***/

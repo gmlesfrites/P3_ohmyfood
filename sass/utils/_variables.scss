@@ -1,46 +1,21 @@
-/***********************************************************************************/
-/*couleurs principales*/
+/*****************************************************/
+/***             Couleurs principales              ***/
+/*****************************************************/
 $color-primary: #579c87;
 $color-secondary: #fcca46;
 $color-main-text: #000;
 
-/************************************************************************************/
-/*Variables sur le logo*/
-$logo-font:'Montserrat', 'sans-serif';
-$logo-weight: bolder;
-$logo-color: $color-secondary;
 
-/************************************************************************************/
-/*Couleurs des header-footer*/
+/*****************************************************/
+/***       Couleurs des header et footer           ***/
+/*****************************************************/
 $header-color: $color-primary;
 $footer-color:  $color-primary;
 
-/************************************************************************************/
-/*Couleur des backgrounds*/
-$menu-note-background: #fcdfdb;
-$menu-chic-background: #fff5fe;
-$menu-delice-background: #edefef;
-$menu-palette-background: #fdfffd;
 
-/*************************************************************************************/
-/*Taille de textes*/
-$base-font-size: 16px !default;
-$line-height:1.5rem;
-$h1-font-size: 3rem;
-$h2-font-size: 2rem;
-$h3-font-size: 1.5rem;
-$h4-font-size: 1.25rem;
-$hr-font-size: 1.5rem;
-$p-font-size: 0.75rem;
-$li-font-size: 1rem;
-
-/**************************************************************************************/
-/*Margin*/
-$margin: 1rem;
-
-
-/**************************************************************************************/
-/******************Couleurs des textes**********************/
+/*****************************************************/
+/***            Couleurs des textes             ***/
+/*****************************************************/
 /*La note enchantée*/
 $menu-note-text: #3d1319;
 
@@ -63,6 +38,44 @@ $menu-palette-gradient1: #41963c;
 $menu-palette-gradient2: #b2f478;
 
 
-/**************************************************************************************/
-/*Couleur des ombres utilisées avec propriété box-shadow*/
+/*****************************************************/
+/***               Couleurs de fond                ***/
+/*****************************************************/
+$menu-note-background: #fcdfdb;
+$menu-chic-background: #fff5fe;
+$menu-delice-background: #edefef;
+$menu-palette-background: #fdfffd;
+
+
+/*****************************************************/
+/***                    LOGO                       ***/
+/*****************************************************/
+$logo-font:"Montserrat-bold", sans-serif;
+$logo-color: $color-secondary;
+
+
+/*****************************************************/
+/***            Taille de caractères               ***/
+/*****************************************************/
+$base-font-size: 16px !default;
+$line-height:1.5rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$hr-font-size: 1.5rem;
+$p-font-size: 0.75rem;
+$li-font-size: 1rem;
+
+
+/*****************************************************/
+/***                    Marges                     ***/
+/*****************************************************/
+$margin: 1rem;
+$margin-bottom: 3rem;
+
+
+/*****************************************************/
+/***           Ombres avec box-shadow              ***/
+/*****************************************************/
 $box-shadow: 4px 4px 4px #efefef;

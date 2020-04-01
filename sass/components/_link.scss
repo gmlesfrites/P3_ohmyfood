@@ -1,15 +1,26 @@
-/*Liens sur les images de la page d'accueil vers chaque page de menu*/
-.page-menu-link{
+/*****************************************************/
+/***         Liens vers les pages de menus         ***/
+/*****************************************************/
+/*   .page-menu-link{} */
+/*ANIMATION A VENIR AU SURVOL*/
 
-}
 
-/*Liens contenus dans le footer*/
+
+
+/*****************************************************/
+/***             Liens dans le footer              ***/
+/*****************************************************/
+
 .footer-link{
   color: $color-secondary;
-  width: 200px;
 }
 
-/*Tous les liens sont sans effet de souligné*/
+/*ANIMATION A VENIR AU SURVOL*/
+
+
+/*****************************************************/
+/***       Liens sans effet de souligné            ***/
+/*****************************************************/
 .page-menu-link, .footer-link, .header_home-link {
   text-decoration: none;
 }

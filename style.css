@@ -1,25 +1,33 @@
 @charset "UTF-8";
-/***********************************************************************************/
-/*couleurs principales*/
-/************************************************************************************/
-/*Variables sur le logo*/
-/************************************************************************************/
-/*Couleurs des header-footer*/
-/************************************************************************************/
-/*Couleur des backgrounds*/
-/*************************************************************************************/
-/*Taille de textes*/
-/**************************************************************************************/
-/*Margin*/
-/**************************************************************************************/
-/******************Couleurs des textes**********************/
+/*****************************************************/
+/***             Couleurs principales              ***/
+/*****************************************************/
+/*****************************************************/
+/***       Couleurs des header et footer           ***/
+/*****************************************************/
+/*****************************************************/
+/***            Couleurs des textes             ***/
+/*****************************************************/
 /*La note enchantée*/
 /*Le chic à la française*/
 /*Dégradés linéaires texte du menu chic à la française*/
 /*Le délice des papilles*/
 /*dégradés dans les hr du menu palette*/
-/**************************************************************************************/
-/*Couleur des ombres utilisées avec propriété box-shadow*/
+/*****************************************************/
+/***               Couleurs de fond                ***/
+/*****************************************************/
+/*****************************************************/
+/***                    LOGO                       ***/
+/*****************************************************/
+/*****************************************************/
+/***            Taille de caractères               ***/
+/*****************************************************/
+/*****************************************************/
+/***                    Marges                     ***/
+/*****************************************************/
+/*****************************************************/
+/***           Ombres avec box-shadow              ***/
+/*****************************************************/
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
@@ -83,16 +91,22 @@ h2, h3, h4, hr, p, ul, li {
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
 .button-prochainement {
-  width: 150px;
-  height: 40px;
+  width: 12rem;
+  height: 3.5rem;
   background: #579c87;
-  border-radius: 10px;
-  margin-bottom: 100px;
+  color: #fcca46;
+  text-align: left;
+  padding-left: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 3rem;
   box-shadow: 4px 4px 4px #efefef; }
 
+/*****************************************************/
+/***                   LOGO                        ***/
+/*****************************************************/
 .logo {
   color: #fcca46;
-  font-family: "Montserrat", "sans-serif";
+  font-family: "Montserrat-bold", sans-serif;
   letter-spacing: -1px;
   background-color: #579c87; }
 
@@ -100,23 +114,35 @@ h2, h3, h4, hr, p, ul, li {
   font-size: 3rem;
   text-align: center; }
 
-/*Liens sur les images de la page d'accueil vers chaque page de menu*/
-/*Liens contenus dans le footer*/
+/*****************************************************/
+/***         Liens vers les pages de menus         ***/
+/*****************************************************/
+/*   .page-menu-link{} */
+/*ANIMATION A VENIR AU SURVOL*/
+/*****************************************************/
+/***             Liens dans le footer              ***/
+/*****************************************************/
 .footer-link {
-  color: #fcca46;
-  width: 200px; }
+  color: #fcca46; }
 
-/*Tous les liens sont sans effet de souligné*/
+/*ANIMATION A VENIR AU SURVOL*/
+/*****************************************************/
+/***       Liens sans effet de souligné            ***/
+/*****************************************************/
 .page-menu-link, .footer-link, .header_home-link {
   text-decoration: none; }
 
+/*****************************************************/
+/***                   Header                      ***/
+/*****************************************************/
 .header {
   background: #579c87;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 165px; }
+  height: 8rem;
+  margin-bottom: 3rem; }
 
 /*****************************************************/
 /***        Particularités page d'accueil          ***/
@@ -128,7 +154,9 @@ h2, h3, h4, hr, p, ul, li {
   justify-content: space-around;
   flex-wrap: wrap; }
 
-/*Gestion des visuels sur la page d'accueil*/
+/*****************************************************/
+/***           Visuels page d'accueil              ***/
+/*****************************************************/
 .main-container__box {
   width: 27em;
   height: 41em;
@@ -139,13 +167,15 @@ h2, h3, h4, hr, p, ul, li {
   align-items: center;
   box-shadow: 4px 4px 4px #efefef; }
 
-/*Bouton prochainement*/
+/*****************************************************/
+/***       Container bouton prochainement          ***/
+/*****************************************************/
 .bouton-index {
   width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-bottom: 70px; }
+  padding-bottom: 3rem; }
 
 /*****************************************************/
 /***        Particularités pages menu              ***/
@@ -184,12 +214,15 @@ h2, h3, h4, hr, p, ul, li {
 .container-note {
   text-align: center; }
 
+/*****************************************************/
+/***                   Footer                      ***/
+/*****************************************************/
 .footer {
   background: #579c87;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -200,14 +233,12 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Animation des points de suspension du bouton prochainement*/
 .suspension {
-  content: ''; }
+  display: flex;
+  flex-direction: row; }
 
 /*Propriétés des points de suspension du bouton prochainement*/
 .suspension-1, .suspension-2, .suspension-3 {
-  width: 5px;
-  height: 5px;
-  color: #fcca46;
-  border-radius: 50%; }
+  color: #fcca46; }
 
 /*****************************************************/
 /***     Particularités Mentions légales           ***/
@@ -249,7 +280,8 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem; }
 
 /*Titre dans chaque carte*/
 .h2-menu {
