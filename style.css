@@ -29,6 +29,36 @@
 /***           Ombres avec box-shadow              ***/
 /*****************************************************/
 /*****************************************************/
+/***                 Contenu global                ***/
+/*****************************************************/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  width: 100%; }
+
+/*****************************************************/
+/***        Contenu du corps de chaque page        ***/
+/*****************************************************/
+.body {
+  width: 320px;
+  border: solid 1px black; }
+
+/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+.body-menu_note {
+  background-color: #fcdfdb; }
+
+.body-menu_chic {
+  background-color: #fff5fe; }
+
+.body-menu_delice {
+  background-color: #edefef; }
+
+.body-menu_palette {
+  background-color: #fdfffd; }
+
+/*****************************************************/
 /***                   LOGO                        ***/
 /*****************************************************/
 .logo {
@@ -111,7 +141,7 @@
 /*****************************************************/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5rem; }
 
 /*Titre dans chaque carte*/
