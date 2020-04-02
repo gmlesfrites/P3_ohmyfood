@@ -4,5 +4,11 @@
 
 /*Points de suspension*/
 .fa-circle {
-    font-size: $p-font-size;
+    font-size: $i-circle-size;
+    padding: 0.25rem;
 }
+
+/*notes de musique
+.fa-music {
+    background:linear-gradient(135deg, $gradient1_note, $gradient2_note);
+}*/

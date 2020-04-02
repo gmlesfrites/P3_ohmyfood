@@ -99,8 +99,8 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 .button_soon {
   text-align: left;
-  font-size: 0.75rem;
-  padding-left: 0.5em; }
+  font-size: 1rem;
+  padding-left: 0.9rem; }
 
 /*****************************************************/
 /***                   LOGO                        ***/
@@ -139,8 +139,13 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Points de suspension*/
 .fa-circle {
-  font-size: 0.75rem; }
+  font-size: 0.25rem;
+  padding: 0.25rem; }
 
+/*notes de musique
+.fa-music {
+    background:linear-gradient(135deg, $gradient1_note, $gradient2_note);
+}*/
 /*****************************************************/
 /***                   Header                      ***/
 /*****************************************************/
@@ -205,11 +210,12 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Marges blanc tournant autour de l'intégralité des textes*/
 .main-container_legal, .article-container_legal, .section-container_legal {
-  margin: 1rem; }
+  margin: 1rem;
+  padding: 2.5rem; }
 
 /*Blanc tournant en bas de sections et gestion du footer fixe*/
-.section-mentions-legales {
-  padding-bottom: 2em; }
+.main-container_legal {
+  margin-bottom: 3rem; }
 
 /*****************************************************/
 /***                   Footer                      ***/
@@ -233,37 +239,32 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /***     Particularités Mentions légales           ***/
 /*****************************************************/
-/*Titre de la page*/
-.h2-mentions-legales {
-  font-size: 1.5em; }
-
-/*Titres de chaque partie*/
-.h3-mentions-legales {
-  font-size: 1.2em; }
-
-/*Titres de sous-parties*/
-.h4-mentions-legales {
-  font-size: 1em; }
-
 /*Titres centrés*/
-.h2-mentions-legales, .h3-mentions-legales, .h4-mentions-legales {
+.h2-legal, .h3-legal, .h4-legal {
   text-align: center; }
 
-/*Taille de polices des contenus*/
-.p-mentions-legales, .li-mentions-legales {
-  font-size: 0.7em; }
+/*Taile des titres*/
+.h3-legal, .h4-legal, .a-legal {
+  font-size: 90%; }
+
+/*Taille des contenus*/
+.p-legal, .li-legal {
+  font-size: 80%;
+  padding: 0.5rem; }
 
 /*Style des puces des listes*/
-.li-mentions-legales {
+.li-legal {
   list-style-type: square; }
 
 /*Séparations des parties*/
-.hr-mentions-legales {
+.hr-legal {
   height: 0.01em;
   border-style: dashed;
   border-width: 0.02rem;
-  color: #fcca46;
-  margin: 1rem; }
+  color: #fcca46; }
+
+.a-legal {
+  color: #579c87; }
 
 /*****************************************************/
 /***   Généralités applicable à chaque menu        ***/
@@ -274,7 +275,6 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  font-family: "Montserrat", sans-serif;
   line-height: 1.5rem; }
 
 /*Titre dans chaque carte*/
@@ -290,6 +290,7 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Séparations entre chaque type de plat*/
 .hr-menu {
+  width: 100%;
   line-height: 2em;
   font-size: 1.5rem;
   position: relative;
@@ -321,11 +322,12 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
-  font-family: "Devonshire-regular", cursive; }
+  font-family: "Devonshire", cursive; }
 
 /*Contenu des menus*/
-.p-menu_note, .p-prix_note {
-  font-family: "Devonshire-regular", cursive; }
+.p-menu_note, .p-prix_note, .hr-menu_note {
+  font-family: 'Short Stack', cursive;
+  /*revoir l'insertion de cette police*/ }
 
 /*Prix en gras*/
 .p-prix_note {
@@ -334,9 +336,6 @@ h2, h3, h4, hr, p, ul, li {
 /*Couleur de police*/
 .h2-menu_note, .hr-menu_note {
   color: #3d1319; }
-
-.fa-music {
-  background: linear-gradient(135deg, #f05561, #f6916a); }
 
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/
@@ -347,12 +346,12 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic, .hr-menu_chic {
-  font-family: 'croissantone', cursive;
+  font-family: cursive;
   background-color: linear-gradient(to right, #db8528, #8f5bfe); }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.li-prix_chic, .li-menu_chic {
-  font-family: 'TeX-Gyre-Schola', serif; }
+.p-prix_chic, .p-menu_chic {
+  font-family: serif; }
 
 /*Reste à traiter*/
 /*.hr-menu_nomdemenu {}*/
@@ -370,11 +369,12 @@ h2, h3, h4, hr, p, ul, li {
 .h2-menu_delice, .h3-menu_delice {
   font-family: 'Dancing Script', cursive; }
 
-.li-prix_delice, .li-menu_delice {
+.p-prix_delice, .p-menu_delice, .hr-menu_delice {
   font-family: 'Short Stack', cursive; }
 
 /*Reste à traiter*/
-/*.hr-menu_note {}*/
+/*.hr-menu_note {}
+polices de caractère*/
 /*****************************************************/
 /***     Particularités La palette du goût         ***/
 /*****************************************************/
@@ -387,10 +387,11 @@ h2, h3, h4, hr, p, ul, li {
   font-family: 'Short Stack', cursive; }
 
 /*Texte des entrées, plats et desserts*/
-.li-prix_delice, .li-menu_delice {
+.p-prix_palette, .p-menu_palette, .hr-menu_palette {
   font-family: 'Short Stack', cursive; }
 
 /*Reste à traiter*/
-/*.hr-menu_note {}*/
+/*.hr-menu_palette {}
+polices de caractères*/
 
 /*# sourceMappingURL=style.css.map */

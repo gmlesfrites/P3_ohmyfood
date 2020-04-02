@@ -6,16 +6,15 @@
     background-color: $background-menu_chic;
 }
 
-
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic, .hr-menu_chic {
-    font-family:'croissantone', cursive;
+    font-family: cursive;
     background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic);
 }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.li-prix_chic, .li-menu_chic {
-    font-family: 'TeX-Gyre-Schola', serif;
+.p-prix_chic, .p-menu_chic {
+    font-family: serif;
 }
 
 

@@ -60,9 +60,10 @@
 /*Marges blanc tournant autour de l'intégralité des textes*/
 .main-container_legal, .article-container_legal, .section-container_legal {
     margin: $margin;
+    padding: 2.5rem;
     }
 
 /*Blanc tournant en bas de sections et gestion du footer fixe*/
-.section-mentions-legales {
-    padding-bottom: 2em;
+.main-container_legal {
+    margin-bottom: 3rem;
 }
