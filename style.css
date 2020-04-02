@@ -29,84 +29,11 @@
 /***           Ombres avec box-shadow              ***/
 /*****************************************************/
 /*****************************************************/
-/***                 Contenu global                ***/
-/*****************************************************/
-* {
-  margin: 0;
-  padding: 0; }
-
-html {
-  width: 100%; }
-
-/*****************************************************/
-/***        Contenu du corps de chaque page        ***/
-/*****************************************************/
-.body {
-  width: 100%;
-  border: solid 1px black; }
-
-/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
-.body-menu_note {
-  background-color: #fcdfdb; }
-
-.body-menu_chic {
-  background-color: #fff5fe; }
-
-.body-menu_delice {
-  background-color: #edefef; }
-
-.body-menu_palette {
-  background-color: #fdfffd; }
-
-/*****************************************************/
-/***   Typographie applicable à chaque page        ***/
-/*****************************************************/
-* {
-  line-height: 1.5rem;
-  font-size: 16px; }
-
-/*****************************************************/
-/***     Taille de caractères généralisée          ***/
-/*****************************************************/
-h1 {
-  font-size: 3rem; }
-
-h2 {
-  font-size: 2rem;
-  padding: 1.5rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 1.25rem; }
-
-/*****************************************************/
-/***  Margin applicable partout sauf h1 - logo     ***/
-/*****************************************************/
-h2, h3, h4, hr, p, ul, li {
-  margin: 0.5rem; }
-
-/*****************************************************/
-/***     Bouton prochainement - page d'accueil     ***/
-/*****************************************************/
-.button-prochainement {
-  width: 12rem;
-  height: 3.5rem;
-  background: #579c87;
-  color: #fcca46;
-  text-align: left;
-  padding-left: 1rem;
-  border-radius: 0.6rem;
-  margin-bottom: 3rem;
-  box-shadow: 4px 4px 4px #efefef; }
-
-/*****************************************************/
 /***                   LOGO                        ***/
 /*****************************************************/
 .logo {
   color: #fcca46;
-  font-family: "Montserrat-bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
   background-color: #579c87; }
 
@@ -143,102 +70,6 @@ h2, h3, h4, hr, p, ul, li {
   justify-content: center;
   height: 8rem;
   margin-bottom: 3rem; }
-
-/*****************************************************/
-/***        Particularités page d'accueil          ***/
-/*****************************************************/
-/*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
-.main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-/*****************************************************/
-/***           Visuels page d'accueil              ***/
-/*****************************************************/
-.main-container__box {
-  width: 27em;
-  height: 41em;
-  margin: 3em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 4px 4px 4px #efefef; }
-
-/*****************************************************/
-/***       Container bouton prochainement          ***/
-/*****************************************************/
-.bouton-index {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-bottom: 3rem; }
-
-/*****************************************************/
-/***        Particularités pages menu              ***/
-/*****************************************************/
-/*Disposition Desktop flex de chaque page de menus*/
-.main-menu {
-  margin: 100px 60px; }
-
-/*Affichage des menus*/
-.section-menu {
-  width: 100%;
-  display: flex; }
-
-/*Affichage en colonnes pour les entrées, plats, desserts et prix en face*/
-.ul-menu {
-  width: 85%; }
-
-.ul-prix {
-  width: 15%; }
-
-/*Marges blanc tournant autour de l'intégralité des textes*/
-.main-mentions-legales, .section-mentions-legales {
-  margin: 1rem; }
-
-/*****************************************************/
-/***             Mentions légales                  ***/
-/*****************************************************/
-/*Un peu de blanc tournant en bas de sections et gestion du footer fixe*/
-.section-mentions-legales {
-  padding-bottom: 2em; }
-
-/*****************************************************/
-/***           Particularité menu 1                 **/
-/*****************************************************/
-/*Affichage des notes de musique au centre du menu*/
-.container-note {
-  text-align: center; }
-
-/*****************************************************/
-/***                   Footer                      ***/
-/*****************************************************/
-.footer {
-  background: #579c87;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-
-/*****************************************************/
-/***     Particularités de la page d'accueil       ***/
-/*****************************************************/
-/*Animation des points de suspension du bouton prochainement*/
-.suspension {
-  display: flex;
-  flex-direction: row; }
-
-/*Propriétés des points de suspension du bouton prochainement*/
-.suspension-1, .suspension-2, .suspension-3 {
-  color: #fcca46; }
 
 /*****************************************************/
 /***     Particularités Mentions légales           ***/
@@ -291,10 +122,6 @@ h2, h3, h4, hr, p, ul, li {
 .h2-menu, .h3-menu, .h2-titre-menu {
   text-align: center; }
 
-/*Effacement des styles de puces pour les listes*/
-.li-menu, .li-prix {
-  list-style-type: none; }
-
 /*Séparations entre chaque type de plat*/
 .hr-menu {
   line-height: 2em;
@@ -318,79 +145,5 @@ h2, h3, h4, hr, p, ul, li {
     position: relative;
     display: inline-block;
     padding: 0.5em; }
-
-/*****************************************************/
-/***     Particularités La note enchantée          ***/
-/*****************************************************/
-/*Titre 2 et titre 3 à l'intérieur de la carte*/
-.h2-menu_note, .h3-menu_note {
-  font-family: "devonshire-regular", cursive; }
-
-/*Particularité taille h3*/
-.h3-rappel-menu_note {
-  font-size: 1.5rem;
-  text-align: center; }
-  .h3-rappel-menu_note::before {
-    content: 'images/Notes.png'; }
-
-/*Contenu des menus*/
-.li-prix_note, .li-menu_note {
-  font-family: 'Short Stack', cursive; }
-
-.li-prix_note {
-  font-weight: 700; }
-
-/*Couleur de police*/
-.h2-menu_note, .h3-rappel-menu_note, .h3-rappel-menu_note, .hr-menu_note, .li-prix_note, .li-menu_note {
-  color: #3d1319; }
-
-.hr-menu {
-  color: #3d1319; }
-
-.span-menu-note {
-  text-transform: uppercase; }
-
-/*****************************************************/
-/***     Particularités Le chic à la française     ***/
-/*****************************************************/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_chic, .h3-menu_chic {
-  font-family: 'croissantone', cursive;
-  /*background-color: linear-gradient(to right, $menu-chic-gradient1, $menu-chic-gradient2);*/ }
-
-/*Texte à l'intérieur des entrées plats et desserts*/
-.li-prix_chic, .li-menu_chic {
-  font-family: 'TeX-Gyre-Schola', serif; }
-
-/*Reste à traiter*/
-/*.hr-menu_nomdemenu {}*/
-/* appétit #c67412; */
-/*papilles  #a56799 */
-/* gourmandises #6e4ccc */
-/*****************************************************/
-/***     Particularités Le délice des papilles     ***/
-/*****************************************************/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_delice, .h3-menu_delice {
-  font-family: 'Dancing Script', cursive; }
-
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
-
-/*Reste à traiter*/
-/*.hr-menu_note {}*/
-/*****************************************************/
-/***     Particularités La palette du goût         ***/
-/*****************************************************/
-/*Titre à l'intérieur de la carte*/
-.h2-menu_palette, .h3-menu_palette {
-  font-family: 'Short Stack', cursive; }
-
-/*Texte des entrées, plats et desserts*/
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
-
-/*Reste à traiter*/
-/*.hr-menu_note {}*/
 
 /*# sourceMappingURL=style.css.map */
