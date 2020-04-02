@@ -1,0 +1,27 @@
+/*****************************************************/
+/***     Particularités Le chic à la française     ***/
+/*****************************************************/
+/*Couleur d'arrière-plan*/
+.body-menu_chic {
+    background-color: $background-menu_chic;
+}
+
+
+/*Titre à l'intérieur de la carte*/
+.h2-menu_chic, .hr-menu_chic {
+    font-family:'croissantone', cursive;
+    background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic);
+}
+
+/*Texte à l'intérieur des entrées plats et desserts*/
+.li-prix_chic, .li-menu_chic {
+    font-family: 'TeX-Gyre-Schola', serif;
+}
+
+
+
+/*Reste à traiter*/
+/*.hr-menu_nomdemenu {}*/
+/* appétit #c67412; */
+/*papilles  #a56799 */
+/* gourmandises #6e4ccc */

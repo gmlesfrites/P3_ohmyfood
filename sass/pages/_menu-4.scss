@@ -1,0 +1,21 @@
+/*****************************************************/
+/***     Particularités La palette du goût         ***/
+/*****************************************************/
+/*Couleur d'arrière-plan*/
+.body-menu_palette {
+    background-color: $background-menu_palette;
+}
+
+/*Titre à l'intérieur de la carte*/
+.h2-menu_palette, .h3-menu_palette {
+    font-family: 'Short Stack', cursive;
+}
+
+/*Texte des entrées, plats et desserts*/
+.li-prix_delice, .li-menu_delice {
+    font-family: 'Short Stack', cursive;
+}
+
+
+/*Reste à traiter*/
+/*.hr-menu_note {}*/

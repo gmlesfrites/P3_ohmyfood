@@ -14,45 +14,79 @@ $footer-color:  $color-primary;
 
 
 /*****************************************************/
+/***            Dégradés de couleurs               ***/
+/*****************************************************/
+/*Notes du menu 1*/
+$gradient1_note: #f05561;
+$gradient2_note: #f6916a;
+
+/*Menu chic*/
+$gradient1_chic: #db8528;
+$gradient2_chic: #8f5bfe;
+
+/*Menu palette*/
+$gradient1_palette: #41963c;
+$gradient2_palette: #b2f478;
+
+
+/*****************************************************/
 /***            Couleurs des textes             ***/
 /*****************************************************/
 /*La note enchantée*/
-$menu-note-text: #3d1319;
+$color-menu_note: #3d1319;
 
 /*Le chic à la française*/
-$menu-chic-entree: #c67412;
-$menu-chic-plat: #a56799;
-$menu-chic-dessert: #6e4ccc;
-
-/*Dégradés linéaires texte du menu chic à la française*/
-$menu-chic-gradient1: #db8528;
-$menu-chic-gradient2: #8f5bfe;
+$color-menu_chic_color1: #c67412;
+$color-menu_chic_color2: #a56799;
+$color-menu_chic-color3: #6e4ccc;
 
 /*Le délice des papilles*/
-$menu-delice-entree: #0228dd;
-$menu-delice-plat: #0670f3;
-$menu-delice-dessert: #229df9;
+$color-menu_delice_color1: #0228dd;
+$color-menu_delice_color2: #0670f3;
+$color-menu_delice-color3: #229df9;
 
-/*dégradés dans les hr du menu palette*/
-$menu-palette-gradient1: #41963c;
-$menu-palette-gradient2: #b2f478;
+/*La palette du goût*/
+$color-menu_gout: #000;
 
 
 /*****************************************************/
 /***               Couleurs de fond                ***/
 /*****************************************************/
-$menu-note-background: #fcdfdb;
-$menu-chic-background: #fff5fe;
-$menu-delice-background: #edefef;
-$menu-palette-background: #fdfffd;
+$background-basic: #efefef;
+$background-menu_note: #fcdfdb;
+$background-menu_chic: #fff5fe;
+$background-menu_delice: #edefef;
+$background-menu_palette: #fdfffd;
 
 
 /*****************************************************/
 /***                    LOGO                       ***/
 /*****************************************************/
-$logo-font: "Montserrat", sans-serif;
+$logo-font: "Montserrat", sans-serif;    /*à voir pour $global-title*/
 $logo-color: $color-secondary;
 
+
+/*****************************************************/
+/***            Polices de caractères              ***/
+/*****************************************************/
+/*Titre carte de chaque restaurant
+$global-title: "Montserrat", sans-serif;
+
+*Menu 1*
+$ff-title-M1: "Devonshire-regular", cursive;
+$ff-content-M1: "Segoe_Print_regular", cursive;
+
+*Menu 2*
+$ff-title-M2:
+$ff-content-M2:
+
+*Menu 3*
+$ff-title-M3:
+$ff-content-M3:
+
+*Menu 4*
+$ff-title-M4:
+$ff-content-M4: */
 
 /*****************************************************/
 /***            Taille de caractères               ***/

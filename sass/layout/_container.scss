@@ -1,82 +1,68 @@
 
 /*****************************************************/
-/***        Particularités page d'accueil          ***/
+/***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
-.main-container {
-    width:100%;
-    display: block;
+/*Conteneur principal*/
+.main-container__index {
+    background-color: $background-basic;
+}
 
+/*Visuels des cartes de restaurant*/
+.section-container_indexbox {
+    width: 16em;
+    height:24em;
+    margin: 1em;
+}
+
+/*Conteneur du bouton prochainement*/
+.button_soon {
+    width: 12rem;
+    height: 3.5rem;
+    background: $color-primary;
+    color: $color-secondary;
+    border-radius: 0.6em;
+    margin-bottom: 3em;
+}
+
+/*Ajout d'ombres sur les menus et le bouton prochainement*/
+.section-container_indexbox, .button_soon {
+    box-shadow: $box-shadow;
 }
 
 
-@media all and (min-width: 768px) {
-    /*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
-    .main-container {
-        display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+/*****************************************************/
+/***        Conteneur des pages de menus           ***/
+/*****************************************************/
+.article-container_menubox {
+    background-menu:$background-basic;
+    margin: 1px; /*revoir tous les calculs sortis de PS adaptés en MF*/
 }
 
+.section-container_menubox {
+    text-align: center;
+}
+
+
 /*****************************************************/
-/***           Visuels page d'accueil              ***/
+/***       Propriétés communes index, menus        ***/
 /*****************************************************/
-.main-container__box {
-    width: 27em;
-    height:41em;
-    margin: 3em;
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container__index, .container-button_soon, .main-container_menubox, .article-container_menubox, .section-container_menubox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: $box-shadow;
 }
 
 /*****************************************************/
-/***       Container bouton prochainement          ***/
+/***     Conteneur en page mentions légales        ***/
 /*****************************************************/
-.bouton-index {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 3rem;
-}
-
-
-/*****************************************************/
-/***        Particularités pages menu              ***/
-/*****************************************************/
-/*Disposition Desktop flex de chaque page de menus*/
-.main-menu {
-    width: 80%;
-    box-shadow: $box-shadow;
-    margin: 100px 60px;
-}
-
-
-
 /*Marges blanc tournant autour de l'intégralité des textes*/
-.main-mentions-legales, .section-mentions-legales {
-margin: $margin;
-}
+.main-container_legal, .article-container_legal, .section-container_legal {
+    margin: $margin;
+    }
 
-
-/*****************************************************/
-/***             Mentions légales                  ***/
-/*****************************************************/
-/*Un peu de blanc tournant en bas de sections et gestion du footer fixe*/
+/*Blanc tournant en bas de sections et gestion du footer fixe*/
 .section-mentions-legales {
     padding-bottom: 2em;
-}
-
-
-/*****************************************************/
-/***           Particularité menu 1                 **/
-/*****************************************************/
-/*Affichage des notes de musique au centre du menu*/
-.container-note {
-    text-align: center;
 }

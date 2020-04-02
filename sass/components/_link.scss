@@ -13,6 +13,7 @@
 
 .footer-link{
   color: $color-secondary;
+  padding: 0.25rem;
 }
 
 /*ANIMATION A VENIR AU SURVOL*/
@@ -21,6 +22,6 @@
 /*****************************************************/
 /***       Liens sans effet de souligné            ***/
 /*****************************************************/
-.page-menu-link, .footer-link, .header_home-link {
+.link-page_menu, .footer-link, .link-home {
   text-decoration: none;
 }

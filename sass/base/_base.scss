@@ -1,38 +1,12 @@
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
-
 * {
     margin: 0;
     padding: 0;
 }
 
-html {
-    width:100%;
-}
-
-/*****************************************************/
-/***        Contenu du corps de chaque page        ***/
-/*****************************************************/
-.body {
-    width: 320px;
-    border: solid 1px black;
-}
-
-/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
-.body-menu_note {
-    background-color: $menu-note-background;
-}
-
-.body-menu_chic {
-    background-color: $menu-chic-background;
-}
-
-.body-menu_delice {
-    background-color: $menu-delice-background;
-}
-
-.body-menu_palette {
-    background-color: $menu-palette-background;
+html, .footer {
+    width:320px;
 }
 

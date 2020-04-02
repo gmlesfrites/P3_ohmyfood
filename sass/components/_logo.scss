@@ -4,12 +4,11 @@
 
 .logo {
     color: $logo-color;
-    font-family: $logo-font;
-    letter-spacing: -1px;
-    background-color: $color-primary;
+    font-family: "Montserrat", cursive; /*voir le souci avec les $fz*/
 }
 
 .h1-logo {
     font-size: $h1-font-size;
     text-align: center;
+    letter-spacing: -1px;
 }

@@ -1,0 +1,21 @@
+/*****************************************************/
+/***     Particularités Le délice des papilles     ***/
+/*****************************************************/
+/*Couleur d'arrière-plan*/
+.body-menu_delice {
+    background-color: $background-menu_delice;
+}
+
+/*Titre à l'intérieur de la carte*/
+.h2-menu_delice, .h3-menu_delice {
+    font-family:'Dancing Script', cursive;
+}
+
+.li-prix_delice, .li-menu_delice {
+    font-family: 'Short Stack', cursive;
+}
+
+
+
+/*Reste à traiter*/
+/*.hr-menu_note {}*/

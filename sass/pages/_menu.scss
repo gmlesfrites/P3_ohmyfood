@@ -2,13 +2,17 @@
 /*****************************************************/
 /***   Généralités applicable à chaque menu        ***/
 /*****************************************************/
+/*Couleur d'arrière-plan*/
+.body-menu_nomdemenu {
+    background-color: $background-basic;
+}
+
 
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: $line_height;
 }
-
 
 /*Titre dans chaque carte*/
 .h2-menu {
@@ -16,8 +20,12 @@
 }
 
 /*Alignement des polices des titres*/
-.h2-menu, .h3-menu, .h2-titre-menu {
+.h2-menu, .h4-menu_note, .h2-titre-menu {
     text-align: center;
+}
+
+.h3-menu {
+    visibility: hidden;
 }
 
 /*Séparations entre chaque type de plat*/
