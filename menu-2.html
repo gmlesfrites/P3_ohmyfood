@@ -34,83 +34,89 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu_chic">
+    <body class="body">
         <!--HEADER-->
-        <header class="header header-home-link">
-            <a href="index.html" class="page-menu-link"></a>
-            <h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">Le chic à la française</h2>
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-page_index">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
 
         <!--CONTENEUR PRINCPAL MENU 2 : Le chic à la française-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_chic">Le chic à la française</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_chic" data-content="Pour se mettre en appétit">
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrée 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Tartare de poulpe acidulé aux zests d'orange</p>
-                    <p class="p-prix p-prix_chic">79€</p>
-                </article>
-                <!--Détail choix d'entrée 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Velouté de légumes d'antan</p>
-                    <p class="p-prix p-prix_chic">57€</p>
-                </article>
-                <!--Détail choix d'entrée 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Soupe à l'oignon revisitée</p>
-                    <p class="p-prix p-prix_chic">57€</p>
-                </article>
-            </div>
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_chic" data-content="Plaisir des papilles">
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plat 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
-                    <p class="p-prix p-prix_chic">95€</p>
-                </article>
-                <!--Détail choix de plat 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Magret de canard et parmentier de pommes de terre</p>
-                    <p class="p-prix p-prix_chic">88€</p>
-                </article>
-                <!--Détail choix de plat 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</p>
-                    <p class="p-prix p-prix_chic">175€</p>
-                </article>
-            </div>
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_chic" data-content="Gourmandises sucrées">
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de dessert 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Pétales de violettes glacés et purée de noisettes</p>
-                    <p class="p-prix p-prix_chic"></p>
-                </article>
-                <!--Détail choix de dessert 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Fondant au chocolat revisité</p>
-                    <p class="p-prix p-prix_chic"></p>
-                </article>
-                <!--Détail choix de dessert 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_chic">Millefeuille croustillant</p>
-                    <p class="p-prix p-prix_chic"></p>
-                </article>
-            </div>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">Le chic à la française</h2>
+            <!--conteneur du menu-->
+            <article class="article-container_menubox">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_chic">Le chic à la française</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3 class="h3-menu">Entrées</h3>
+                    <hr class="hr-menu hr-menu_chic_color1" data-content="Pour se mettre en appétit">
+                    <!--Détail choix d'entrée-->
+                    <div class="div-container_menubox">
+                        <!--Détail choix d'entrée 1-->
+                        <p class="p-menu p-menu_chic_color1">Tartare de poulpe acidulé aux zests d'orange</p>
+                        <p class="p-prix p-prix_chic_color1">79€</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color1">Velouté de légumes d'antan</p>
+                        <p class="p-prix p-prix_chic_color1">57€</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color1">Soupe à l'oignon revisitée</p>
+                        <p class="p-prix p-prix_chic_color1">57€</p>
+                    </div>
+                </section>
+                <!--Section Plats-->
+                <section class="section-container_menubox">
+                    <!--Titre Plats-->
+                    <h3>Plats</h3>
+                    <hr class="hr-menu hr-menu_chic_color2" data-content="Plaisir des papilles">
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                        <p class="p-prix p-prix_chic_color2">95€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Magret de canard et parmentier de pommes de terre</p>
+                        <p class="p-prix p-prix_chic_color2">88€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</p>
+                        <p class="p-prix p-prix_chic_color2">175€</p>
+                    </div>
+                </section>
+                <!--section desserts-->
+                <section>
+                    <!--Titre Desserts-->
+                    <h3>Desserts</h3>
+                    <hr class="hr-menu hr-menu_chic_color3" data-content="Gourmandises sucrées">
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Pétales de violettes glacés et purée de noisettes</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Fondant au chocolat revisité</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Millefeuille croustillant</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                </section>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
             <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>

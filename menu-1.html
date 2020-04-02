@@ -31,91 +31,95 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu_note">
+    <body class="body">
         <!--HEADER-->
-        <header class="header header-home-link">
-            <a href="index.html" class="page-menu-link"></a>
-            <h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">La note enchantée</h2>
-
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-page_index">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
         <!--CONTENEUR PRINCPAL MENU 1 : La note enchantée-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <p><i class="fas fa-music"></i></p>
-            <h2 class="h2-menu h2-menu_note">La note enchantée</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_note" data-content="Prélude">
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrée 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Ravioles de foie gras accompagnées de leur crème à la truffe</p>
-                    <p class="p-prix p-prix_note">98 €</p>
-                </article>
-                <!--Détail choix d'entrée 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Caviar osciètre sur blini à la farine de blé noir</p>
-                    <p class="p-prix p-prix_note">115 €</p>
-                </article>
-                <!--Détail choix d'entrée 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Homard et espuma de potiron mariné aux zests d'orange</p>
-                    <p class="p-prix p-prix_note">89 €</p>
-                </article>
-                <!--Détail choix d'entrée 4-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
-                    <p class="p-prix p-prix_note">105 €</p>
-                </article>
-            </div>
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_note" data-content="Point d'orgue">
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plat 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-                    <p class="p-prix p-prix_note">102€</p>
-                </article>
-                <!--Détail choix de plat 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Langoustine poêlée, purée de patate douce</p>
-                    <p class="p-prix p-prix_note">205€</p>
-                </article>
-                <!--Détail choix de plat 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                    <p class="p-prix p-prix_note">169€</p>
-                </article>
-            </div>
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_note" data-content="Mouvement final">
-
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de dessert 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                    <p class="p-prix p-prix_note"></p>
-                </article>
-                <!--Détail choix de dessert 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Baba au rhum revisité avec son coulis de citron</p>
-                    <p class="p-prix p-prix_note"></p>
-                </article>
-                <!--Détail choix de dessert 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_note">Tarte au citron meringuée destructurée</p>
-                    <p class="p-prix p-prix_note"></p>
-                </article>
-            </div>
-            <h3 class="h3-menu"><i class="fas fa-music"></i>La note enchantée</h3>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">La note enchantée</h2>
+            <!--Conteneur du menu-->
+            <article class="article-container_menubox">
+                <!--Titre menu-->
+                <p><i class="fas fa-music"></i></p>
+                <h2 class="h2-menu h2-menu_note">La note enchantée</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3 class="h3-menu">Entrées</h3>
+                    <hr class="hr-menu hr-menu_note" data-content="Prélude">
+                    <!--Détail choix d'entrée-->
+                    <div class="div-container_menu">
+                        <!--Détail choix d'entrée 1-->
+                        <p class="p-menu p-menu_note">Ravioles de foie gras accompagnées de leur crème à la truffe</p>
+                        <p class="p-prix p-prix_note">98 €</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Caviar osciètre sur blini à la farine de blé noir</p>
+                        <p class="p-prix p-prix_note">115 €</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Homard et espuma de potiron mariné aux zests d'orange</p>
+                        <p class="p-prix p-prix_note">89 €</p>
+                    </div>
+                    <!--Détail choix d'entrée 4-->
+                    <div class="article-container_menubox"">
+                        <p class="p-menu p-menu_note">Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
+                        <p class="p-prix p-prix_note">105 €</p>
+                    </div>
+                </section>
+                <!--Section plats-->
+                <section class="section-container_menu">
+                    <!--Titre Plats-->
+                    <h3>Plats</h3>
+                    <hr class="hr-menu hr-menu_note" data-content="Point d'orgue">
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
+                        <p class="p-prix p-prix_note">102€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Langoustine poêlée, purée de patate douce</p>
+                        <p class="p-prix p-prix_note">205€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
+                        <p class="p-prix p-prix_note">169€</p>
+                    </div>
+                </section>
+                <!--Section desserts-->
+                <section>
+                    <!--Titre Desserts-->
+                    <h3>Desserts</h3>
+                    <hr class="hr-menu hr-menu_note" data-content="Mouvement final">
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
+                        <p class="p-prix p-prix_note"></p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Baba au rhum revisité avec son coulis de citron</p>
+                        <p class="p-prix p-prix_note"></p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox"">
+                        <p class="p-menu p-menu_note">Tarte au citron meringuée destructurée</p>
+                        <p class="p-prix p-prix_note"></p>
+                    </div>
+                </section>
+                <h4 class="h4-menu_note"><i class="fas fa-music i_h3"></i>La note enchantée</h4>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
             <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>

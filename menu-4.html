@@ -9,7 +9,7 @@
         <meta name="author" content="Paul Lecto - Directeur technique, Fanny Luxe - Designer, Marc Poignon - Responsable commercial, Emilie GOURLIN - Web développeur">
         <meta name="copyright" content="ohmyfood">
 
-        <!--Balises meta opengraph--> 
+        <!--Balises meta opengraph-->
         <meta property="og:description" content="ohmyfood présente le menu du restaurant La palette du gout."/>
 
         <!--Balises meta pour la compatibilté navigateurs et différents devices-->
@@ -29,82 +29,87 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu_palette">
+    <body class="body">
         <!--HEADER-->
-        <header class="header header-home-link">
-            <a href="index.html" class="page-menu-link"></a>
-            <h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">La palette du goût</h2>
-
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-page_index">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
         <!--CONTENEUR PRINCPAL MENU 4 : La palette du goût-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_palette">La palette du goût</h2>
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_palette" data-content="Esquisse">
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrée 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Fricassée d'escargots au piment d'Espelette</p>
-                    <p class="p-prix p-prix_nomdemenu">60€</p>
-                </article>
-                <!--Détail choix d'entrée 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Oeuf au plat assaisonné à la truffe sur lit de caviar</p>
-                    <p class="p-prix p-prix_nomdemenu">55€</p>
-                </article>
-                <!--Détail choix d'entrée 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Foie gras de canard mi-cuit et ses copeaux de truffe noire</p>
-                    <p class="p-prix p-prix_nomdemenu">65€</p>
-                </article>
-            </div>
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_palette" data-content="Oeuvre de maître">
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plat 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</p>
-                    <p class="p-prix p-prix_nomdemenu">70€</p>
-                </article>
-                <!--Détail choix de plat 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</p>
-                    <p class="p-prix p-prix_nomdemenu">85€</p>
-                </article>
-                <!--Détail choix de plat 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Filet de Turbot aux agrumes</p>
-                    <p class="p-prix p-prix_nomdemenu">125€</p>
-                </article>
-            </div>
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_palette" data-content="Au sommet de l'art">
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de dessert 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Paris - Brest revisité</p>
-                    <p class="p-prix p-prix_nomdemenu">55€</p>
-                </article>
-                <!--Détail choix de dessert 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Macaron au chocolat d'exception et glace à la vanille de Madagascar</p>
-                    <p class="p-prix p-prix_nomdemenu">65€</p>
-                </article>
-                <!--Détail choix de dessert 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Mousse au chocolat au piment d'Espelette et à la truffe noire</p>
-                    <p class="p-prix p-prix_nomdemenu">60€</p>
-                </article>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">La palette du goût</h2>
+            <!--conteneur du menu-->
+            <div class="article-container_menubox">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_palette">La palette du goût</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3>Entrées</h3>
+                    <hr class="hr-menu hr-menu_palette" data-content="Esquisse">
+                    <!--Détail choix d'entrée 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Fricassée d'escargots au piment d'Espelette</p>
+                        <p class="p-prix p-prix_nomdemenu">60€</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Oeuf au plat assaisonné à la truffe sur lit de caviar</p>
+                        <p class="p-prix p-prix_nomdemenu">55€</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Foie gras de canard mi-cuit et ses copeaux de truffe noire</p>
+                        <p class="p-prix p-prix_nomdemenu">65€</p>
+                    </div>
+                </section>
+                <!--Section plats-->
+                <section class="section-container_menu">
+                    <!--Titre plats-->
+                    <h3>Plats</h3>
+                    <hr class="hr-menu hr-menu_palette" data-content="Oeuvre de maître">
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</p>
+                        <p class="p-prix p-prix_nomdemenu">70€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</p>
+                        <p class="p-prix p-prix_nomdemenu">85€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Filet de Turbot aux agrumes</p>
+                        <p class="p-prix p-prix_nomdemenu">125€</p>
+                    </div>
+                </section>
+                <!--Section desserts-->
+                <section>
+                    <!--Titre Desserts-->
+                    <h3>Desserts</h3>
+                    <hr class="hr-menu hr-menu_palette" data-content="Au sommet de l'art">
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Paris - Brest revisité</p>
+                        <p class="p-prix p-prix_nomdemenu">55€</p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Macaron au chocolat d'exception et glace à la vanille de Madagascar</p>
+                        <p class="p-prix p-prix_nomdemenu">65€</p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Mousse au chocolat au piment d'Espelette et à la truffe noire</p>
+                        <p class="p-prix p-prix_nomdemenu">60€</p>
+                    </div>
+                </section>
             </div>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
             <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>

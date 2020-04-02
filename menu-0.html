@@ -30,88 +30,92 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu-0">
+    <body class="body">
         <!--HEADER-->
-        <header class="header header-home-link">
-            <a href="index.html" class="page-menu-link"></a>
-            <h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">Le nom du menu</h2>
-
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-page_index">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
         <!--CONTENEUR PRINCPAL MENU 0 : NOM A DEFINIR-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_nomdemenu">Le nom du menu à l'intérieur de la carte</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_nomdemenu" data-content="Entrées">
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrée 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Entree 1</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix d'entrée 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Entree 2</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix d'entrée 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Entree 3</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix d'entrée 4-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Entree 4</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-            </div>
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_nomdemenu" data-content="Plats">
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plat 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Plat 1</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix de plat 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Plat 2</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix de plat 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Plat 3</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-            </div>
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_nomdemenu" data-content="Desserts">
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de dessert 1-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Dessert 1</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix de dessert 2-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Dessert 2</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-                <!--Détail choix de dessert 3-->
-                <article class="article-menu">
-                    <p class="p-menu p-menu_nomdemenu">Dessert 3</p>
-                    <p class="p-prix p-prix_nomdemenu">0 €</p>
-                </article>
-            </div>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+           <h2 class="h2-titre-menu">Le nom du menu</h2>
+            <!--conteneur du menu-->
+           <article class="article-container_menubox">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_nomdemenu">Le nom du menu à l'intérieur de la carte</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3 class="h3-menu">Entrées</h3>
+                    <hr class="hr-menu hr-menu_nomdemenu" data-content="Entrées">
+                    <!--Détail choix d'entrée 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Entree 1</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                     </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Entree 2</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Entree 3</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix d'entrée 4-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Entree 4</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                </section>
+                <!--Section plats-->
+                <section class="section-container_menu">
+                    <!--Titre plats-->
+                    <h3>Plats</h3>
+                    <hr class="hr-menu hr-menu_nomdemenu" data-content="plats">
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Plat 1</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Plat 2</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Plat 3</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                </section>
+                <!--Section desserts-->
+                <section>
+                    <!--Titre Desserts-->
+                    <h3>Desserts</h3>
+                    <hr class="hr-menu hr-menu_nomdemenu" data-content="Desserts">
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Dessert 1</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Dessert 2</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_nomdemenu">Dessert 3</p>
+                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                    </div>
+                </section>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
             <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>
