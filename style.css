@@ -59,6 +59,34 @@ html {
   background-color: #fdfffd; }
 
 /*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
+* {
+  line-height: 1.5rem;
+  font-size: 16px; }
+
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+/*****************************************************/
+/***  Margin applicable partout sauf h1 - logo     ***/
+/*****************************************************/
+h2, h3, h4, hr, p, ul, li {
+  margin: 0.5rem; }
+
+/*****************************************************/
 /***                   LOGO                        ***/
 /*****************************************************/
 .logo {
@@ -100,6 +128,71 @@ html {
   justify-content: center;
   height: 8rem;
   margin-bottom: 3rem; }
+
+/*****************************************************/
+/***        Particularités page d'accueil          ***/
+/*****************************************************/
+/*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
+.main-container {
+  width: 100%;
+  display: block; }
+
+@media all and (min-width: 768px) {
+  /*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; } }
+/*****************************************************/
+/***           Visuels page d'accueil              ***/
+/*****************************************************/
+.main-container__box {
+  width: 27em;
+  height: 41em;
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px #efefef; }
+
+/*****************************************************/
+/***       Container bouton prochainement          ***/
+/*****************************************************/
+.bouton-index {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3rem; }
+
+/*****************************************************/
+/***        Particularités pages menu              ***/
+/*****************************************************/
+/*Disposition Desktop flex de chaque page de menus*/
+.main-menu {
+  width: 80%;
+  box-shadow: 4px 4px 4px #efefef;
+  margin: 100px 60px; }
+
+/*Marges blanc tournant autour de l'intégralité des textes*/
+.main-mentions-legales, .section-mentions-legales {
+  margin: 1rem; }
+
+/*****************************************************/
+/***             Mentions légales                  ***/
+/*****************************************************/
+/*Un peu de blanc tournant en bas de sections et gestion du footer fixe*/
+.section-mentions-legales {
+  padding-bottom: 2em; }
+
+/*****************************************************/
+/***           Particularité menu 1                 **/
+/*****************************************************/
+/*Affichage des notes de musique au centre du menu*/
+.container-note {
+  text-align: center; }
 
 /*****************************************************/
 /***     Particularités Mentions légales           ***/

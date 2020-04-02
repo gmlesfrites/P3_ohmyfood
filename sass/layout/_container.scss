@@ -1,0 +1,82 @@
+
+/*****************************************************/
+/***        Particularités page d'accueil          ***/
+/*****************************************************/
+/*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
+.main-container {
+    width:100%;
+    display: block;
+
+}
+
+
+@media all and (min-width: 768px) {
+    /*Disposition Desktop flex de la page d'accueil : 4 menus sur 2 lignes- 2 colonnes */
+    .main-container {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+/*****************************************************/
+/***           Visuels page d'accueil              ***/
+/*****************************************************/
+.main-container__box {
+    width: 27em;
+    height:41em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+}
+
+/*****************************************************/
+/***       Container bouton prochainement          ***/
+/*****************************************************/
+.bouton-index {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 3rem;
+}
+
+
+/*****************************************************/
+/***        Particularités pages menu              ***/
+/*****************************************************/
+/*Disposition Desktop flex de chaque page de menus*/
+.main-menu {
+    width: 80%;
+    box-shadow: $box-shadow;
+    margin: 100px 60px;
+}
+
+
+
+/*Marges blanc tournant autour de l'intégralité des textes*/
+.main-mentions-legales, .section-mentions-legales {
+margin: $margin;
+}
+
+
+/*****************************************************/
+/***             Mentions légales                  ***/
+/*****************************************************/
+/*Un peu de blanc tournant en bas de sections et gestion du footer fixe*/
+.section-mentions-legales {
+    padding-bottom: 2em;
+}
+
+
+/*****************************************************/
+/***           Particularité menu 1                 **/
+/*****************************************************/
+/*Affichage des notes de musique au centre du menu*/
+.container-note {
+    text-align: center;
+}
