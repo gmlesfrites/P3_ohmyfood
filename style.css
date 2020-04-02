@@ -188,7 +188,7 @@ h2, h3, h4, hr, p, ul, li {
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 .article-container_menubox {
-  background-menu: #efefef;
+  background-color: #efefef;
   margin: 1px;
   /*revoir tous les calculs sortis de PS adaptés en MF*/ }
 
@@ -347,7 +347,7 @@ h2, h3, h4, hr, p, ul, li {
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic, .hr-menu_chic {
   font-family: cursive;
-  background-color: linear-gradient(to right, #db8528, #8f5bfe); }
+  /*background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic); A TRAITER */ }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic {
