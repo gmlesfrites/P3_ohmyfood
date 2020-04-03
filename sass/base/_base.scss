@@ -1,11 +1,8 @@
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
-* {
-    box-sizing: border-box;
+/*Annuler le margin par défaut des navigateurs*/
+html, body {
+    margin: 0;
+    padding: 0;
 }
-
-html, .footer {
-    width:320px;
-}
-

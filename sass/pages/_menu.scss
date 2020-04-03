@@ -2,13 +2,9 @@
 /*****************************************************/
 /***   Généralités applicable à chaque menu        ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_nomdemenu {
-    background-color: $background-basic;
-}
-
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
+    margin: 2rem 0;
     line-height: $line_height;
 }
 
@@ -22,14 +18,10 @@
     text-align: center;
 }
 
-.h3-menu {
-    visibility: hidden;
-}
-
 /*Séparations entre chaque type de plat*/
 .hr-menu {
+    margin:0;
     width: 100%;
-    line-height: 2em;
     font-size: $hr-font-size;
     position: relative;
     outline: 0;

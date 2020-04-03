@@ -2,12 +2,12 @@
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Conteneur principal*/
-.main-container__index {
-    background-color: $background-basic;
+/*Ombres des menus et bouton prochainement*/
+.section-container_indexbox, .button_soon {
+    box-shadow: $box-shadow;
 }
 
-/*Visuels des cartes de restaurant*/
+/*Mise en paga des visuels des cartes de restaurant*/
 .section-container_indexbox {
     width: 16em;
     height:24em;
@@ -17,53 +17,47 @@
 /*Conteneur du bouton prochainement*/
 .button_soon {
     width: 12rem;
-    height: 3.5rem;
+    height: 3rem;
     background: $color-primary;
     color: $color-secondary;
-    border-radius: 0.6em;
+    border:none;
+    border-radius: 0.4em;
     margin-bottom: 3em;
-}
-
-/*Ajout d'ombres sur les menus et le bouton prochainement*/
-.section-container_indexbox, .button_soon {
-    box-shadow: $box-shadow;
 }
 
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
-.article-container_menubox {
-    background-color:$background-basic;
-    margin: 1px; /*revoir tous les calculs sortis de PS adaptés en MF*/
-}
-
-.section-container_menubox {
+/*Texte centrés dans les conteneurs */
+.article-container_menubox, .section-container_menubox, .section-container_indexbox {
     text-align: center;
 }
 
+/*Délimitations de section <hr> */
+.hr-legal, .hr-menu {
+    margin: 2em;
+}
 
 /*****************************************************/
-/***       Propriétés communes index, menus        ***/
+/***     Conteneur en page mentions légales        ***/
+/*****************************************************/
+/*Blanc tournant en bas de sections et gestion du footer fixe*/
+
+
+/*****************************************************/
+/***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
 /*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container__index, .container-button_soon, .main-container_menubox, .article-container_menubox, .section-container_menubox {
+.main-container__index, .main-container_menu, .container-button_soon, .section-container_indexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/*****************************************************/
-/***     Conteneur en page mentions légales        ***/
-/*****************************************************/
-/*Marges blanc tournant autour de l'intégralité des textes*/
-.main-container_legal, .article-container_legal, .section-container_legal {
-    margin: $margin;
-    padding: 2.5rem;
-    }
 
-/*Blanc tournant en bas de sections et gestion du footer fixe*/
-.main-container_legal {
-    margin-bottom: 3rem;
+/*Ombre sous les menus et les boutons*/
+.article-container_menubox, .button_soon {
+    box-shadow: $box-shadow;
 }
