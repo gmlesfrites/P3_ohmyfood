@@ -5,10 +5,17 @@
 /*Points de suspension*/
 .fa-circle {
     font-size: $i-circle-size;
-    padding: 0.25rem;
+    padding: 0.2rem;
 }
 
-/*notes de musique
+/*notes de musique*/
 .fa-music {
-    background:linear-gradient(135deg, $gradient1_note, $gradient2_note);
-}*/
+    background:linear-gradient(90deg, $gradient1_note, $gradient2_note);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Note en grand format*/
+.i_top {
+    font-size: 3rem;
+}

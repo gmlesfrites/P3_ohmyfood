@@ -48,14 +48,13 @@
 /*****************************************************/
 /*Annuler le margin par défaut des navigateurs*/
 html, body {
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
 * {
-  line-height: 1em;
+  line-height: 1rem;
   font-size: 16px;
   word-wrap: break-word; }
 
@@ -66,19 +65,25 @@ h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding: 1.5rem; }
 
 h3 {
   font-size: 1.25em; }
+
+/*hr utilisés à la place des h3*/
+.h3-hidden {
+  display: none; }
 
 h4 {
   font-size: 1.12em; }
 
 /*****************************************************/
-/***  Margin applicable partout sauf h1 - logo     ***/
+/***             Suppression de Margin             ***/
 /*****************************************************/
-h2, h3, h4, hr, p, ul, li {
-  margin: 0.5rem; }
+body, h1, footer, header, .h3-hidden {
+  margin: 0;
+  padding: 0; }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
@@ -111,7 +116,7 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 .footer-link {
   color: #fcca46;
-  padding: 0.25rem; }
+  margin: 0.25rem; }
 
 /*ANIMATION A VENIR AU SURVOL*/
 /*****************************************************/
@@ -126,12 +131,18 @@ h2, h3, h4, hr, p, ul, li {
 /*Points de suspension*/
 .fa-circle {
   font-size: 0.25em;
-  padding: 0.25rem; }
+  padding: 0.2rem; }
 
-/*notes de musique
+/*notes de musique*/
 .fa-music {
-    background:linear-gradient(135deg, $gradient1_note, $gradient2_note);
-}*/
+  background: linear-gradient(90deg, #f05561, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*Note en grand format*/
+.i_top {
+  font-size: 3rem; }
+
 /*****************************************************/
 /***                   Header                      ***/
 /*****************************************************/
@@ -142,7 +153,7 @@ h2, h3, h4, hr, p, ul, li {
   flex-direction: column;
   justify-content: center;
   height: 7rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 2.2rem; }
 
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
@@ -157,19 +168,6 @@ h2, h3, h4, hr, p, ul, li {
   height: 24em;
   margin: 1em; }
 
-/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
-.body-menu_note {
-  background-color: #fcdfdb; }
-
-.body-menu_chic {
-  background-color: #fff5fe; }
-
-.body-menu_delice {
-  background-color: #edefef; }
-
-.body-menu_palette {
-  background-color: #fdfffd; }
-
 /*Conteneur du bouton prochainement*/
 .button_soon {
   width: 12rem;
@@ -178,7 +176,7 @@ h2, h3, h4, hr, p, ul, li {
   color: #fcca46;
   border: none;
   border-radius: 0.4em;
-  margin-bottom: 3em; }
+  margin-bottom: 2.2rem; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -189,17 +187,20 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Délimitations de section <hr> */
 .hr-legal, .hr-menu {
-  margin: 2em; }
+  margin: 2em 0.8rem; }
 
 /*****************************************************/
 /***     Conteneur en page mentions légales        ***/
 /*****************************************************/
-/*Blanc tournant en bas de sections et gestion du footer fixe*/
+/*Blanc tournant*/
+.article-container_legal {
+  margin: 1rem; }
+
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
 /*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container__index, .main-container_menu, .container-button_soon, .section-container_indexbox {
+.main-container_index, .main-container_menu, .container-button_soon, .section-container_indexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,6 +209,24 @@ h2, h3, h4, hr, p, ul, li {
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .button_soon {
   box-shadow: 4px 4px 4px #efefef; }
+
+/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+.article-container_menubox_note {
+  background-color: #fcdfdb; }
+
+.article-container_menubox_chic {
+  background-color: #fff5fe; }
+
+.article-container_menubox_delice {
+  background-color: #edefef; }
+
+.article-container_menubox_palette {
+  background-color: #fdfffd; }
+
+/*Marge bas de conteneur pour éviter la partie cachée par le footer fixe*/
+main {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem; }
 
 /*****************************************************/
 /***                   Footer                      ***/
@@ -272,7 +291,7 @@ h2, h3, h4, hr, p, ul, li {
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
   margin: 2rem 0;
-  line-height: 1em; }
+  line-height: 1rem; }
 
 /*Titre dans chaque carte*/
 .h2-menu {

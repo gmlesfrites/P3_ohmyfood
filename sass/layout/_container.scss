@@ -1,4 +1,3 @@
-
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
@@ -22,7 +21,7 @@
     color: $color-secondary;
     border:none;
     border-radius: 0.4em;
-    margin-bottom: 3em;
+    margin-bottom: 2.2rem;
 }
 
 
@@ -36,22 +35,23 @@
 
 /*Délimitations de section <hr> */
 .hr-legal, .hr-menu {
-    margin: 2em;
+    margin: 2em 0.8rem;
 }
-
 
 
 /*****************************************************/
 /***     Conteneur en page mentions légales        ***/
 /*****************************************************/
-/*Blanc tournant en bas de sections et gestion du footer fixe*/
-
+/*Blanc tournant*/
+.article-container_legal {
+    margin: 1rem;
+}
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
 /*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container__index, .main-container_menu, .container-button_soon, .section-container_indexbox {
+.main-container_index, .main-container_menu, .container-button_soon, .section-container_indexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,18 +64,24 @@
 }
 
 /*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
-.article-container_menubox_note, .body-menu_note {
+.article-container_menubox_note {
     background-color: $background-menu_note;
 }
 
-.article-container_menubox_chic, .body-menu_chic {
+.article-container_menubox_chic {
     background-color: $background-menu_chic;
 }
 
-.article-container_menubox_delice, .body-menu_delice {
+.article-container_menubox_delice {
     background-color: $background-menu_delice;
 }
 
-.article-container_menubox_palette, .body-menu_palette {
+.article-container_menubox_palette {
     background-color: $background-menu_palette;
+}
+
+/*Marge bas de conteneur pour éviter la partie cachée par le footer fixe*/
+main {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }

@@ -16,11 +16,16 @@ h1 {
 
 h2 {
     font-size: $h2-font-size;
-    $padding-h2: 1.5rem;
+    padding: $padding-h2;
 }
 
 h3 {
     font-size: $h3-font-size;
+}
+
+/*hr utilisés à la place des h3*/
+.h3-hidden {
+    display: none;
 }
 
 h4 {
@@ -28,8 +33,9 @@ h4 {
 }
 
 /*****************************************************/
-/***  Margin applicable partout sauf h1 - logo     ***/
+/***             Suppression de Margin             ***/
 /*****************************************************/
-h2, h3, h4, hr, p, ul, li {
-    margin: 0.5rem;
+body, h1, footer, header, .h3-hidden {
+    margin: 0;
+    padding:0;
 }
