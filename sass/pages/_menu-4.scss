@@ -7,13 +7,13 @@
 }
 
 /*Titre à l'intérieur de la carte*/
-.h2-menu_palette, .h3-menu_palette {
-    font-family: 'Short Stack', cursive;
+.h2-menu_palette {
+    font-family: $ff-title-M4;
 }
 
 /*Texte des entrées, plats et desserts*/
 .p-prix_palette, .p-menu_palette, .hr-menu_palette {
-    font-family: 'Short Stack', cursive;
+    font-family: $ff-content-M4;
 }
 
 

@@ -7,14 +7,15 @@
 }
 
 /*Titre à l'intérieur de la carte*/
-.h2-menu_chic, .hr-menu_chic {
-    font-family: cursive;
+.h2-menu_chic {
+    font-family: $ff-title-M2;
+
     /*background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic); A TRAITER */
 }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.p-prix_chic, .p-menu_chic {
-    font-family: serif;
+.p-prix_chic, .p-menu_chic, .hr-menu_chic {
+    font-family: $ff-content-M2;
 }
 
 

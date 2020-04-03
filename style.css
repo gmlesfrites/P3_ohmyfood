@@ -28,24 +28,12 @@
 /*****************************************************/
 /***            Polices de caractères              ***/
 /*****************************************************/
-/*Titre carte de chaque restaurant
-$global-title: "Montserrat", sans-serif;
-
-*Menu 1*
-$ff-title-M1: "Devonshire-regular", cursive;
-$ff-content-M1: "Segoe_Print_regular", cursive;
-
-*Menu 2*
-$ff-title-M2:
-$ff-content-M2:
-
-*Menu 3*
-$ff-title-M3:
-$ff-content-M3:
-
-*Menu 4*
-$ff-title-M4:
-$ff-content-M4: */
+/*Titre carte de chaque restaurant*/
+/*Menu 1*/
+/*Menu 2*/
+/*Menu 3*/
+/*Menu 4*/
+/*Mentions légales*/
 /*****************************************************/
 /***            Taille de caractères               ***/
 /*****************************************************/
@@ -241,6 +229,7 @@ h2, h3, h4, hr, p, ul, li {
 /*****************************************************/
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
+  font-family: "Montserrat", sans-serif;
   text-align: center; }
 
 /*Taile des titres*/
@@ -249,8 +238,13 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Taille des contenus*/
 .p-legal, .li-legal {
+  font-family: "Roboto Slab", serif;
   font-size: 80%;
   padding: 0.5rem; }
+
+/*Blanc tournant supplémentaire pour les puces des listes*/
+.li-legal {
+  padding-left: 0.7rem; }
 
 /*Style des puces des listes*/
 .li-legal {
@@ -326,8 +320,7 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Contenu des menus*/
 .p-menu_note, .p-prix_note, .hr-menu_note {
-  font-family: 'Short Stack', cursive;
-  /*revoir l'insertion de cette police*/ }
+  font-family: "segoepr", "Open Sans", cursive; }
 
 /*Prix en gras*/
 .p-prix_note {
@@ -337,6 +330,9 @@ h2, h3, h4, hr, p, ul, li {
 .h2-menu_note, .hr-menu_note {
   color: #3d1319; }
 
+.span-menu_note {
+  text-transform: uppercase; }
+
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/
 /*****************************************************/
@@ -345,13 +341,13 @@ h2, h3, h4, hr, p, ul, li {
   background-color: #fff5fe; }
 
 /*Titre à l'intérieur de la carte*/
-.h2-menu_chic, .hr-menu_chic {
-  font-family: cursive;
+.h2-menu_chic {
+  font-family: "Croissant One", cursive;
   /*background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic); A TRAITER */ }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.p-prix_chic, .p-menu_chic {
-  font-family: serif; }
+.p-prix_chic, .p-menu_chic, .hr-menu_chic {
+  font-family: "Roboto Slab", serif; }
 
 /*Reste à traiter*/
 /*.hr-menu_nomdemenu {}*/
@@ -367,10 +363,10 @@ h2, h3, h4, hr, p, ul, li {
 
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice, .h3-menu_delice {
-  font-family: 'Dancing Script', cursive; }
+  font-family: "Dancing Script", cursive; }
 
 .p-prix_delice, .p-menu_delice, .hr-menu_delice {
-  font-family: 'Short Stack', cursive; }
+  font-family: "segoepr", "Open Sans", cursive; }
 
 /*Reste à traiter*/
 /*.hr-menu_note {}
@@ -383,12 +379,12 @@ polices de caractère*/
   background-color: #fdfffd; }
 
 /*Titre à l'intérieur de la carte*/
-.h2-menu_palette, .h3-menu_palette {
-  font-family: 'Short Stack', cursive; }
+.h2-menu_palette {
+  font-family: "Kaushan Script", cursive; }
 
 /*Texte des entrées, plats et desserts*/
 .p-prix_palette, .p-menu_palette, .hr-menu_palette {
-  font-family: 'Short Stack', cursive; }
+  font-family: "Open Sans", cursive; }
 
 /*Reste à traiter*/
 /*.hr-menu_palette {}

@@ -3,6 +3,7 @@
 /*****************************************************/
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
+    font-family: $ff-titre-legal;
     text-align: center;
 }
 
@@ -13,8 +14,14 @@
 
 /*Taille des contenus*/
 .p-legal, .li-legal {
+    font-family: $ff-content-legal;
     font-size: 80%;
     padding: 0.5rem;
+}
+
+/*Blanc tournant supplémentaire pour les puces des listes*/
+.li-legal {
+    padding-left: 0.7rem;
 }
 
 /*Style des puces des listes*/
