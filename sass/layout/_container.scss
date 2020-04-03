@@ -39,6 +39,8 @@
     margin: 2em;
 }
 
+
+
 /*****************************************************/
 /***     Conteneur en page mentions légales        ***/
 /*****************************************************/
@@ -56,8 +58,24 @@
     align-items: center;
 }
 
-
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .button_soon {
     box-shadow: $box-shadow;
+}
+
+/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+.article-container_menubox_note, .body-menu_note {
+    background-color: $background-menu_note;
+}
+
+.article-container_menubox_chic, .body-menu_chic {
+    background-color: $background-menu_chic;
+}
+
+.article-container_menubox_delice, .body-menu_delice {
+    background-color: $background-menu_delice;
+}
+
+.article-container_menubox_palette, .body-menu_palette {
+    background-color: $background-menu_palette;
 }

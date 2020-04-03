@@ -157,6 +157,19 @@ h2, h3, h4, hr, p, ul, li {
   height: 24em;
   margin: 1em; }
 
+/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+.body-menu_note {
+  background-color: #fcdfdb; }
+
+.body-menu_chic {
+  background-color: #fff5fe; }
+
+.body-menu_delice {
+  background-color: #edefef; }
+
+.body-menu_palette {
+  background-color: #fdfffd; }
+
 /*Conteneur du bouton prochainement*/
 .button_soon {
   width: 12rem;
