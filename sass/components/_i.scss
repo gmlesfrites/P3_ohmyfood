@@ -10,13 +10,13 @@
 
 /*notes de musique*/
 .fa-music {
-    background:linear-gradient(90deg, $gradient1_note, $gradient2_note);
+    background:linear-gradient($direction, $gradient1_note, $gradient2_note);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /*Note en grand format*/
 .i_top {
-    font-size: 2.35em;
+    font-size: 2.3em;
     line-height: 1.4;
 }

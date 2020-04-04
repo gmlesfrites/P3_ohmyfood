@@ -15,6 +15,9 @@ $footer-color:  $color-primary;
 /*****************************************************/
 /***            Dégradés de couleurs               ***/
 /*****************************************************/
+/*Variable générique pour la mixin linear-gradient*/
+$direction : 120deg;
+
 /*Notes du menu 1*/
 $gradient1_note: #f05561;
 $gradient2_note: #f6916a;
@@ -22,6 +25,10 @@ $gradient2_note: #f6916a;
 /*Menu chic*/
 $gradient1_chic: #db8528;
 $gradient2_chic: #8f5bfe;
+
+/*Menu délice*/
+$gradient1_delice :  #0228dd;
+$gradient2_delice: #229df9;
 
 /*Menu palette*/
 $gradient1_palette: #41963c;

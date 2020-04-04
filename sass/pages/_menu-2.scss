@@ -9,11 +9,9 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
     font-family: $ff-title-M2;
-    background:linear-gradient(130deg, $gradient1_chic, $gradient2_chic);
+    background:linear-gradient($direction, $gradient1_chic, $gradient2_chic);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /*background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic); A TRAITER */
 }
 
 /*Texte à l'intérieur des entrées plats et desserts*/

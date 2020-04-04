@@ -9,6 +9,10 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
     font-family: $ff-title-M4;
+    /*Titre à l'intérieur de la carte*/
+    background:linear-gradient($direction, $gradient1_palette, $gradient2_palette);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*Texte des entrées, plats et desserts*/
