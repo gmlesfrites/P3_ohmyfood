@@ -4,18 +4,13 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
     font-family: $ff-title-M4;
-    /*Titre à l'intérieur de la carte*/
+    background:-webkit-linear-gradient($direction, $gradient1_palette, $gradient2_palette);
     background:linear-gradient($direction, $gradient1_palette, $gradient2_palette);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /*Texte des entrées, plats et desserts*/
-.p-prix_palette, .p-menu_palette, .hr-menu_palette {
+.h3-menu_palette,.p-prix_palette, .p-menu_palette {
     font-family: $ff-content-M4;
 }
-
-
-/*Reste à traiter*/
-/*.hr-menu_palette {}
-polices de caractères*/

@@ -27,7 +27,7 @@ $gradient1_chic: #db8528;
 $gradient2_chic: #8f5bfe;
 
 /*Menu délice*/
-$gradient1_delice :  #0228dd;
+$gradient1_delice:  #0228dd;
 $gradient2_delice: #229df9;
 
 /*Menu palette*/
@@ -64,7 +64,7 @@ $background-menu_palette: #fdfffd;
 /*****************************************************/
 /***                    LOGO                       ***/
 /*****************************************************/
-$logo-font: 'Montserrat', sans-serif;
+$logo-font: 'Montserrat', 'Helvetica', sans-serif;
 $logo-color: $color-secondary;
 
 
@@ -76,31 +76,30 @@ $global-title: $logo-font;
 
 
 /*Menu 1*/
-$ff-title-M1: 'devonshire', cursive;
-$ff-content-M1: 'segoepr', 'Open Sans', cursive;
+$ff-title-M1: 'devonshire', 'Zapf-Chancery', cursive;
+$ff-content-M1: 'segoepr', 'Open Sans', 'Zapf-Chancery', cursive;
 
 /*Menu 2*/
-$ff-title-M2: 'Croissant One', cursive;
-$ff-content-M2:'Roboto Slab', serif;
+$ff-title-M2: 'Croissant One', 'Zapf-Chancery', cursive;
+$ff-content-M2:'Roboto Slab', 'Times', serif;
 
 /*Menu 3*/
-$ff-title-M3:'Dancing Script', cursive;
-$ff-content-M3: 'segoepr', 'Open Sans', cursive;
+$ff-title-M3:'Dancing Script', 'Zapf-Chancery', cursive;
+$ff-content-M3: 'segoepr', 'Open Sans', 'Zapf-Chancery', cursive;
 
 /*Menu 4*/
-$ff-title-M4: 'Kaushan Script', cursive;
-$ff-content-M4: 'Open Sans', cursive;
+$ff-title-M4: 'Kaushan Script', 'Zapf-Chancery', cursive;
+$ff-content-M4: 'segoepr','Open Sans', 'Zapf-Chancery', cursive;
 
 /*Mentions légales*/
-$ff-titre-legal: 'Montserrat', sans-serif;
-$ff-content-legal: 'Roboto Slab', serif;
+$ff-titre-legal: 'Montserrat', 'Helevetica', sans-serif;
+$ff-content-legal: 'Roboto Slab', 'Times', serif;
 
 
 /*****************************************************/
 /***            Taille de caractères               ***/
 /*****************************************************/
 $base-font-size: 16px!default;
-$line-height:1.4;
 $h1-font-size: 2em;
 $h2-font-size: 1.5em;
 $h3-font-size: 1.25em;

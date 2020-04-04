@@ -3,20 +3,20 @@
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-    margin:2em 1em;
+    margin:2em 0;
 }
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
-    width: 7.2rem;
-    height:10rem;
+    width: 16em;
+    height:22em;
     margin-bottom: 2em;
 }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-    width: 16rem;
-    height: 3.5rem;
+    width: 16em;
+    height: 3.5em;
     background: $color-primary;
     color: $color-secondary;
     border:none;
@@ -29,20 +29,20 @@
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox,  {
+.article-container_menubox, .section-container_menubox {
     text-align: center;
 }
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-    margin: 2em 1em;
+    margin: 2em 0;
 }
 
 /*Mise en page du visuel de chaque carte*/
 .article-container_menubox {
-    width: 16rem;
+    width: 16em;
     height: auto;
-
+    margin-bottom: 2em;
 }
 
 /*Délimitations de section <hr>*/
@@ -56,7 +56,7 @@
 /*****************************************************/
 /*Blanc tournant*/
 .article-container_legal {
-    margin: 1.5em;
+    margin: 2em;
     margin-bottom: 2rem;
 }
 

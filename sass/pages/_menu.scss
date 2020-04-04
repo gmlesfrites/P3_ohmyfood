@@ -5,7 +5,6 @@
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
     margin: 2rem 0;
-    line-height: $line_height;
 }
 
 /*Titre dans chaque carte*/
@@ -14,21 +13,17 @@
 }
 
 /*Alignement des polices des titres*/
-.h2-menu, .h4-menu_note, .h2-titre-menu {
+.h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
     text-align: center;
 }
 
-.h3-menu {
-    margin: 0;
-}
-/*Séparations entre chaque type de plat*/
+/*Séparations entre chaque type de plat
 .hr-menu {
     margin:0;
     width: 100%;
     font-size: $hr-font-size;
     position: relative;
     outline: 0;
-    border: 1px solid green; /*à ôter à la fin du travail, permet de délimiter la zone hr dans son entier*/
     text-align: center;
     height: auto;
     opacity: 0.9;
@@ -48,4 +43,4 @@
             display: inline-block;
             padding: 0.5em;
         }
-}
+}*/

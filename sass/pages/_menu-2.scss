@@ -5,9 +5,21 @@
 .h2-menu_chic {
     font-family: $ff-title-M2;
     background:linear-gradient($direction, $gradient1_chic, $gradient2_chic);
+    background:-webkit-linear-gradient($direction, $gradient1_chic, $gradient2_chic);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 98%;
+}
+
+.h3-menu_chic_color1 {
+    color: $color-menu_chic_color1
+}
+
+.h3-menu_chic_color2 {
+    color: $color-menu_chic_color2;
+}
+
+.h3-menu_chic_color3 {
+    color: $color-menu_chic-color3; 
 }
 
 /*Texte à l'intérieur des entrées plats et desserts*/

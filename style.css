@@ -51,14 +51,12 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 16px;
-  line-height: 1.4; }
+  font-size: 16px; }
 
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
 * {
-  line-height: 1.4;
   font-size: 16px;
   word-wrap: break-word; }
 
@@ -138,6 +136,7 @@ body, h1, footer, header, .h3-hidden {
 /*notes de musique*/
 .fa-music {
   background: linear-gradient(120deg, #f05561, #f6916a);
+  background: webkit-linear-gradient(120deg, #f05561, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -164,18 +163,18 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-  margin: 2em 1em; }
+  margin: 2em 0; }
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
-  width: 7.2rem;
-  height: 10rem;
+  width: 16em;
+  height: 22em;
   margin-bottom: 2em; }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-  width: 16rem;
-  height: 3.5rem;
+  width: 16em;
+  height: 3.5em;
   background: #579c87;
   color: #fcca46;
   border: none;
@@ -191,12 +190,13 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-  margin: 2em 1em; }
+  margin: 2em 0; }
 
 /*Mise en page du visuel de chaque carte*/
 .article-container_menubox {
-  width: 16rem;
-  height: auto; }
+  width: 16em;
+  height: auto;
+  margin-bottom: 2em; }
 
 /*Délimitations de section <hr>*/
 .hr-legal, .hr-menu {
@@ -207,7 +207,7 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Blanc tournant*/
 .article-container_legal {
-  margin: 1.5em;
+  margin: 2em;
   margin-bottom: 2rem; }
 
 /*****************************************************/
@@ -259,18 +259,18 @@ body, h1, footer, header, .h3-hidden {
 .h3-menu_note {
   color: #3d1319;
   text-transform: uppercase;
-  font-family: "segoepr", "Open Sans", cursive; }
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
 .h3-menu_chic {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Times", serif;
   color: #c67412; }
 
 .h3-menu_delice {
-  font-family: "segoepr", "Open Sans", cursive;
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive;
   color: #0228dd; }
 
 .h3-menu_palette {
-  font-family: "Open Sans", cursive;
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive;
   color: #41963c; }
 
 /*****************************************************/
@@ -278,7 +278,7 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Helevetica", sans-serif;
   text-align: center; }
 
 /*Taile des titres*/
@@ -287,7 +287,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Taille des contenus*/
 .p-legal, .li-legal {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", "Times", serif;
   font-size: 80%;
   padding: 0.5rem; }
 
@@ -314,55 +314,53 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  margin: 2rem 0;
-  line-height: 1.4; }
+  margin: 2rem 0; }
 
 /*Titre dans chaque carte*/
 .h2-menu {
   font-size: 1.5em; }
 
 /*Alignement des polices des titres*/
-.h2-menu, .h4-menu_note, .h2-titre-menu {
+.h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
   text-align: center; }
 
-.h3-menu {
-  margin: 0; }
-
-/*Séparations entre chaque type de plat*/
+/*Séparations entre chaque type de plat
 .hr-menu {
-  margin: 0;
-  width: 100%;
-  font-size: 1em;
-  position: relative;
-  outline: 0;
-  border: 1px solid green;
-  /*à ôter à la fin du travail, permet de délimiter la zone hr dans son entier*/
-  text-align: center;
-  height: auto;
-  opacity: 0.9; }
-  .hr-menu::before {
-    content: '';
-    position: absolute;
-    left: 0%;
-    top: 50%;
+    margin:0;
     width: 100%;
-    height: 1px; }
-  .hr-menu::after {
-    content: attr(data-content);
+    font-size: $hr-font-size;
     position: relative;
-    display: inline-block;
-    padding: 0.5em; }
+    outline: 0;
+    text-align: center;
+    height: auto;
+    opacity: 0.9;
 
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+        }
+
+        &::after {
+            content: attr(data-content);
+            position: relative;
+            display: inline-block;
+            padding: 0.5em;
+        }
+}*/
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
-.h2-menu_note, .h4-menu_note {
-  font-family: "devonshire", cursive; }
+.h2-menu_note, .h3-menu_note, .h4-menu_note {
+  font-family: "devonshire", "Zapf-Chancery", cursive; }
 
 /*Contenu des menus*/
 .p-menu_note, .p-prix_note, .hr-menu_note {
-  font-family: "segoepr", "Open Sans", cursive; }
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
 /*Prix en gras*/
 .p-prix_note {
@@ -377,15 +375,24 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
-  font-family: "Croissant One", cursive;
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #db8528, #8f5bfe);
+  background: -webkit-linear-gradient(120deg, #db8528, #8f5bfe);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 98%; }
+  -webkit-text-fill-color: transparent; }
+
+.h3-menu_chic_color1 {
+  color: #c67412; }
+
+.h3-menu_chic_color2 {
+  color: #a56799; }
+
+.h3-menu_chic_color3 {
+  color: #6e4ccc; }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic, .hr-menu_chic {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto Slab", "Times", serif; }
 
 /*Reste à traiter*/
 /*.hr-menu_nomdemenu {}*/
@@ -397,16 +404,17 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
-  font-family: "Croissant One", cursive;
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #0228dd, #229df9);
+  background: -webkit-linear-gradient(120deg, #0228dd, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .h2-menu_delice, .h3-menu_delice {
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", "Zapf-Chancery", cursive; }
 
 .p-prix_delice, .p-menu_delice, .hr-menu_delice {
-  font-family: "segoepr", "Open Sans", cursive; }
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
 /*Reste à traiter*/
 /*.hr-menu_note {}
@@ -416,18 +424,14 @@ polices de caractère*/
 /*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
-  font-family: "Kaushan Script", cursive;
-  /*Titre à l'intérieur de la carte*/
+  font-family: "Kaushan Script", "Zapf-Chancery", cursive;
+  background: -webkit-linear-gradient(120deg, #41963c, #b2f478);
   background: linear-gradient(120deg, #41963c, #b2f478);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /*Texte des entrées, plats et desserts*/
-.p-prix_palette, .p-menu_palette, .hr-menu_palette {
-  font-family: "Open Sans", cursive; }
-
-/*Reste à traiter*/
-/*.hr-menu_palette {}
-polices de caractères*/
+.h3-menu_palette, .p-prix_palette, .p-menu_palette {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
 /*# sourceMappingURL=style.css.map */
