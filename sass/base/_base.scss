@@ -1,7 +1,11 @@
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
-/*Annuler le margin par défaut des navigateurs*/
-html, body {
+/*Pour éviter aux contenus de sortir du contenant*/
+* {
    box-sizing: border-box;
+}
+
+html {
+   font-size: $base-font-size;
 }

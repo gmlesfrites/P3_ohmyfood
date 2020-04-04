@@ -1,41 +1,42 @@
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Ombres des menus et bouton prochainement*/
-.section-container_indexbox, .button_soon {
-    box-shadow: $box-shadow;
+/*Mise en page partie main entre header -footer */
+.main-container_index {
+    padding: 3em 4.4em;
 }
 
 /*Mise en paga des visuels des cartes de restaurant*/
-.section-container_indexbox {
+.container_indexbox {
     width: 16em;
-    height:24em;
-    margin: 1em;
+    height:22em;
+    margin-bottom: 3em;
 }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-    width: 12rem;
-    height: 3rem;
+    width: 12em;
+    height: 3.5em;
     background: $color-primary;
     color: $color-secondary;
     border:none;
     border-radius: 0.4em;
-    margin-bottom: 2.2rem;
+    margin: 1.2em 0 2em 0;
 }
+
 
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox, .section-container_indexbox {
+.article-container_menubox, .section-container_menubox, .container_indexbox {
     text-align: center;
 }
 
 /*Délimitations de section <hr> */
 .hr-legal, .hr-menu {
-    margin: 2em 0.8rem;
+    margin: 2em 0.8em;
 }
 
 
@@ -51,7 +52,7 @@
 /***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
 /*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container_index, .main-container_menu, .container-button_soon, .section-container_indexbox {
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +60,7 @@
 }
 
 /*Ombre sous les menus et les boutons*/
-.article-container_menubox, .button_soon {
+.article-container_menubox, .container_indexbox, .button_soon {
     box-shadow: $box-shadow;
 }
 
@@ -78,10 +79,4 @@
 
 .article-container_menubox_palette {
     background-color: $background-menu_palette;
-}
-
-/*Marge bas de conteneur pour éviter la partie cachée par le footer fixe*/
-main {
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
 }

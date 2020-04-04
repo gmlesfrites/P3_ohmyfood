@@ -1,8 +1,11 @@
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
-/*Menu écrit en majuscule sur le menu note*/
-.span-menu_note {
+/*Particularités MENU*/
+.h3-menu_note {
+    color: $color-menu_note;
     text-transform: uppercase;
+    font-family: $ff-content-M1;
 }
+
 

@@ -53,14 +53,14 @@ $color-menu_gout: #000;
 /*****************************************************/
 $background-menu_note: #fcdfdb;
 $background-menu_chic: #fff5fe;
-$background-menu_delice: #edefef;
+$background-menu_delice: #f9f9f9;
 $background-menu_palette: #fdfffd;
 
 
 /*****************************************************/
 /***                    LOGO                       ***/
 /*****************************************************/
-$logo-font: "Montserrat", sans-serif;    /*à voir pour $global-title*/
+$logo-font: 'Montserrat', sans-serif;
 $logo-color: $color-secondary;
 
 
@@ -68,11 +68,12 @@ $logo-color: $color-secondary;
 /***            Polices de caractères              ***/
 /*****************************************************/
 /*Titre carte de chaque restaurant*/
-$global-title: "Montserrat", sans-serif;
+$global-title: $logo-font;
+
 
 /*Menu 1*/
-$ff-title-M1: "Devonshire", cursive;
-$ff-content-M1: "segoepr", 'Open Sans', cursive;
+$ff-title-M1: 'devonshire', cursive;
+$ff-content-M1: 'segoepr', 'Open Sans', cursive;
 
 /*Menu 2*/
 $ff-title-M2: 'Croissant One', cursive;
@@ -80,14 +81,14 @@ $ff-content-M2:'Roboto Slab', serif;
 
 /*Menu 3*/
 $ff-title-M3:'Dancing Script', cursive;
-$ff-content-M3: "segoepr", 'Open Sans', cursive;
+$ff-content-M3: 'segoepr', 'Open Sans', cursive;
 
 /*Menu 4*/
 $ff-title-M4: 'Kaushan Script', cursive;
 $ff-content-M4: 'Open Sans', cursive;
 
 /*Mentions légales*/
-$ff-titre-legal: "Montserrat", sans-serif;
+$ff-titre-legal: 'Montserrat', sans-serif;
 $ff-content-legal: 'Roboto Slab', serif;
 
 
@@ -95,7 +96,7 @@ $ff-content-legal: 'Roboto Slab', serif;
 /***            Taille de caractères               ***/
 /*****************************************************/
 $base-font-size: 16px!default;
-$line-height:1rem;
+$line-height:1.4;
 $h1-font-size: 2em;
 $h2-font-size: 1.5em;
 $h3-font-size: 1.25em;

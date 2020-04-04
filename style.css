@@ -24,7 +24,6 @@
 /*****************************************************/
 /***                    LOGO                       ***/
 /*****************************************************/
-/*à voir pour $global-title*/
 /*****************************************************/
 /***            Polices de caractères              ***/
 /*****************************************************/
@@ -46,15 +45,18 @@
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
-/*Annuler le margin par défaut des navigateurs*/
-html, body {
+/*Pour éviter aux contenus de sortir du contenant*/
+* {
   box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
 
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
 * {
-  line-height: 1rem;
+  line-height: 1.4;
   font-size: 16px;
   word-wrap: break-word; }
 
@@ -65,8 +67,7 @@ h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.5em;
-  padding: 1.5rem; }
+  font-size: 1.5em; }
 
 h3 {
   font-size: 1.25em; }
@@ -131,7 +132,7 @@ body, h1, footer, header, .h3-hidden {
 /*Points de suspension*/
 .fa-circle {
   font-size: 0.25em;
-  padding: 0.2rem; }
+  padding: 0.2em; }
 
 /*notes de musique*/
 .fa-music {
@@ -141,7 +142,8 @@ body, h1, footer, header, .h3-hidden {
 
 /*Note en grand format*/
 .i_top {
-  font-size: 3rem; }
+  font-size: 2.35em;
+  line-height: 1.4; }
 
 /*****************************************************/
 /***                   Header                      ***/
@@ -152,42 +154,42 @@ body, h1, footer, header, .h3-hidden {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 7rem;
-  margin-bottom: 2.2rem; }
+  height: 112px;
+  height: 7rem; }
 
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Ombres des menus et bouton prochainement*/
-.section-container_indexbox, .button_soon {
-  box-shadow: 4px 4px 4px #efefef; }
+/*Mise en page partie main entre header -footer */
+.main-container_index {
+  padding: 3em 4.4em; }
 
 /*Mise en paga des visuels des cartes de restaurant*/
-.section-container_indexbox {
+.container_indexbox {
   width: 16em;
-  height: 24em;
-  margin: 1em; }
+  height: 22em;
+  margin-bottom: 3em; }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-  width: 12rem;
-  height: 3rem;
+  width: 12em;
+  height: 3.5em;
   background: #579c87;
   color: #fcca46;
   border: none;
   border-radius: 0.4em;
-  margin-bottom: 2.2rem; }
+  margin: 1.2em 0 2em 0; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox, .section-container_indexbox {
+.article-container_menubox, .section-container_menubox, .container_indexbox {
   text-align: center; }
 
 /*Délimitations de section <hr> */
 .hr-legal, .hr-menu {
-  margin: 2em 0.8rem; }
+  margin: 2em 0.8em; }
 
 /*****************************************************/
 /***     Conteneur en page mentions légales        ***/
@@ -200,14 +202,14 @@ body, h1, footer, header, .h3-hidden {
 /***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
 /*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container_index, .main-container_menu, .container-button_soon, .section-container_indexbox {
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
 /*Ombre sous les menus et les boutons*/
-.article-container_menubox, .button_soon {
+.article-container_menubox, .container_indexbox, .button_soon {
   box-shadow: 4px 4px 4px #efefef; }
 
 /*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
@@ -218,15 +220,10 @@ body, h1, footer, header, .h3-hidden {
   background-color: #fff5fe; }
 
 .article-container_menubox_delice {
-  background-color: #edefef; }
+  background-color: #f9f9f9; }
 
 .article-container_menubox_palette {
   background-color: #fdfffd; }
-
-/*Marge bas de conteneur pour éviter la partie cachée par le footer fixe*/
-main {
-  padding-bottom: 3rem;
-  margin-bottom: 3rem; }
 
 /*****************************************************/
 /***                   Footer                      ***/
@@ -236,7 +233,8 @@ main {
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 2.2rem;
+  height: 32px;
+  height: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -245,9 +243,11 @@ main {
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
-/*Menu écrit en majuscule sur le menu note*/
-.span-menu_note {
-  text-transform: uppercase; }
+/*Particularités MENU*/
+.h3-menu_note {
+  color: #3d1319;
+  text-transform: uppercase;
+  font-family: "segoepr", "Open Sans", cursive; }
 
 /*****************************************************/
 /***     Particularités Mentions légales           ***/
@@ -291,7 +291,7 @@ main {
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
   margin: 2rem 0;
-  line-height: 1rem; }
+  line-height: 1.4; }
 
 /*Titre dans chaque carte*/
 .h2-menu {
@@ -335,7 +335,7 @@ main {
 
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
-  font-family: "Devonshire", cursive; }
+  font-family: "devonshire", cursive; }
 
 /*Contenu des menus*/
 .p-menu_note, .p-prix_note, .hr-menu_note {
@@ -362,6 +362,9 @@ main {
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
   font-family: "Croissant One", cursive;
+  background: linear-gradient(130deg, #db8528, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /*background-color: linear-gradient(to right, $gradient1_chic, $gradient2_chic); A TRAITER */ }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
@@ -378,7 +381,7 @@ main {
 /*****************************************************/
 /*Couleur d'arrière-plan*/
 .body-menu_delice {
-  background-color: #edefef; }
+  background-color: #f9f9f9; }
 
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice, .h3-menu_delice {
