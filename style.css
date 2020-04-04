@@ -51,7 +51,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.4; }
 
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
@@ -154,6 +155,7 @@ body, h1, footer, header, .h3-hidden {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   height: 112px;
   height: 7rem; }
 
@@ -166,14 +168,14 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
-  width: 16em;
-  height: 22em;
+  width: 7.2rem;
+  height: 10rem;
   margin-bottom: 2em; }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-  width: 16em;
-  height: 3.5em;
+  width: 16rem;
+  height: 3.5rem;
   background: #579c87;
   color: #fcca46;
   border: none;
@@ -189,11 +191,11 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-  margin-bottom: 2rem; }
+  margin: 2em 1em; }
 
 /*Mise en page du visuel de chaque carte*/
 .article-container_menubox {
-  width: 12em;
+  width: 16rem;
   height: auto; }
 
 /*Délimitations de section <hr>*/
@@ -317,8 +319,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Titre dans chaque carte*/
 .h2-menu {
-  font-size: 1.5em;
-  margin-bottom: 0; }
+  font-size: 1.5em; }
 
 /*Alignement des polices des titres*/
 .h2-menu, .h4-menu_note, .h2-titre-menu {
@@ -377,10 +378,10 @@ body, h1, footer, header, .h3-hidden {
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
   font-family: "Croissant One", cursive;
-  font-size: 98%;
   background: linear-gradient(120deg, #db8528, #8f5bfe);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  font-size: 98%; }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic, .hr-menu_chic {

@@ -8,15 +8,15 @@
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
-    width: 16em;
-    height:22em;
+    width: 7.2rem;
+    height:10rem;
     margin-bottom: 2em;
 }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-    width: 16em;
-    height: 3.5em;
+    width: 16rem;
+    height: 3.5rem;
     background: $color-primary;
     color: $color-secondary;
     border:none;
@@ -35,13 +35,14 @@
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-    margin-bottom: 2rem;
+    margin: 2em 1em;
 }
 
 /*Mise en page du visuel de chaque carte*/
 .article-container_menubox {
-    width: 12em;
+    width: 16rem;
     height: auto;
+
 }
 
 /*Délimitations de section <hr>*/
