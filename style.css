@@ -19,7 +19,6 @@
 /*La note enchantée*/
 /*Le chic à la française*/
 /*Le délice des papilles*/
-/*La palette du goût*/
 /*****************************************************/
 /***               Couleurs de fond                ***/
 /*****************************************************/
@@ -92,9 +91,8 @@ body, h1, footer, header, .h3-hidden {
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
 .button_soon {
-  text-align: left;
-  font-size: 1em;
-  padding-left: 0.9rem; }
+  text-align: center;
+  font-size: 1em; }
 
 /*****************************************************/
 /***                   LOGO                        ***/
@@ -162,35 +160,43 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Mise en page partie main entre header -footer */
+/*Mise en page partie main entre header-footer */
 .main-container_index {
-  padding: 3em 4.4em; }
+  margin: 2em 1em; }
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
   width: 16em;
   height: 22em;
-  margin-bottom: 3em;
-  font-size: 99%; }
+  margin-bottom: 2em; }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-  width: 12em;
+  width: 16em;
   height: 3.5em;
   background: #579c87;
   color: #fcca46;
   border: none;
-  border-radius: 0.4em;
-  margin: 1.2em 0 2em 0; }
+  border-radius: 0.6em;
+  margin: 2em; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox, .container_indexbox {
+.article-container_menubox, .section-container_menubox {
   text-align: center; }
 
-/*Délimitations de section <hr> */
+/*Mise en page entre header-footer*/
+.main-container_menu {
+  margin-bottom: 2rem; }
+
+/*Mise en page du visuel de chaque carte*/
+.article-container_menubox {
+  width: 12em;
+  height: auto; }
+
+/*Délimitations de section <hr>*/
 .hr-legal, .hr-menu {
   margin: 2em 0.8em; }
 
@@ -199,7 +205,8 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Blanc tournant*/
 .article-container_legal {
-  margin: 1rem; }
+  margin: 1.5em;
+  margin-bottom: 2rem; }
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
@@ -212,10 +219,10 @@ body, h1, footer, header, .h3-hidden {
   align-items: center; }
 
 /*Ombre sous les menus et les boutons*/
-.article-container_menubox, .container_indexbox, .button_soon {
-  box-shadow: 4px 4px 4px #efefef; }
+.article-container_menubox, .container_indexbox {
+  box-shadow: -3px -3px 3px #efefef; }
 
-/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
 .article-container_menubox_note {
   background-color: #fcdfdb; }
 
@@ -244,22 +251,25 @@ body, h1, footer, header, .h3-hidden {
   align-items: center; }
 
 /*****************************************************/
-/***     Particularités La note enchantée          ***/
+/***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/
-/*Particularités MENU*/
+/*Particularités de l'écriture du mot menu*/
 .h3-menu_note {
   color: #3d1319;
   text-transform: uppercase;
   font-family: "segoepr", "Open Sans", cursive; }
 
 .h3-menu_chic {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto Slab", serif;
+  color: #c67412; }
 
-.h3-menu-delice {
-  font-family: "segoepr", "Open Sans", cursive; }
+.h3-menu_delice {
+  font-family: "segoepr", "Open Sans", cursive;
+  color: #0228dd; }
 
-.h3-menu-palette {
-  font-family: "Open Sans", cursive; }
+.h3-menu_palette {
+  font-family: "Open Sans", cursive;
+  color: #41963c; }
 
 /*****************************************************/
 /***     Particularités Mentions légales           ***/
@@ -307,11 +317,15 @@ body, h1, footer, header, .h3-hidden {
 
 /*Titre dans chaque carte*/
 .h2-menu {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-bottom: 0; }
 
 /*Alignement des polices des titres*/
 .h2-menu, .h4-menu_note, .h2-titre-menu {
   text-align: center; }
+
+.h3-menu {
+  margin: 0; }
 
 /*Séparations entre chaque type de plat*/
 .hr-menu {
@@ -341,10 +355,6 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_note {
-  background-color: #fcdfdb; }
-
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
   font-family: "devonshire", cursive; }
@@ -361,19 +371,13 @@ body, h1, footer, header, .h3-hidden {
 .h2-menu_note, .hr-menu_note {
   color: #3d1319; }
 
-.span-menu_note {
-  text-transform: uppercase; }
-
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_chic {
-  background-color: #fff5fe; }
-
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
   font-family: "Croissant One", cursive;
+  font-size: 98%;
   background: linear-gradient(120deg, #db8528, #8f5bfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -390,10 +394,6 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /***     Particularités Le délice des papilles     ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_delice {
-  background-color: #f9f9f9; }
-
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
   font-family: "Croissant One", cursive;
@@ -413,10 +413,6 @@ polices de caractère*/
 /*****************************************************/
 /***     Particularités La palette du goût         ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_palette {
-  background-color: #fdfffd; }
-
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
   font-family: "Kaushan Script", cursive;

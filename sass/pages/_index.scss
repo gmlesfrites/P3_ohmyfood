@@ -1,7 +1,7 @@
 /*****************************************************/
-/***     Particularités La note enchantée          ***/
+/***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/
-/*Particularités MENU*/
+/*Particularités de l'écriture du mot menu*/
 .h3-menu_note {
     color: $color-menu_note;
     text-transform: uppercase;
@@ -10,12 +10,15 @@
 
 .h3-menu_chic {
     font-family: $ff-content-M2;
+    color: $color-menu_chic_color1;
 }
 
-.h3-menu-delice {
+.h3-menu_delice {
     font-family: $ff-content-M3;
+    color: $color-menu_delice_color1;
 }
 
-.h3-menu-palette {
+.h3-menu_palette {
     font-family: $ff-content-M4;
+    color: $gradient1_palette;
 }

@@ -1,41 +1,50 @@
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
-/*Mise en page partie main entre header -footer */
+/*Mise en page partie main entre header-footer */
 .main-container_index {
-    padding: 3em 4.4em;
+    margin:2em 1em;
 }
 
 /*Mise en paga des visuels des cartes de restaurant*/
 .container_indexbox {
     width: 16em;
     height:22em;
-    margin-bottom: 3em;
-    font-size: 99%;
+    margin-bottom: 2em;
 }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-    width: 12em;
+    width: 16em;
     height: 3.5em;
     background: $color-primary;
     color: $color-secondary;
     border:none;
-    border-radius: 0.4em;
-    margin: 1.2em 0 2em 0;
+    border-radius: 0.6em;
+    margin: 2em;
 }
-
 
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox, .container_indexbox {
+.article-container_menubox, .section-container_menubox,  {
     text-align: center;
 }
 
-/*Délimitations de section <hr> */
+/*Mise en page entre header-footer*/
+.main-container_menu {
+    margin-bottom: 2rem;
+}
+
+/*Mise en page du visuel de chaque carte*/
+.article-container_menubox {
+    width: 12em;
+    height: auto;
+}
+
+/*Délimitations de section <hr>*/
 .hr-legal, .hr-menu {
     margin: 2em 0.8em;
 }
@@ -46,8 +55,10 @@
 /*****************************************************/
 /*Blanc tournant*/
 .article-container_legal {
-    margin: 1rem;
+    margin: 1.5em;
+    margin-bottom: 2rem;
 }
+
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
@@ -61,11 +72,11 @@
 }
 
 /*Ombre sous les menus et les boutons*/
-.article-container_menubox, .container_indexbox, .button_soon {
+.article-container_menubox, .container_indexbox {
     box-shadow: $box-shadow;
 }
 
-/*Body couleur de fond personnalisée pour les menus et les visuels de menus en index*/
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
 .article-container_menubox_note {
     background-color: $background-menu_note;
 }

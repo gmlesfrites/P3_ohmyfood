@@ -1,11 +1,6 @@
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_note {
-    background-color: $background-menu_note;
-}
-
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
     font-family:$ff-title-M1;
@@ -23,8 +18,4 @@
 /*Couleur de police*/
 .h2-menu_note, .hr-menu_note,  {
     color: $color-menu_note;
-}
-
-.span-menu_note {
-    text-transform: uppercase;
 }

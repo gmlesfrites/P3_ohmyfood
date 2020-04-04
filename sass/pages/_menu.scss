@@ -11,6 +11,7 @@
 /*Titre dans chaque carte*/
 .h2-menu {
     font-size: $h2-font-size;
+    margin-bottom: 0;
 }
 
 /*Alignement des polices des titres*/
@@ -18,6 +19,9 @@
     text-align: center;
 }
 
+.h3-menu {
+    margin: 0;
+}
 /*Séparations entre chaque type de plat*/
 .hr-menu {
     margin:0;

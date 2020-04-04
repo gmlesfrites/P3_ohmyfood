@@ -1,14 +1,10 @@
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/
 /*****************************************************/
-/*Couleur d'arrière-plan*/
-.body-menu_chic {
-    background-color: $background-menu_chic;
-}
-
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
     font-family: $ff-title-M2;
+    font-size: 98%;
     background:linear-gradient($direction, $gradient1_chic, $gradient2_chic);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
