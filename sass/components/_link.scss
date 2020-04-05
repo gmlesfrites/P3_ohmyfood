@@ -1,10 +1,11 @@
 /*****************************************************/
-/***         Liens vers les pages de menus         ***/
+/***              Liens page d'accueil             ***/
 /*****************************************************/
-/*   .page-menu-link{} */
-/*ANIMATION A VENIR AU SURVOL*/
-
-
+.link-page_menu {
+    width: 16em;
+    height:22em;
+    margin-bottom: 2em;
+}
 
 
 /*****************************************************/
@@ -30,6 +31,7 @@
   87.5% {transform: rotate(2deg);}
   100% {transform: rotate(0deg);}
 }
+
 /*****************************************************/
 /***       Liens sans effet de souligné            ***/
 /*****************************************************/

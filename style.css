@@ -107,10 +107,13 @@ body, h1, footer, header, .h3-hidden {
   letter-spacing: -1px; }
 
 /*****************************************************/
-/***         Liens vers les pages de menus         ***/
+/***              Liens page d'accueil             ***/
 /*****************************************************/
-/*   .page-menu-link{} */
-/*ANIMATION A VENIR AU SURVOL*/
+.link-page_menu {
+  width: 16em;
+  height: 22em;
+  margin-bottom: 2em; }
+
 /*****************************************************/
 /***             Liens dans le footer              ***/
 /*****************************************************/
@@ -186,10 +189,14 @@ body, h1, footer, header, .h3-hidden {
   margin: 2em 0; }
 
 /*Mise en paga des visuels des cartes de restaurant*/
-.container_indexbox {
-  width: 16em;
-  height: 22em;
-  margin-bottom: 2em; }
+.section-index_hover:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 0.7; }
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
