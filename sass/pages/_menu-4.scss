@@ -6,6 +6,7 @@
     font-family: $ff-title-M4;
     background:linear-gradient($direction, $gradient1_palette, $gradient2_palette);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

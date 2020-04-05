@@ -1,23 +1,23 @@
 /*****************************************************/
 /***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/
-/*Particularités de l'écriture du mot menu*/
+/*Particularités de l'écriture du mot menu Note*/
 .h3-menu_note {
-    color: $color-menu_note;
+    color: $gradient3_note;
     text-transform: uppercase;
     font-family: $ff-content-M1;
 }
-
+/*Particularités de l'écriture du mot menu Chic*/
 .h3-menu_chic {
     font-family: $ff-content-M2;
-    color: $color-menu_chic_color1;
+    color: $gradient1_chic;
 }
-
+/*Particularités de l'écriture du mot menu delice*/
 .h3-menu_delice {
     font-family: $ff-content-M3;
-    color: $color-menu_delice_color1;
+    color: $gradient2_delice;
 }
-
+/*Particularités de l'écriture du mot menu palette*/
 .h3-menu_palette {
     font-family: $ff-content-M4;
     color: $gradient1_palette;

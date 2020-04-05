@@ -6,7 +6,13 @@
     margin:2em 0;
 }
 
-/*Mise en paga des visuels des cartes de restaurant*/
+/*Mise en paga des visuels des cartes de restaurant !!lien a=ref de chaque visuel*/
+.link-page_menu {
+    width: 80%;
+    height:22em;
+    margin-bottom: 2em;
+}
+
 .section-index_hover:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -42,27 +48,7 @@
 /*Mise en page entre header-footer*/
 .main-container_menu {
     margin: 2em 0;
-}
-
-/*Mise en page du visuel de chaque carte*/
-.article-container_menubox {
-    width: 16em;
-    height: auto;
-    margin-bottom: 2em;
-}
-
-/*Délimitations de section <hr>*/
-.hr-legal, .hr-menu {
-    margin: 2em 0.8em;
-}
-
-/*****************************************************/
-/***     Conteneur en page mentions légales        ***/
-/*****************************************************/
-/*Blanc tournant*/
-.article-container_legal {
-    margin: 2em;
-    margin-bottom: 2rem;
+    padding: 1.5em;
 }
 
 /*****************************************************/
@@ -76,6 +62,12 @@
     align-items: center;
 }
 
+/*Mise en page du visuel de chaque carte et en mentions légales*/
+.article-container_menubox, .article-container_legal {
+    width: 80%;
+    margin-bottom: 2em;
+}
+
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .container_indexbox {
     box-shadow: $box-shadow;
@@ -85,15 +77,12 @@
 .article-container_menubox_note {
     background-color: $background-menu_note;
 }
-
 .article-container_menubox_chic {
     background-color: $background-menu_chic;
 }
-
 .article-container_menubox_delice {
     background-color: $background-menu_delice;
 }
-
 .article-container_menubox_palette {
     background-color: $background-menu_palette;
 }

@@ -4,32 +4,24 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
     font-family: $ff-title-M2;
-    background: linear-gradient($direction, $gradient1_chic, $gradient2_chic);
+    background: linear-gradient($direction, $gradient1_chic, $gradient3_chic);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.h3-menu_chic_color1 {
-    color: $color-menu_chic_color1
+/*Couleurs différentes entrées/plats/desserts*/
+.section_chic_color1 {
+    color: $gradient1_chic;
 }
-
-.h3-menu_chic_color2 {
-    color: $color-menu_chic_color2;
+.section_chic_color2 {
+    color: $gradient2_chic;
 }
-
-.h3-menu_chic_color3 {
-    color: $color-menu_chic-color3; 
+.section_chic_color3 {
+    color: $gradient3_chic;
 }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.p-prix_chic, .p-menu_chic, .hr-menu_chic {
+.p-prix_chic, .p-menu_chic {
     font-family: $ff-content-M2;
 }
-
-
-
-/*Reste à traiter*/
-/*.hr-menu_nomdemenu {}*/
-/* appétit #c67412; */
-/*papilles  #a56799 */
-/* gourmandises #6e4ccc */
