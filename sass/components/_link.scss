@@ -1,14 +1,21 @@
-/*Liens sur les images de la page d'accueil vers chaque page de menu*/
-.lien-page{
-    &:hover {
-        transform: scale(1.3,0);
-        opacity: 0.8;
-    }
-}
+/*****************************************************/
+/***         Liens vers les pages de menus         ***/
+/*****************************************************/
+/*   .page-menu-link{} */
+/*ANIMATION A VENIR AU SURVOL*/
 
-/*Liens contenus dans le footer*/
-.footer-link{
-  color: $color-secondary;
+
+
+
+/*****************************************************/
+/***             Liens dans le footer              ***/
+/*****************************************************/
+
+
+
+/*****************************************************/
+/***       Liens sans effet de souligné            ***/
+/*****************************************************/
+.link-page_menu, .footer-link, .link-home {
   text-decoration: none;
-  width: 200px;
 }

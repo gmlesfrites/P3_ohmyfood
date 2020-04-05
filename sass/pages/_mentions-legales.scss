@@ -1,28 +1,42 @@
-.h2-mentions-legales {
-font-size: 1.5em;
-}
-
-.h3-mentions-legales {
-    font-size: 1.25em;
-}
-
-.h4-mentions-legales {
-    font-size: 1em;
-}
-
-.h2-mentions-legales,.h3-mentions-legales, .h4-mentions-legales {
+/*****************************************************/
+/***     Particularités Mentions légales           ***/
+/*****************************************************/
+/*Titres centrés*/
+.h2-legal, .h3-legal, .h4-legal {
+    font-family: $ff-titre-legal;
     text-align: center;
 }
 
-.p-mentions-legales, .li-mentions-legales {
-    font-size: 0.7em;
+/*Taile des titres*/
+.h3-legal, .h4-legal, .a-legal {
+    font-size: 90%;
 }
 
-.li-mentions-legales {
-    list-style-type: square;
+/*Taille des contenus*/
+.p-legal, .li-legal {
+    font-family: $ff-content-legal;
+    font-size: 80%;
+    padding: 0.5rem;
 }
 
-.hr-mentions-legales {
-    border: 0.01em dashed  #fcca46;
-    margin: 20px;
+/*Blanc tournant supplémentaire pour les puces des listes*/
+.li-legal {
+    padding-left: 0.7rem;
+}
+
+/*Style des puces des listes*/
+.li-legal {
+    list-style: none;
+}
+
+/*Séparations des parties*/
+.hr-legal {
+    height: 0.01em;
+    border-style: dashed;
+    border-width: 0.02rem;
+    color: #fcca46;
+}
+
+.a-legal {
+    color: $color-primary;
 }

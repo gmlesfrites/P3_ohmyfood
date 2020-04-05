@@ -1,105 +1,118 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
     <head>
-        <!--Balises Meta-->
+        <!--Balises meta-->
         <meta charset="UTF-8">
+
+        <!---Balises meta description-->
+        <meta name="description" content="Ohmyfood! est un nouveau concept. Réduisez votre temps d’attente dans les restaurants en choisissant à l’avance votre menu parmi les cartes présentées ici. Plus de perte de temps sur place !">
+        <meta name="author" content="Paul Lecto - Directeur technique, Fanny Luxe - Designer, Marc Poignon - Responsable commercial, Emilie GOURLIN - Web développeur">
+        <meta name="copyright" content="ohmyfood">
+
+        <!--Balises meta opengraph-->
+        <meta property="og:description" content="ohmyfood présente le menu du restaurant La palette du gout."/>
+
+        <!--Balises meta pour la compatibilté navigateurs et différents devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!--Liens Font Awesome-->
-        <script src="https://kit.fontawesome.com/6a89ea6dae.js" crossorigin="anonymous"></script>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-
         <!--Liens Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
         <!--Favicon-->
-        <link rel="icon" type="image/svg" href="images/fav.svg">
+        <link href="images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" >
 
+        <!--Titre page-->
         <title>La palette du goût - ohmyfood</title>
 
         <!--Lien Feuille de style-->
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu-palette">
+    <body class="body">
         <!--HEADER-->
-        <header class="header">
-        	<h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">La palette du goût</h2>
-
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-home">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
         <!--CONTENEUR PRINCPAL MENU 4 : La palette du goût-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_palette">La palette du goût</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_palette" data-content="Esquisse">
-
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrées-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_palette">Fricassée d'escargots au piment d'Espelette</li>
-                    <li class="li-menu li-menu_palette">Oeuf au plat assaisonné à la truffe sur lit de caviar</li>
-                    <li class="li-menu li-menu_palette">Foie gras de canard mi-cuit et ses copeaux de truffe noire</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_palette">60€</li>
-                    <li class="li-prix li-prix_palette">55€</li>
-                    <li class="li-prix li-prix_palette">65€</li>
-                </ul>
-            </div>
-
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_palette" data-content="Oeuvre de maître">
-
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plats-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_palette">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</li>
-                    <li class="li-menu li-menu_palette">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</li>
-                    <li class="li-menu li-menu_palette">Filet de Turbot aux agrumes</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_palette">70€</li>
-                    <li class="li-prix li-prix_palette">85€</li>
-                    <li class="li-prix li-prix_palette">125€</li>
-                </ul>
-            </div>
-
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_palette" data-content="Au sommet de l'art">
-
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de desserts-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_palette">Paris - Brest revisité</li>
-                    <li class="li-menu li-menu_palette">Macaron au chocolat d'exception et glace à la vanille de Madagascar</li>
-                    <li class="li-menu li-menu_palette">Mousse au chocolat au piment d'Espelette et à la truffe noire</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_palette">55€</li>
-                    <li class="li-prix li-prix_palette">65€</li>
-                    <li class="li-prix li-prix_palette">60€</li>
-                </ul>
-            </div>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">La palette du goût</h2>
+            <!--conteneur du menu-->
+            <article class="article-container_menubox article-container_menubox_palette">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_palette">La palette du goût</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3 class="h3-menu h3-menu_palette">Esquisse</h3>
+                    <!--Détail choix d'entrée 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Fricassée d'escargots au piment d'Espelette</p>
+                        <p class="p-prix p-prix_palette">60€</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Oeuf au plat assaisonné à la truffe sur lit de caviar</p>
+                        <p class="p-prix p-prix_palette">55€</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Foie gras de canard mi-cuit et ses copeaux de truffe noire</p>
+                        <p class="p-prix p-prix_palette">65€</p>
+                    </div>
+                </section>
+                <!--Section plats-->
+                <section class="section-container_menubox">
+                    <!--Titre plats-->
+                    <h3 class="h3-menu_palette">Oeuvre de maître</h3>
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</p>
+                        <p class="p-prix p-prix_palette">70€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</p>
+                        <p class="p-prix p-prix_palette">85€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Filet de Turbot aux agrumes</p>
+                        <p class="p-prix p-prix_palette">125€</p>
+                    </div>
+                </section>
+                <!--Section desserts-->
+                <section class="section-container_menubox">
+                    <!--Titre Desserts-->
+                    <h3 class="h3-menu h3-menu_palette">Au sommet de l'art</h3>
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Paris - Brest revisité</p>
+                        <p class="p-prix p-prix_palette">55€</p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Macaron au chocolat d'exception et glace à la vanille de Madagascar</p>
+                        <p class="p-prix p-prix_palette">65€</p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_palette">Mousse au chocolat au piment d'Espelette et à la truffe noire</p>
+                        <p class="p-prix p-prix_palette">60€</p>
+                    </div>
+                </section>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
-            <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
-            <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
+            <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>
+            <a href="mailto:ohmyfood@mail.com" class="footer-link">Contactez-nous</a>
         </footer>
     </body>
 </html>

@@ -1,41 +1,95 @@
-
-.main-menu {
-    margin: 100px 60px;
+/*****************************************************/
+/***         Conteneurs en page d'accueil          ***/
+/*****************************************************/
+/*Mise en page partie main entre header-footer */
+.main-container_index {
+    margin:2em 0;
 }
 
-.main-container {
-    margin:100px 50px;
+/*Mise en paga des visuels des cartes de restaurant*/
+.container_indexbox {
+    width: 16em;
+    height:22em;
+    margin-bottom: 2em;
+}
+
+/*Conteneur du bouton prochainement*/
+.button_soon {
+    width: 16em;
+    height: 3.5em;
+    background: $color-primary;
+    color: $color-secondary;
+    border:none;
+    border-radius: 0.6em;
+    margin: 2em;
+}
+
+
+/*****************************************************/
+/***        Conteneur des pages de menus           ***/
+/*****************************************************/
+/*Texte centrés dans les conteneurs */
+.article-container_menubox, .section-container_menubox {
+    text-align: center;
+}
+
+/*Mise en page entre header-footer*/
+.main-container_menu {
+    margin: 2em 0;
+}
+
+/*Mise en page du visuel de chaque carte*/
+.article-container_menubox {
+    width: 16em;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+/*Délimitations de section <hr>*/
+.hr-legal, .hr-menu {
+    margin: 2em 0.8em;
+}
+
+
+/*****************************************************/
+/***     Conteneur en page mentions légales        ***/
+/*****************************************************/
+/*Blanc tournant*/
+.article-container_legal {
+    margin: 2em;
+    margin-bottom: 2rem;
+}
+
+
+/*****************************************************/
+/***    Propriétés communes à toutes les pages     ***/
+/*****************************************************/
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox {
     display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    align-content: space-between;
 }
 
-.main-container__box {
-    width: 370px;
-    height:520px;
-    margin:60px;
+/*Ombre sous les menus et les boutons*/
+.article-container_menubox, .container_indexbox {
+    box-shadow: $box-shadow;
 }
 
-.section-menu {
-width: 100%;
-display:flex;
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
+.article-container_menubox_note {
+    background-color: $background-menu_note;
 }
 
-.ul-menu {
-    width: 85%;
+.article-container_menubox_chic {
+    background-color: $background-menu_chic;
 }
 
-.ul-prix {
-    width: 15%;
+.article-container_menubox_delice {
+    background-color: $background-menu_delice;
 }
 
-.main-mentions-legales {
-margin: 20px;
-}
-
-.section-mentions-legales {
-padding:30px;
+.article-container_menubox_palette {
+    background-color: $background-menu_palette;
 }

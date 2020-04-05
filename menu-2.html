@@ -1,105 +1,121 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
     <head>
         <!--Balises Meta-->
         <meta charset="UTF-8">
+
+        <!---Balises meta description-->
+        <meta name="description" content="Ohmyfood! est un nouveau concept. Réduisez votre temps d’attente dans les
+        restaurants en choisissant à l’avance votre menu parmi les cartes présentées ici. Plus de perte de temps sur place !">
+        <meta name="author" content="Paul Lecto - Directeur technique, Fanny Luxe - Designer, Marc Poignon - Responsable commercial, Emilie GOURLIN - Web développeur">
+        <meta name="copyright" content="ohmyfood">
+
+        <!--Balises meta opengraph-->
+        <meta property="og:description" content="ohmyfood présente le menu du restaurant Le chic à la française."/>
+
+        <!--Balises meta pour la compatibilté navigateurs et différents devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!--Liens Font Awesome-->
-        <script src="https://kit.fontawesome.com/6a89ea6dae.js" crossorigin="anonymous"></script>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-
         <!--Liens Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
         <!--Favicon-->
-        <link rel="icon" type="image/svg" href="images/fav.svg">
+        <link href="images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" >
 
+        <!--Titre page-->
         <title>Le chic à la française - ohmyfood</title>
 
         <!--Lien Feuille de style-->
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body body-menu-chic">
+    <body class="body">
         <!--HEADER-->
-        <header class="header">
-        	<h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">Le chic à la française</h2>
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-home">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
 
         <!--CONTENEUR PRINCPAL MENU 2 : Le chic à la française-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_chic">Le chic à la française</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_chic" data-content="Pour se mettre en appétit">
-
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrées-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_chic">Tartare de poulpe acidulé aux zests d'orange</li>
-                    <li class="li-menu li-menu_chic">Velouté de légumes d'antan</li>
-                    <li class="li-menu li-menu_chic">Soupe à l'oignon revisitée</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_chic">79€</li>
-                    <li class="li-prix li-prix_chic">57€</li>
-                    <li class="li-prix li-prix_chic">57€</li>
-                </ul>
-            </div>
-
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_chic" data-content="Plaisir des papilles">
-
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plats-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_chic">Coquilles Saint-Jacques accompagnées d'une purée de panais</li>
-                    <li class="li-menu li-menu_chic">Magret de canard et parmentier de pommes de terre</li>
-                    <li class="li-menu li-menu_chic">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_chic">95€</li>
-                    <li class="li-prix li-prix_chic">88€</li>
-                    <li class="li-prix li-prix_chic">175€</li>
-                </ul>
-            </div>
-
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_chic" data-content="Gourmandises sucrées">
-
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de desserts-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_chic">Pétales de violettes glacés et purée de noisettes</li>
-                    <li class="li-menu li-menu_chic">Fondant au chocolat revisité</li>
-                    <li class="li-menu li-menu_chic">Millefeuille croustillant</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_chic"></li>
-                    <li class="li-prix li-prix_chic"></li>
-                    <li class="li-prix li-prix_chic"></li>
-                </ul>
-            </div>
+        <main class="main-container_menu">
+            <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">Le chic à la française</h2>
+            <!--conteneur du menu-->
+            <article class="article-container_menubox article-container_menubox_chic">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_chic">Le chic à la française</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <h3 class="h3-menu h3-menu_chic_color1">Pour se mettre en appétit</h3>
+                    <!--Détail choix d'entrée-->
+                    <div class="div-container_menubox">
+                        <!--Détail choix d'entrée 1-->
+                        <p class="p-menu p-menu_chic_color1">Tartare de poulpe acidulé aux zests d'orange</p>
+                        <p class="p-prix p-prix_chic_color1">79€</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color1">Velouté de légumes d'antan</p>
+                        <p class="p-prix p-prix_chic_color1">57€</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color1">Soupe à l'oignon revisitée</p>
+                        <p class="p-prix p-prix_chic_color1">57€</p>
+                    </div>
+                </section>
+                <!--Section Plats-->
+                <section class="section-container_menubox">
+                    <!--Titre Plats-->
+                    <h3 class="h3-menu h3-menu_chic_color2">Plaisir des papilles</h3>
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                        <p class="p-prix p-prix_chic_color2">95€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Magret de canard et parmentier de pommes de terre</p>
+                        <p class="p-prix p-prix_chic_color2">88€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color2">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</p>
+                        <p class="p-prix p-prix_chic_color2">175€</p>
+                    </div>
+                </section>
+                <!--section desserts-->
+                <section>
+                    <!--Titre Desserts-->
+                    <h3 class="h3-menu h3-menu_chic_color3">Gourmandises sucrées</h3>
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Pétales de violettes glacés et purée de noisettes</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Fondant au chocolat revisité</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_chic_color3">Millefeuille croustillant</p>
+                        <p class="p-prix p-prix_chic_color3"></p>
+                    </div>
+                </section>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
-            <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
-            <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
+            <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>
+            <a href="mailto:ohmyfood@mail.com" class="footer-link">Contactez-nous</a>
         </footer>
     </body>
 </html>

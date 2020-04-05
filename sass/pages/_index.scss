@@ -1,10 +1,24 @@
-.suspension {
-    content:'';
+/*****************************************************/
+/***    Ecriture des Visuels page d'accueil        ***/
+/*****************************************************/
+/*Particularités de l'écriture du mot menu*/
+.h3-menu_note {
+    color: $color-menu_note;
+    text-transform: uppercase;
+    font-family: $ff-content-M1;
 }
 
-.suspension-1, .suspension-2, .suspension-3 {
-    width: 5px;
-    height:5px;
-    color: $color-secondary;
-    border-radius: 50%;
+.h3-menu_chic {
+    font-family: $ff-content-M2;
+    color: $color-menu_chic_color1;
+}
+
+.h3-menu_delice {
+    font-family: $ff-content-M3;
+    color: $color-menu_delice_color1;
+}
+
+.h3-menu_palette {
+    font-family: $ff-content-M4;
+    color: $gradient1_palette;
 }

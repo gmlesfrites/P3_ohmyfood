@@ -1,30 +1,11 @@
-/*contenu global*/
+/*****************************************************/
+/***                 Contenu global                ***/
+/*****************************************************/
+/*Pour éviter aux contenus de sortir du contenant*/
+* {
+   box-sizing: border-box;
+}
+
 html {
-    width:100%;
-    margin: 0;
-    padding: 0;
-    /*$fav-color: $color-secondary;*/
-}
-
-/**************contenu body****************/
-.body {
-    width: 900px;
-    border: solid 1px black;
-}
-
-/*Body personnalisé pour les menus*/
-.body-menu-note {
-    background-color: $menu-note-background;
-}
-
-.body-menu-chic {
-    background-color: $menu-chic-background;
-}
-
-.body-menu-delice {
-    background-color: $menu-delice-background;
-}
-
-.body-menu-palette {
-    background-color: $menu-palette-background;
+   font-size: $base-font-size;
 }

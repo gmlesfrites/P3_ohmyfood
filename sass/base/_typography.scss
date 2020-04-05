@@ -1,12 +1,14 @@
-
-/*Typo pour tout le corps des pages*/
-body {
-    font-family: 'Montserrat', sans-serif;
+/*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
+* {
     font-size: $base-font-size;
-    line-height: $line-height;
+    word-wrap: break-word;
 }
 
-/*Typo pour tous les titres du site*/
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
 h1 {
     font-size: $h1-font-size;
 }
@@ -19,10 +21,19 @@ h3 {
     font-size: $h3-font-size;
 }
 
+/*hr utilisés à la place des h3*/
+.h3-hidden {
+    display: none;
+}
+
 h4 {
     font-size: $h4-font-size;
 }
 
-
-
-
+/*****************************************************/
+/***             Suppression de Margin             ***/
+/*****************************************************/
+body, h1, footer, header, .h3-hidden {
+    margin: 0;
+    padding:0;
+}

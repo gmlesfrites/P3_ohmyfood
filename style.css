@@ -1,243 +1,432 @@
 @charset "UTF-8";
-/*couleurs principales*/
-/*Variables sur le logo*/
-/*Couleurs des header-footer*/
-/*Couleur des backgrounds*/
-/*Taille de textes*/
-/******************Couleurs des textes**********************/
+/*****************************************************/
+/***             Couleurs principales              ***/
+/*****************************************************/
+/*****************************************************/
+/***       Couleurs des header et footer           ***/
+/*****************************************************/
+/*****************************************************/
+/***            Dégradés de couleurs               ***/
+/*****************************************************/
+/*Variable générique pour la mixin linear-gradient*/
+/*Notes du menu 1*/
+/*Menu chic*/
+/*Menu délice*/
+/*Menu palette*/
+/*****************************************************/
+/***            Couleurs des textes             ***/
+/*****************************************************/
 /*La note enchantée*/
 /*Le chic à la française*/
-/*Dégradés linéaires texte du menu chic à la française*/
 /*Le délice des papilles*/
-/*dégradés dans les hr du menu palette*/
-/*contenu global*/
+/*****************************************************/
+/***               Couleurs de fond                ***/
+/*****************************************************/
+/*****************************************************/
+/***                    LOGO                       ***/
+/*****************************************************/
+/*****************************************************/
+/***            Polices de caractères              ***/
+/*****************************************************/
+/*Titre carte de chaque restaurant*/
+/*Menu 1*/
+/*Menu 2*/
+/*Menu 3*/
+/*Menu 4*/
+/*Mentions légales*/
+/*****************************************************/
+/***            Taille de caractères               ***/
+/*****************************************************/
+/*****************************************************/
+/***                    Marges                     ***/
+/*****************************************************/
+/*****************************************************/
+/***           Ombres avec box-shadow              ***/
+/*****************************************************/
+/*****************************************************/
+/***                 Contenu global                ***/
+/*****************************************************/
+/*Pour éviter aux contenus de sortir du contenant*/
+* {
+  box-sizing: border-box; }
+
 html {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  /*$fav-color: $color-secondary;*/ }
+  font-size: 16px; }
 
-/**************contenu body****************/
-.body {
-  width: 900px;
-  border: solid 1px black; }
-
-/*Body personnalisé pour les menus*/
-.body-menu-note {
-  background-color: #fcdfdb; }
-
-.body-menu-chic {
-  background-color: #fff5fe; }
-
-.body-menu-delice {
-  background-color: #edefef; }
-
-.body-menu-palette {
-  background-color: #fdfffd; }
-
-/*Typo pour tout le corps des pages*/
-body {
-  font-family: 'Montserrat', sans-serif;
+/*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
+* {
   font-size: 16px;
-  line-height: 1.5rem; }
+  word-wrap: break-word; }
 
-/*Typo pour tous les titres du site*/
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
 h1 {
-  font-size: 3rem; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 1.75rem; }
+  font-size: 1.5em; }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.25em; }
+
+/*hr utilisés à la place des h3*/
+.h3-hidden {
+  display: none; }
 
 h4 {
-  font-size: 1.25rem; }
+  font-size: 1.12em; }
 
-/*Bouton prochainement sur la page d'accueil*/
-.button-prochainement {
-  width: 150px;
-  height: 40px;
-  background: #579c87;
-  border-radius: 10px; }
+/*****************************************************/
+/***             Suppression de Margin             ***/
+/*****************************************************/
+body, h1, footer, header, .h3-hidden {
+  margin: 0;
+  padding: 0; }
 
+/*****************************************************/
+/***     Bouton prochainement - page d'accueil     ***/
+/*****************************************************/
+.button_soon {
+  text-align: center;
+  font-size: 1em; }
+
+/*****************************************************/
+/***                   LOGO                        ***/
+/*****************************************************/
 .logo {
   color: #fcca46;
-  font-family: "Montserrat", "sans-serif";
-  letter-spacing: -1px; }
+  font-family: "Montserrat", cursive;
+  /*voir le souci avec les $fz*/ }
 
 .h1-logo {
-  font-size: 3rem;
-  text-align: center; }
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: -1px; }
 
-/*Liens sur les images de la page d'accueil vers chaque page de menu*/
-.lien-page:hover {
-  transform: scale(1.3, 0);
-  opacity: 0.8; }
+/*****************************************************/
+/***         Liens vers les pages de menus         ***/
+/*****************************************************/
+/*   .page-menu-link{} */
+/*ANIMATION A VENIR AU SURVOL*/
+/*****************************************************/
+/***             Liens dans le footer              ***/
+/*****************************************************/
+/*****************************************************/
+/***       Liens sans effet de souligné            ***/
+/*****************************************************/
+.link-page_menu, .footer-link, .link-home {
+  text-decoration: none; }
 
-/*Liens contenus dans le footer*/
-.footer-link {
-  color: #fcca46;
-  text-decoration: none;
-  width: 200px; }
+/*****************************************************/
+/***              Icônes Font Awesome              ***/
+/*****************************************************/
+/*Points de suspension*/
+.fa-circle {
+  font-size: 0.25em;
+  padding: 0.2em; }
 
-/*Ajout d'animations sur les images des menus en page d'accueil*/
-.img-note_titre {
-  width: 50px;
-  height: 50px; }
+/*notes de musique*/
+.fa-music {
+  background: linear-gradient(120deg, #f05561, #f6916a);
+  background: webkit-linear-gradient(120deg, #f05561, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
-.img-note_rappel {
-  width: 20px;
-  height: 20px; }
+/*Note en grand format*/
+.i_top {
+  font-size: 2.3em;
+  line-height: 1.4; }
 
+/*****************************************************/
+/***                   Header                      ***/
+/*****************************************************/
 .header {
   background: #579c87;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 165px; }
+  align-content: center;
+  height: 112px;
+  height: 7rem; }
 
-.main-menu {
-  margin: 100px 60px; }
+/*****************************************************/
+/***         Conteneurs en page d'accueil          ***/
+/*****************************************************/
+/*Mise en page partie main entre header-footer */
+.main-container_index {
+  margin: 2em 0; }
 
-.main-container {
-  margin: 100px 50px;
+/*Mise en paga des visuels des cartes de restaurant*/
+.container_indexbox {
+  width: 16em;
+  height: 22em;
+  margin-bottom: 2em; }
+
+/*Conteneur du bouton prochainement*/
+.button_soon {
+  width: 16em;
+  height: 3.5em;
+  background: #579c87;
+  color: #fcca46;
+  border: none;
+  border-radius: 0.6em;
+  margin: 2em; }
+
+/*****************************************************/
+/***        Conteneur des pages de menus           ***/
+/*****************************************************/
+/*Texte centrés dans les conteneurs */
+.article-container_menubox, .section-container_menubox {
+  text-align: center; }
+
+/*Mise en page entre header-footer*/
+.main-container_menu {
+  margin: 2em 0; }
+
+/*Mise en page du visuel de chaque carte*/
+.article-container_menubox {
+  width: 16em;
+  height: auto;
+  margin-bottom: 2em; }
+
+/*Délimitations de section <hr>*/
+.hr-legal, .hr-menu {
+  margin: 2em 0.8em; }
+
+/*****************************************************/
+/***     Conteneur en page mentions légales        ***/
+/*****************************************************/
+/*Blanc tournant*/
+.article-container_legal {
+  margin: 2em;
+  margin-bottom: 2rem; }
+
+/*****************************************************/
+/***    Propriétés communes à toutes les pages     ***/
+/*****************************************************/
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: space-between; }
+  justify-content: center;
+  align-items: center; }
 
-.main-container__box {
-  width: 370px;
-  height: 520px;
-  margin: 60px; }
+/*Ombre sous les menus et les boutons*/
+.article-container_menubox, .container_indexbox {
+  box-shadow: -3px -3px 3px #efefef; }
 
-.section-menu {
-  width: 100%;
-  display: flex; }
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
+.article-container_menubox_note {
+  background-color: #fcdfdb; }
 
-.ul-menu {
-  width: 85%; }
+.article-container_menubox_chic {
+  background-color: #fff5fe; }
 
-.ul-prix {
-  width: 15%; }
+.article-container_menubox_delice {
+  background-color: #f9f9f9; }
 
-.main-mentions-legales {
-  margin: 20px; }
+.article-container_menubox_palette {
+  background-color: #fdfffd; }
 
-.section-mentions-legales {
-  padding: 30px; }
-
+/*****************************************************/
+/***                   Footer                      ***/
+/*****************************************************/
 .footer {
   background: #579c87;
   position: fixed;
-  bottom: 0px;
   width: 100%;
-  height: 50px;
+  bottom: 0;
+  height: 32px;
+  height: 2rem;
   display: flex;
-  justify-content: flex-end;
-  align-content: space-around; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
-.suspension {
-  content: ''; }
+/*****************************************************/
+/***    Ecriture des Visuels page d'accueil        ***/
+/*****************************************************/
+/*Particularités de l'écriture du mot menu*/
+.h3-menu_note {
+  color: #3d1319;
+  text-transform: uppercase;
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
-.suspension-1, .suspension-2, .suspension-3 {
-  width: 5px;
-  height: 5px;
-  color: #fcca46;
-  border-radius: 50%; }
+.h3-menu_chic {
+  font-family: "Roboto Slab", "Times", serif;
+  color: #c67412; }
 
-.h2-mentions-legales {
-  font-size: 1.5em; }
+.h3-menu_delice {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive;
+  color: #0228dd; }
 
-.h3-mentions-legales {
-  font-size: 1.25em; }
+.h3-menu_palette {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive;
+  color: #41963c; }
 
-.h4-mentions-legales {
-  font-size: 1em; }
-
-.h2-mentions-legales, .h3-mentions-legales, .h4-mentions-legales {
+/*****************************************************/
+/***     Particularités Mentions légales           ***/
+/*****************************************************/
+/*Titres centrés*/
+.h2-legal, .h3-legal, .h4-legal {
+  font-family: "Montserrat", "Helevetica", sans-serif;
   text-align: center; }
 
-.p-mentions-legales, .li-mentions-legales {
-  font-size: 0.7em; }
+/*Taile des titres*/
+.h3-legal, .h4-legal, .a-legal {
+  font-size: 90%; }
 
-.li-mentions-legales {
-  list-style-type: square; }
+/*Taille des contenus*/
+.p-legal, .li-legal {
+  font-family: "Roboto Slab", "Times", serif;
+  font-size: 80%;
+  padding: 0.5rem; }
 
-.hr-mentions-legales {
-  border: 0.01em dashed  #fcca46;
-  margin: 20px; }
+/*Blanc tournant supplémentaire pour les puces des listes*/
+.li-legal {
+  padding-left: 0.7rem; }
 
+/*Style des puces des listes*/
+.li-legal {
+  list-style: none; }
+
+/*Séparations des parties*/
+.hr-legal {
+  height: 0.01em;
+  border-style: dashed;
+  border-width: 0.02rem;
+  color: #fcca46; }
+
+.a-legal {
+  color: #579c87; }
+
+/*****************************************************/
+/***   Généralités applicable à chaque menu        ***/
+/*****************************************************/
+/*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  font-family: 'Montserrat', sans-serif; }
+  margin: 2rem 0; }
 
+/*Titre dans chaque carte*/
 .h2-menu {
-  font-size: 1.75rem; }
+  font-size: 1.5em; }
 
-.li-menu, .li-prix {
-  list-style-type: none; }
+/*Alignement des polices des titres*/
+.h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
+  text-align: center; }
 
-/*à traiter
-.ul-prix {}
-.hr-menu {}
-.ul-menu {}*/
-/*La note enchantée*/
+/*Séparations entre chaque type de plat
+.hr-menu {
+    margin:0;
+    width: 100%;
+    font-size: $hr-font-size;
+    position: relative;
+    outline: 0;
+    text-align: center;
+    height: auto;
+    opacity: 0.9;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+        }
+
+        &::after {
+            content: attr(data-content);
+            position: relative;
+            display: inline-block;
+            padding: 0.5em;
+        }
+}*/
+/*****************************************************/
+/***     Particularités La note enchantée          ***/
+/*****************************************************/
 /*Titre 2 et titre 3 à l'intérieur de la carte*/
-.h2-menu_note, .h3-rappel-menu_note {
-  font-family: 'Ma Shan Zheng', cursive; }
-
-/*Particularité taille h3*/
-.h3-rappel-menu_note {
-  font-size: 1.5rem; }
+.h2-menu_note, .h3-menu_note, .h4-menu_note {
+  font-family: "devonshire", "Zapf-Chancery", cursive; }
 
 /*Contenu des menus*/
-.li-prix_note, .li-menu_note {
-  font-family: 'Short Stack', cursive; }
+.p-menu_note, .p-prix_note, .hr-menu_note {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
-.li-prix_note {
+/*Prix en gras*/
+.p-prix_note {
   font-weight: 700; }
 
 /*Couleur de police*/
-.h2-menu_note, .h3-rappel-menu_note, .h3-rappel-menu_note, .hr-menu_note, .li-prix_note, .li-menu_note {
+.h2-menu_note, .hr-menu_note {
   color: #3d1319; }
 
-/*.hr-menu_note {}*/
-/*Le chic à la française*/
+/*****************************************************/
+/***     Particularités Le chic à la française     ***/
+/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
-  font-family: 'croissant-one', cursive;
-  /*background-color: linear-gradient(to right, $menu-chic-gradient1, $menu-chic-gradient2);*/ }
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
+  background: linear-gradient(120deg, #db8528, #8f5bfe);
+  background: -webkit-linear-gradient(120deg, #db8528, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.h3-menu_chic_color1 {
+  color: #c67412; }
+
+.h3-menu_chic_color2 {
+  color: #a56799; }
+
+.h3-menu_chic_color3 {
+  color: #6e4ccc; }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
-.li-prix_chic, .li-menu_chic {
-  font-family: 'TeX-Gyre-Schola', serif; }
+.p-prix_chic, .p-menu_chic, .hr-menu_chic {
+  font-family: "Roboto Slab", "Times", serif; }
 
+/*Reste à traiter*/
 /*.hr-menu_nomdemenu {}*/
 /* appétit #c67412; */
 /*papilles  #a56799 */
 /* gourmandises #6e4ccc */
-/*Le délice des papilles*/
+/*****************************************************/
+/***     Particularités Le délice des papilles     ***/
+/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
-  font-family: 'Dancing Script', cursive; }
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
+  background: linear-gradient(120deg, #0228dd, #229df9);
+  background: -webkit-linear-gradient(120deg, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
+.h2-menu_delice, .h3-menu_delice {
+  font-family: "Dancing Script", "Zapf-Chancery", cursive; }
 
-/*.hr-menu_note {}*/
-/*La palette du goût*/
+.p-prix_delice, .p-menu_delice, .hr-menu_delice {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
+
+/*Reste à traiter*/
+/*.hr-menu_note {}
+polices de caractère*/
+/*****************************************************/
+/***     Particularités La palette du goût         ***/
+/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
-  font-family: 'Short Stack', cursive; }
+  font-family: "Kaushan Script", "Zapf-Chancery", cursive;
+  background: -webkit-linear-gradient(120deg, #41963c, #b2f478);
+  background: linear-gradient(120deg, #41963c, #b2f478);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 /*Texte des entrées, plats et desserts*/
-.li-prix_delice, .li-menu_delice {
-  font-family: 'Short Stack', cursive; }
-
-/*.hr-menu_note {}*/
+.h3-menu_palette, .p-prix_palette, .p-menu_palette {
+  font-family: "segoepr", "Open Sans", "Zapf-Chancery", cursive; }
 
 /*# sourceMappingURL=style.css.map */

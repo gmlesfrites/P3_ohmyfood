@@ -1,18 +1,46 @@
 
+/*****************************************************/
+/***   Généralités applicable à chaque menu        ***/
+/*****************************************************/
+/*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-    font-family: 'Montserrat', sans-serif;
+    margin: 2rem 0;
 }
 
+/*Titre dans chaque carte*/
 .h2-menu {
     font-size: $h2-font-size;
 }
 
-.li-menu, .li-prix {
-    list-style-type: none;
+/*Alignement des polices des titres*/
+.h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
+    text-align: center;
 }
 
+/*Séparations entre chaque type de plat
+.hr-menu {
+    margin:0;
+    width: 100%;
+    font-size: $hr-font-size;
+    position: relative;
+    outline: 0;
+    text-align: center;
+    height: auto;
+    opacity: 0.9;
 
-/*à traiter
-.ul-prix {}
-.hr-menu {}
-.ul-menu {}*/
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+        }
+
+        &::after {
+            content: attr(data-content);
+            position: relative;
+            display: inline-block;
+            padding: 0.5em;
+        }
+}*/

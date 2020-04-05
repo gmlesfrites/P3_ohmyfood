@@ -1,12 +1,25 @@
-/*Le délice des papilles*/
-
+/*****************************************************/
+/***     Particularités Le délice des papilles     ***/
+/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
-    font-family:'Dancing Script', cursive;
+    font-family: $ff-title-M2;
+    background:linear-gradient($direction, $gradient1_delice, $gradient2_delice);
+    background:-webkit-linear-gradient($direction, $gradient1_delice, $gradient2_delice);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.li-prix_delice, .li-menu_delice {
-    font-family: 'Short Stack', cursive;
+.h2-menu_delice, .h3-menu_delice {
+    font-family: $ff-title-M3;
 }
 
-/*.hr-menu_note {}*/
+.p-prix_delice, .p-menu_delice, .hr-menu_delice {
+    font-family: $ff-content-M3;
+}
+
+
+
+/*Reste à traiter*/
+/*.hr-menu_note {}
+polices de caractère*/
