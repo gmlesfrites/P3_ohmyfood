@@ -4,8 +4,7 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
     font-family: $ff-title-M2;
-    background:linear-gradient($direction, $gradient1_delice, $gradient2_delice);
-    background:-webkit-linear-gradient($direction, $gradient1_delice, $gradient2_delice);
+    background: linear-gradient($direction, $gradient1_delice, $gradient2_delice);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
