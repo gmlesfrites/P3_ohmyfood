@@ -115,7 +115,8 @@ body, h1, footer, header, .h3-hidden {
 /***             Liens dans le footer              ***/
 /*****************************************************/
 .footer-link {
-  color: #fcca46; }
+  color: #fcca46;
+  margin: 0.3em; }
   .footer-link:hover {
     -webkit-animation: wiggle 200ms infinite;
     animation: wiggle 200ms infinite; }

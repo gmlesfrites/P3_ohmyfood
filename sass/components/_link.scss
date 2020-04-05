@@ -12,6 +12,7 @@
 /*****************************************************/
 .footer-link {
   color: $color-secondary;
+  margin: 0.3em;
     &:hover {
       -webkit-animation: wiggle 200ms infinite;
       animation: wiggle 200ms infinite;
