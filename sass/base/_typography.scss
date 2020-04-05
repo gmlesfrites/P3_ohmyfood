@@ -1,10 +1,20 @@
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
+/*Selection de tout pour propriété mot-coupé*/
 * {
-    font-size: $base-font-size;
     word-wrap: break-word;
 }
+
+/*Determination de  la taille de police html*/
+html {
+    font-size: $base-font-size;
+ }
+
+ /*Determination de  la taille de police body*/
+ body {
+    font-size: 62.5%;
+ }
 
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/

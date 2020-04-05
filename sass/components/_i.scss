@@ -1,16 +1,12 @@
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
 /*****************************************************/
-/*Points de suspension*/
-.fa-circle {
-    font-size: $i-circle-size;
-    padding: 0.2em;
-}
-
 /*notes de musique*/
 .fa-music {
     background: linear-gradient($direction, $gradient1_note, $gradient2_note);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -18,4 +14,18 @@
 .i_top {
     font-size: 2.3em;
     line-height: 1.4;
+}
+/*Points de suspension*/
+.fa-circle {
+    font-size: $i-circle-size;
+    padding: 0.2em;
+}
+
+.dot1 {
+    animation: waiting infinite 0.7 linear 10s;
+}
+@keyframes waiting {
+    0% {transform: scale(0);}
+    50% {transform: translateY(2em);}
+    100% {transform: translate(0);}
 }
