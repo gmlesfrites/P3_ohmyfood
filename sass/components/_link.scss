@@ -15,20 +15,20 @@
   color: $color-secondary;
   margin: 0.3em;
     &:hover {
-      -webkit-animation: wiggle 200ms infinite;
-      animation: wiggle 200ms infinite;
+      -webkit-animation: wiggle 200ms 3;
+      animation: wiggle 200ms 3;
     }
 }
 
 @keyframes wiggle {
   0% {transform: rotate(0deg);}
-  12.5% {transform: rotate(-2deg);}
-  25% {transform: rotate(-4deg);}
-  37.5% {transform: rotate(-2deg);}
+  12.5% {transform: rotate(-1deg);}
+  25% {transform: rotate(-2deg);}
+  37.5% {transform: rotate(-1deg);}
   50% {transform: rotate(0deg);}
-  62.5% {transform: rotate(2deg);}
-  75% {transform: rotate(4deg);}
-  87.5% {transform: rotate(2deg);}
+  62.5% {transform: rotate(1deg);}
+  75% {transform: rotate(2deg);}
+  87.5% {transform: rotate(1deg);}
   100% {transform: rotate(0deg);}
 }
 

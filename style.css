@@ -121,26 +121,26 @@ body, h1, footer, header, .h3-hidden {
   color: #fcca46;
   margin: 0.3em; }
   .footer-link:hover {
-    -webkit-animation: wiggle 200ms infinite;
-    animation: wiggle 200ms infinite; }
+    -webkit-animation: wiggle 200ms 3;
+    animation: wiggle 200ms 3; }
 
 @keyframes wiggle {
   0% {
     transform: rotate(0deg); }
   12.5% {
-    transform: rotate(-2deg); }
+    transform: rotate(-1deg); }
   25% {
-    transform: rotate(-4deg); }
-  37.5% {
     transform: rotate(-2deg); }
+  37.5% {
+    transform: rotate(-1deg); }
   50% {
     transform: rotate(0deg); }
   62.5% {
-    transform: rotate(2deg); }
+    transform: rotate(1deg); }
   75% {
-    transform: rotate(4deg); }
-  87.5% {
     transform: rotate(2deg); }
+  87.5% {
+    transform: rotate(1deg); }
   100% {
     transform: rotate(0deg); } }
 /*****************************************************/
@@ -343,41 +343,14 @@ body, h1, footer, header, .h3-hidden {
 .h2-titre-menu {
   margin: 2rem 0; }
 
-/*Titre dans chaque carte*/
-.h2-menu {
-  font-size: 1.5em; }
-
 /*Alignement des polices des titres*/
 .h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
   text-align: center; }
 
-/*Séparations entre chaque type de plat
-.hr-menu {
-    margin:0;
-    width: 100%;
-    font-size: $hr-font-size;
-    position: relative;
-    outline: 0;
-    text-align: center;
-    height: auto;
-    opacity: 0.9;
+/*Animation sur les titres entrée/plat/desser au :hover*/
+.h3-menu_hover {
+  text-decoration: none; }
 
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0%;
-            top: 50%;
-            width: 100%;
-            height: 1px;
-        }
-
-        &::after {
-            content: attr(data-content);
-            position: relative;
-            display: inline-block;
-            padding: 0.5em;
-        }
-}*/
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
