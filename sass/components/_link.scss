@@ -1,6 +1,18 @@
 /*****************************************************/
-/***             Liens dans le footer              ***/
+/***          Liens de la page d'accueil           ***/
 /*****************************************************/
+/*Mise en paga des visuels des cartes de restaurant !!lien a=ref de chaque visuel*/
+.link-page_menu {
+  width:80%;
+  min-width: 16rem;
+  min-width:250px;
+  height: calc(width*7/5);
+  min-height:22rem;
+  min-height: 352px;
+  margin-bottom: 2em;
+}
+
+/*Footer*/
 .footer-link {
   color: $color-secondary;
   margin: 0.3em;
@@ -13,6 +25,7 @@
     }
 }
 
+/*Règles d'animation des liens du footer*/
 @keyframes wiggle {
   0% {-webkit-transform: -webkit-rotate(0deg);}
   0% {-moz-transform: -moz-rotate(0deg);}
@@ -36,9 +49,7 @@
   100% {transform: rotate(0deg);}
 }
 
-/*****************************************************/
-/***       Liens sans effet de souligné            ***/
-/*****************************************************/
+/*Liens non souligné*/
 .link-page_menu, .footer-link, .link-home {
   text-decoration: none;
 }

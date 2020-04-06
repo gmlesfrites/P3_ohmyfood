@@ -6,13 +6,6 @@
     margin:2em 0;
 }
 
-/*Mise en paga des visuels des cartes de restaurant !!lien a=ref de chaque visuel*/
-.link-page_menu {
-    width: 80%;
-    height:22em;
-    margin-bottom: 2em;
-}
-
 .section-index_hover:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -28,8 +21,10 @@
 
 /*Conteneur du bouton prochainement*/
 .button_soon {
-    width: 16em;
-    height: 3.5em;
+    width: 16rem;
+    width:250px;
+    height: 3.5rem;
+    height: 56px;
     background: $color-primary;
     color: $color-secondary;
     border:none;
@@ -63,8 +58,7 @@
 }
 
 /*Mise en page du visuel de chaque carte et en mentions légales*/
-.article-container_menubox, .article-container_legal {
-    width: 80%;
+.article-container_menubox, .article-container_legal{
     margin-bottom: 2em;
 }
 
