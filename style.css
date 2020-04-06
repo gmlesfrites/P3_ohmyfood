@@ -104,7 +104,7 @@ body, h1, footer, header, .h3-hidden {
   height: calc(width*7/5);
   min-height: 22rem;
   min-height: 352px;
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
 
 /*Footer*/
 .footer-link {
@@ -212,13 +212,13 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-  margin: 2em 0; }
+  margin: 3em 0; }
 
 .section-index_hover:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: ease-in-out;
+  -webkit-transition: ease-in-out no-reo;
   -moz-transition: ease-in-out;
   transition: ease-in-out;
   -webkit-transition-duration: 1s;
@@ -236,7 +236,8 @@ body, h1, footer, header, .h3-hidden {
   color: #fcca46;
   border: none;
   border-radius: 0.6em;
-  margin: 2em; }
+  margin: 3em;
+  margin-bottom: 3em; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -247,7 +248,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-  margin: 2em 0;
+  margin: 3em 0;
   padding: 1.5em; }
 
 /*****************************************************/
@@ -262,7 +263,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page du visuel de chaque carte et en mentions légales*/
 .article-container_menubox, .article-container_legal {
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
 
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .container_indexbox {
@@ -375,6 +376,15 @@ body, h1, footer, header, .h3-hidden {
   font-weight: 700;
   padding-bottom: 1em; }
 
+.h3-menu_hover {
+  text-decoration: none;
+  text-transform: initial;
+  color: black;
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s; }
+  .h3-menu_hover:hover {
+    background-size: 100% 100%; }
+
 /*****************************************************/
 /***     Particularités La note enchantée          ***/
 /*****************************************************/
@@ -387,8 +397,11 @@ body, h1, footer, header, .h3-hidden {
   font-family: "segoepr", "Open Sans", "Helvetica", sans-serif; }
 
 /*Couleur de police*/
-.h2-menu_note, .h3-menu_note {
+.h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
   color: #3d1319; }
+
+.h3-menu_hover_note {
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/
@@ -402,14 +415,24 @@ body, h1, footer, header, .h3-hidden {
   -webkit-text-fill-color: transparent; }
 
 /*Couleurs différentes entrées/plats/desserts*/
-.section_chic_color1 {
+.section_chic_color1, .h3-menu_hover_chic1 {
   color: #db8528; }
 
-.section_chic_color2 {
+.section_chic_color2, .h3-menu_hover_chic2 {
   color: #a56799; }
 
-.section_chic_color3 {
+.section_chic_color3, .h3-menu_hover_chic3 {
   color: #8f5bfe; }
+
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_chic1 {
+  background: linear-gradient(to top, #db8528 0%, #db8528 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_chic2 {
+  background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_chic3 {
+  background: linear-gradient(to top, #8f5bfe 0%, #8f5bfe 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic {

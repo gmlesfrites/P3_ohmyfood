@@ -20,3 +20,14 @@
     font-weight: 700;
     padding-bottom: 1em;
 }
+
+.h3-menu_hover {
+    text-decoration: none;
+    text-transform: initial;
+    color: $gradientblack;
+    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    &:hover {
+        background-size: 100% 100%;
+    }
+}

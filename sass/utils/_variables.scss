@@ -7,6 +7,7 @@ $color-secondary: #fcca46;
 /*Couleurs du header et du footer*/
 $header-color: $color-primary;
 $footer-color:  $color-primary;
+$gradientblack : black;
 
 /*La note enchantée*/
 $gradient3_note: #3d1319;
@@ -27,7 +28,6 @@ $gradient3_delice: #229df9;
 /*Menu palette*/
 $gradient1_palette: #41963c;
 $gradient2_palette: #b2f478;
-
 /*Variable générique pour la mixin linear-gradient*/
 $direction : 120deg;
 
