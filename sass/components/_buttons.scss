@@ -3,6 +3,11 @@
 /*****************************************************/
 .button_soon {
     text-align: center;
-    font-size: $p-font-size;
+    width: 16em;
+    height: 3.5em;
+    font-size: $h3-font-size;
+    background: $color-primary;
+    color: $color-secondary;
+    border:none;
+    border-radius: 0.6em;
 }
-

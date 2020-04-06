@@ -6,6 +6,13 @@
     margin:3em 0;
 }
 
+/*Dimension des visuels */
+.container_indexbox {
+    width:16em;
+    height: 22em;
+}
+
+/*Survol des visuels*/
 .section-index_hover:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -19,18 +26,9 @@
     opacity: 0.7;
 }
 
-/*Conteneur du bouton prochainement*/
-.button_soon {
-    width: 16rem;
-    width:250px;
-    height: 3.5rem;
-    height: 56px;
-    background: $color-primary;
-    color: $color-secondary;
-    border:none;
-    border-radius: 0.6em;
+/*Bouton prochainement*/
+.container-button_soon {
     margin: 3em;
-    margin-bottom: 3em;
 }
 
 /*****************************************************/

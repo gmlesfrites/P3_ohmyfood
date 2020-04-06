@@ -79,7 +79,13 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 .button_soon {
   text-align: center;
-  font-size: 1em; }
+  width: 16em;
+  height: 3.5em;
+  font-size: 1.3em;
+  background: #579c87;
+  color: #fcca46;
+  border: none;
+  border-radius: 0.6em; }
 
 /*****************************************************/
 /***                   LOGO                        ***/
@@ -182,18 +188,26 @@ body, h1, footer, header, .h3-hidden {
 /*Points de suspension*/
 .fa-circle {
   font-size: 0.25em;
-  padding: 0.2em; }
+  color: #fcca46;
+  animation: dotanim 2s infinite;
+  opacity: 0.9; }
 
 .dot1 {
-  animation: waiting infinite 0.7 linear 10s; }
+  animation-delay: .2s; }
 
-@keyframes waiting {
+.dot2 {
+  animation-delay: .4s; }
+
+.dot3 {
+  animation-delay: 0.6s; }
+
+@keyframes dotanim {
   0% {
-    transform: scale(0); }
+    transform: scale(1, 1); }
   50% {
-    transform: translateY(2em); }
+    transform: scale(0.3, 0.3); }
   100% {
-    transform: translate(0); } }
+    transform: scale(1, 1); } }
 /*****************************************************/
 /***                   Header                      ***/
 /*****************************************************/
@@ -214,6 +228,12 @@ body, h1, footer, header, .h3-hidden {
 .main-container_index {
   margin: 3em 0; }
 
+/*Dimension des visuels */
+.container_indexbox {
+  width: 16em;
+  height: 22em; }
+
+/*Survol des visuels*/
 .section-index_hover:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -226,18 +246,9 @@ body, h1, footer, header, .h3-hidden {
   transition-duration: 1s;
   opacity: 0.7; }
 
-/*Conteneur du bouton prochainement*/
-.button_soon {
-  width: 16rem;
-  width: 250px;
-  height: 3.5rem;
-  height: 56px;
-  background: #579c87;
-  color: #fcca46;
-  border: none;
-  border-radius: 0.6em;
-  margin: 3em;
-  margin-bottom: 3em; }
+/*Bouton prochainement*/
+.container-button_soon {
+  margin: 3em; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/

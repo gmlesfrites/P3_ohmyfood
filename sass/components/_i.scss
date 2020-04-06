@@ -18,14 +18,22 @@
 /*Points de suspension*/
 .fa-circle {
     font-size: $i-circle-size;
-    padding: 0.2em;
+    color: $color-secondary;
+    animation: dotanim 2s infinite;
+    opacity: 0.9;
+}
+.dot1 {
+    animation-delay: .2s;
+}
+.dot2 {
+    animation-delay:.4s;
+}
+.dot3 {
+    animation-delay:.6s
 }
 
-.dot1 {
-    animation: waiting infinite 0.7 linear 10s;
-}
-@keyframes waiting {
-    0% {transform: scale(0);}
-    50% {transform: translateY(2em);}
-    100% {transform: translate(0);}
+@keyframes dotanim {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(0.3,0.3);}
+    100% {transform: scale(1,1);}
 }
