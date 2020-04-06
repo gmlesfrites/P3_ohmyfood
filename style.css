@@ -103,7 +103,6 @@ body, h1, footer, header, .h3-hidden {
   width: 80%;
   min-width: 16rem;
   min-width: 250px;
-  height: calc(width*7/5);
   min-height: 22rem;
   min-height: 352px;
   margin-bottom: 3em; }
@@ -172,8 +171,6 @@ body, h1, footer, header, .h3-hidden {
 .fa-music {
   background: linear-gradient(120deg, #f05561, #f6916a);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /*Note en grand format*/
@@ -416,7 +413,6 @@ body, h1, footer, header, .h3-hidden {
   font-family: "Croissant One", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #db8528, #8f5bfe);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /*Couleurs différentes entrées/plats/desserts*/
@@ -451,7 +447,6 @@ body, h1, footer, header, .h3-hidden {
   font-family: "Croissant One", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #0228dd, #229df9);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .h2-menu_delice, .h3-menu_delice {
@@ -468,7 +463,6 @@ body, h1, footer, header, .h3-hidden {
   font-family: "Kaushan Script", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #41963c, #b2f478);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 /*Texte des entrées, plats et desserts*/
