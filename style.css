@@ -226,19 +226,19 @@ body, h1, footer, header, .h3-hidden {
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-  margin: 3em 0; }
+  margin: 2em 0; }
 
 /*Dimension des visuels */
 .container_indexbox {
-  width: 16em;
-  height: 22em; }
+  width: 33vw;
+  height: 45vh; }
 
 /*Survol des visuels*/
 .section-index_hover:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-transition: ease-in-out no-reo;
+  -webkit-transition: ease-in-out;
   -moz-transition: ease-in-out;
   transition: ease-in-out;
   -webkit-transition-duration: 1s;
@@ -248,7 +248,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Bouton prochainement*/
 .container-button_soon {
-  margin: 3em; }
+  margin: 2em; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -259,7 +259,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-  margin: 3em 0;
+  margin: 2em 0;
   padding: 1.5em; }
 
 /*****************************************************/
@@ -274,7 +274,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page du visuel de chaque carte et en mentions légales*/
 .article-container_menubox, .article-container_legal {
-  margin-bottom: 3em; }
+  margin-bottom: 2em; }
 
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .container_indexbox {
