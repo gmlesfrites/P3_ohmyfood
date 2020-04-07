@@ -31,7 +31,9 @@
 /*****************************************************/
 /*Pour éviter aux contenus de sortir du contenant*/
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
@@ -51,62 +53,47 @@ html {
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/
 /*****************************************************/
-h1 {
-  font-size: 2em; }
+h1, .h1_logo {
+  font-size: 3.125em;
+  font-family: "Montserrat", cursive;
+  text-align: center;
+  letter-spacing: -1px; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 2.375em; }
 
 h3 {
-  font-size: 1.3em; }
+  font-size: 1.75em; }
 
 h4 {
-  font-size: 1.1em; }
+  font-size: 1.25em; }
 
-/*****************************************************/
-/***             Suppression de Margin             ***/
-/*****************************************************/
-body, h1, footer, header, .h3-hidden {
-  margin: 0;
-  padding: 0; }
+h2, h3, h4 {
+  margin: 1em;
+  padding: 1em; }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
 .button_soon {
   text-align: center;
-  width: 16em;
-  height: 3.5em;
-  font-size: 1.3em;
+  width: 256px;
+  height: 50px;
+  font-size: 1.75em;
   background: #579c87;
   color: #fcca46;
   border: none;
-  border-radius: 0.6em; }
+  border-radius: 0.3em; }
 
 /*****************************************************/
 /***                   LOGO                        ***/
 /*****************************************************/
 .logo {
-  color: #fcca46;
-  font-family: "Montserrat", cursive; }
-
-.h1-logo {
-  font-size: 2em;
-  text-align: center;
-  letter-spacing: -1px; }
+  color: #fcca46; }
 
 /*****************************************************/
 /***          Liens de la page d'accueil           ***/
 /*****************************************************/
-/*Mise en paga des visuels des cartes de restaurant !!lien a=ref de chaque visuel*/
-.link-page_menu {
-  width: 80%;
-  min-width: 16rem;
-  min-width: 250px;
-  min-height: 22rem;
-  min-height: 352px;
-  margin-bottom: 3em; }
-
 /*Footer*/
 .footer-link {
   color: #fcca46;
@@ -165,6 +152,9 @@ body, h1, footer, header, .h3-hidden {
   text-decoration: none; }
 
 /*****************************************************/
+/***                 Fioritures                    ***/
+/*****************************************************/
+/*****************************************************/
 /***              Icônes Font Awesome              ***/
 /*****************************************************/
 /*notes de musique*/
@@ -175,32 +165,30 @@ body, h1, footer, header, .h3-hidden {
 
 /*Note en grand format*/
 .i_top {
-  font-size: 2.3em;
-  line-height: 1.4; }
+  margin-top: 1em;
+  font-size: 2.3em; }
 
 /*Points de suspension*/
 .fa-circle {
-  font-size: 0.25em;
+  font-size: 0.5em;
   color: #fcca46;
-  animation: dotanim 2s infinite;
-  opacity: 0.9; }
+  animation: dotanim 2s infinite alternate-reverse;
+  opacity: 0.8; }
 
 .dot1 {
-  animation-delay: .2s; }
+  animation-delay: .1s; }
 
 .dot2 {
   animation-delay: .4s; }
 
 .dot3 {
-  animation-delay: 0.6s; }
+  animation-delay: .7s; }
 
 @keyframes dotanim {
   0% {
-    transform: scale(1, 1); }
-  50% {
-    transform: scale(0.3, 0.3); }
+    transform: scale(0.8); }
   100% {
-    transform: scale(1, 1); } }
+    transform: scale(0.1); } }
 /*****************************************************/
 /***                   Header                      ***/
 /*****************************************************/
@@ -218,20 +206,18 @@ body, h1, footer, header, .h3-hidden {
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
-.main-container_index {
-  margin: 2em 0; }
-
 /*Dimension des visuels */
-.container_indexbox {
+.container_indexbox, .section-index_hover {
   width: 33vw;
-  height: 45vh; }
+  height: 45vw;
+  margin-top: 3.5vw;
+  margin-bottom: 3.5vw; }
 
 /*Survol des visuels*/
 .section-index_hover {
-  width: 100%;
-  height: 45vh;
+  font-size: 95%;
   box-sizing: border-box;
-  transition: 0.5s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
+  transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
   .section-index_hover:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -239,7 +225,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Bouton prochainement*/
 .container-button_soon {
-  margin: 2em; }
+  margin: 5vmin; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -250,8 +236,8 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-  margin: 2em 0;
-  padding: 1.5em; }
+  margin: 5vmin 0;
+  padding: 4vmin 3.25vmin; }
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
@@ -265,7 +251,7 @@ body, h1, footer, header, .h3-hidden {
 
 /*Mise en page du visuel de chaque carte et en mentions légales*/
 .article-container_menubox, .article-container_legal {
-  margin-bottom: 2em; }
+  margin-bottom: 5vmin; }
 
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .container_indexbox {

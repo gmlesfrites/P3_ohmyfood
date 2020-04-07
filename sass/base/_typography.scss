@@ -8,7 +8,7 @@
 
 /*Determination de  la taille de police html*/
 html {
-    font-size: $base-font-size;
+    font-size: 16px;
  }
 
  /*Determination de  la taille de police body*/
@@ -19,26 +19,24 @@ html {
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/
 /*****************************************************/
-h1 {
+h1, .h1_logo {
     font-size: $h1-font-size;
+    font-family: "Montserrat", cursive;
+    text-align: center;
+    letter-spacing: -1px;
 }
 
 h2 {
     font-size: $h2-font-size;
 }
-
 h3 {
     font-size: $h3-font-size;
 }
-
 h4 {
     font-size: $h4-font-size;
 }
 
-/*****************************************************/
-/***             Suppression de Margin             ***/
-/*****************************************************/
-body, h1, footer, header, .h3-hidden {
-    margin: 0;
-    padding:0;
+h2, h3, h4 {
+    margin: 1em;
+    padding: 1em;
 }

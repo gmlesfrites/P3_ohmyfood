@@ -10,28 +10,28 @@
 
 /*Note en grand format*/
 .i_top {
+    margin-top: 1em;
     font-size: 2.3em;
-    line-height: 1.4;
 }
 /*Points de suspension*/
 .fa-circle {
-    font-size: $i-circle-size;
+    font-size: 0.5em;
     color: $color-secondary;
-    animation: dotanim 2s infinite;
-    opacity: 0.9;
+    animation: dotanim 2s infinite alternate-reverse;
+    opacity: 0.8;
+    ;
 }
 .dot1 {
-    animation-delay: .2s;
+    animation-delay: .1s;
 }
 .dot2 {
     animation-delay:.4s;
 }
 .dot3 {
-    animation-delay:.6s
+    animation-delay:.7s;
 }
 
 @keyframes dotanim {
-    0% {transform: scale(1,1);}
-    50% {transform: scale(0.3,0.3);}
-    100% {transform: scale(1,1);}
+    0% {transform: scale(0.8);}
+    100% {transform: scale(0.1);}
 }

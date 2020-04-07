@@ -3,21 +3,22 @@
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-    margin:2em 0;
+
 }
 
 /*Dimension des visuels */
-.container_indexbox {
+.container_indexbox, .section-index_hover {
     width:33vw;
-    height: 45vh;
+    height: 45vw;
+    margin-top: 3.5vw;
+    margin-bottom: 3.5vw;
 }
 
 /*Survol des visuels*/
 .section-index_hover {
-    width: 100%;
-    height: 45vh;
+    font-size: 95%;
     box-sizing: border-box;
-    transition: .5s cubic-bezier(.68,.25,.53,.82);
+    transition: .8s cubic-bezier(.68,.25,.53,.82);
     &:hover {
     	-webkit-transform: scale(1.2);
 	    transform: scale(1.2);
@@ -27,7 +28,7 @@
 
 /*Bouton prochainement*/
 .container-button_soon {
-    margin: 2em;
+    margin: 5vmin;
 }
 
 /*****************************************************/
@@ -40,8 +41,8 @@
 
 /*Mise en page entre header-footer*/
 .main-container_menu {
-    margin: 2em 0;
-    padding: 1.5em;
+    margin: 5vmin 0;
+    padding: 4vmin 3.25vmin;
 }
 
 /*****************************************************/
@@ -57,7 +58,7 @@
 
 /*Mise en page du visuel de chaque carte et en mentions légales*/
 .article-container_menubox, .article-container_legal{
-    margin-bottom: 2em;
+    margin-bottom: 5vmin;
 }
 
 /*Ombre sous les menus et les boutons*/
