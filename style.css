@@ -152,8 +152,14 @@ h2, h3, h4 {
   text-decoration: none; }
 
 /*****************************************************/
-/***                 Fioritures                    ***/
+/***                 Ornements                    ***/
 /*****************************************************/
+/*Visible à partir de la tablette*/
+.img_deco {
+  width: 30%;
+  margin: 20px; }
+
+/*mediaqueries sur la visibilité des ornements*/
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
 /*****************************************************/
@@ -225,7 +231,7 @@ h2, h3, h4 {
 
 /*Bouton prochainement*/
 .container-button_soon {
-  margin: 5vmin; }
+  margin: 0; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -238,6 +244,13 @@ h2, h3, h4 {
 .main-container_menu {
   margin: 5vmin 0;
   padding: 4vmin 3.25vmin; }
+
+/*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
+.container_deco {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center; }
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/

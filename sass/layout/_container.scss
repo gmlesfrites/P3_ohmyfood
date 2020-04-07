@@ -28,7 +28,7 @@
 
 /*Bouton prochainement*/
 .container-button_soon {
-    margin: 5vmin;
+    margin: 0;
 }
 
 /*****************************************************/
@@ -43,6 +43,14 @@
 .main-container_menu {
     margin: 5vmin 0;
     padding: 4vmin 3.25vmin;
+}
+
+/*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
+.container_deco {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
 }
 
 /*****************************************************/

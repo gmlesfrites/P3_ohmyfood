@@ -1,3 +1,13 @@
 /*****************************************************/
-/***                 Fioritures                    ***/
+/***                 Ornements                    ***/
 /*****************************************************/
+/*Visible à partir de la tablette*/
+.img_deco {
+    width: 30%;
+    margin: 20px;
+}
+
+/*mediaqueries sur la visibilité des ornements*/
+@media all and (min-width: 768px) {
+
+}
