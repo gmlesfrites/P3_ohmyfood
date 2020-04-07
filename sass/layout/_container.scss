@@ -3,32 +3,66 @@
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-
+    @media all and (min-width: 1024px) {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-between;
+    }
+    @media all and (min-width: 1440px) {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 /*Dimension des visuels */
 .container_indexbox, .section-index_hover {
-    width:33vw;
-    height: 45vw;
-    margin-top: 3.5vw;
-    margin-bottom: 3.5vw;
+    width:256px;
+    height: 358px;
+    margin: 20px;
+        @media all and (min-width:768px) {
+            width: 615px;
+            height:860px;
+            margin: 50px;
+        }
+        @media all and (min-width: 1024px) {
+            width: 360px;
+            height: 510px;
+            margin: 70px;
+        }
+        @media all and (min-width: 1440px) {
+            width: 530px;
+            height: 750px;
+            margin: 100px;
+        }
 }
 
 /*Survol des visuels*/
 .section-index_hover {
-    font-size: 95%;
-    box-sizing: border-box;
     transition: .8s cubic-bezier(.68,.25,.53,.82);
-    &:hover {
-    	-webkit-transform: scale(1.2);
-	    transform: scale(1.2);
+    &:active {
+        -webkit-transform: scale(1.1);
+	    transform: scale(1.1);
         opacity: 0.8;
+    }
+    @media all and (min-width: 1024px) {
+        &:hover {
+    	    -webkit-transform: scale(1.3);
+	        transform: scale(1.3);
+            opacity: 0.8;
+        }
     }
 }
 
 /*Bouton prochainement*/
 .container-button_soon {
-    margin: 0;
+    font-size: $p-font-size;
+    margin: 20px;
+    margin-bottom: 32px;
 }
 
 /*****************************************************/

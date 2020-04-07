@@ -10,4 +10,16 @@
     color: $color-secondary;
     border:none;
     border-radius: 0.3em;
+        @media all and (min-width: 768px) {
+            width: 330px;
+            height: 65px;
+        }
+        @media all and (min-width: 1024px) {
+            width:445px;
+            height: 85px;
+        }
+        @media all and (min-width:1440px) {
+            width: 650px;
+            height: 120px;
+        }
 }

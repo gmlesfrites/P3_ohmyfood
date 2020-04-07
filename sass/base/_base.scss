@@ -7,3 +7,9 @@
    margin: 0;
    padding:0;
 }
+
+@media (prefer-reduced-motion:reduce) {
+   .img_deco, .h3-menu_hover, .fa-circle, .section-index_hover, .footer-link {
+      animation: none;
+   }
+}

@@ -4,6 +4,7 @@
 /*Selection de tout pour propriété mot-coupé*/
 * {
     word-wrap: break-word;
+    margin: auto;
 }
 
 /*Determination de  la taille de police html*/
@@ -13,12 +14,16 @@ html {
 
  /*Determination de  la taille de police body*/
  .body {
-    font-size: 62.5%;
+    font-size: 62.5;
+        @media all and (min-width: 1024px) {
+        font-size: 75%;
+        }
  }
 
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/
 /*****************************************************/
+/*LOGO dans le header*/
 h1, .h1_logo {
     font-size: $h1-font-size;
     font-family: "Montserrat", cursive;
@@ -26,16 +31,21 @@ h1, .h1_logo {
     letter-spacing: -1px;
 }
 
+/*Titre de toutes les pages menu et mentions légales*/
 h2 {
     font-size: $h2-font-size;
 }
+/*Entrées, plats desserts dans les menus et grandes parties mentions légales*/
 h3 {
     font-size: $h3-font-size;
 }
+
+/*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
 h4 {
     font-size: $h4-font-size;
 }
 
-h2, h3, h4 {
+/*Marges généralisées après reset avec sélecteur universel*/
+h3, h4 {
     margin: 1em;
 }

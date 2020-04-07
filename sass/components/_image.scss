@@ -1,17 +1,13 @@
 /*****************************************************/
 /***                 Ornements                    ***/
 /*****************************************************/
-/*Visible à partir de la tablette*/
+/*Visible à partir de la tablette min-width:768px */
 .img_deco {
-    width: 90%;
-    opacity: 0.7;
+    width: 80%;
     visibility: hidden;
-    margin: 5px;
-}
-
-/*mediaqueries sur la visibilité des ornements*/
-@media all and (min-width: 768px) {
-.img_deco {
-    visibility: initial;
-}
+    opacity: 0.7;
+    margin: 1em;
+    @media all and (min-width: 768px) {
+        visibility: initial;
+    }
 }

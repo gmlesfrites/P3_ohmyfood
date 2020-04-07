@@ -35,12 +35,16 @@
   margin: 0;
   padding: 0; }
 
+@media (prefer-reduced-motion: reduce) {
+  .img_deco, .h3-menu_hover, .fa-circle, .section-index_hover, .footer-link {
+    animation: none; } }
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
 /*Selection de tout pour propriété mot-coupé*/
 * {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  margin: auto; }
 
 /*Determination de  la taille de police html*/
 html {
@@ -48,27 +52,35 @@ html {
 
 /*Determination de  la taille de police body*/
 .body {
-  font-size: 62.5%; }
+  font-size: 62.5; }
+  @media all and (min-width: 1024px) {
+    .body {
+      font-size: 75%; } }
 
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/
 /*****************************************************/
+/*LOGO dans le header*/
 h1, .h1_logo {
   font-size: 3.125em;
   font-family: "Montserrat", cursive;
   text-align: center;
   letter-spacing: -1px; }
 
+/*Titre de toutes les pages menu et mentions légales*/
 h2 {
   font-size: 2.375em; }
 
+/*Entrées, plats desserts dans les menus et grandes parties mentions légales*/
 h3 {
   font-size: 1.75em; }
 
+/*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
 h4 {
   font-size: 1.25em; }
 
-h2, h3, h4 {
+/*Marges généralisées après reset avec sélecteur universel*/
+h3, h4 {
   margin: 1em; }
 
 /*****************************************************/
@@ -83,26 +95,47 @@ h2, h3, h4 {
   color: #fcca46;
   border: none;
   border-radius: 0.3em; }
+  @media all and (min-width: 768px) {
+    .button_soon {
+      width: 330px;
+      height: 65px; } }
+  @media all and (min-width: 1024px) {
+    .button_soon {
+      width: 445px;
+      height: 85px; } }
+  @media all and (min-width: 1440px) {
+    .button_soon {
+      width: 650px;
+      height: 120px; } }
 
-/*****************************************************/
-/***                   LOGO                        ***/
-/*****************************************************/
-.logo {
-  color: #fcca46; }
+/*Liens non soulignés*/
+.link-page_menu, .footer-link, .link-home {
+  text-decoration: none; }
 
-/*****************************************************/
-/***          Liens de la page d'accueil           ***/
-/*****************************************************/
-/*Footer*/
+.link_contact:hover, .link_legal:hover {
+  -webkit-animation: wiggle 200ms 3;
+  -moz-animation: wiggle 200ms 3;
+  -ms-animation: wiggle 200ms 3;
+  animation: wiggle 200ms 3;
+  opacity: 0.7; }
+  @media all and (min-width: 1024px) {
+    .link_contact:hover, .link_legal:hover {
+      animation-play-state: paused;
+      animation-duration: 0;
+      animation: none; } }
+
+/*Animation sur les liens*/
 .footer-link {
   color: #fcca46;
-  margin: 0.3em; }
-  .footer-link:hover {
-    -webkit-animation: wiggle 200ms 3;
-    -moz-animation: wiggle 200ms 3;
-    -ms-animation: wiggle 200ms 3;
-    animation: wiggle 200ms 3;
-    opacity: 0.7; }
+  margin: 0.3em;
+  opacity: 0.7; }
+  @media all and (min-width: 1024px) {
+    .footer-link {
+      -webkit-animation: wiggle 200ms 3;
+      -moz-animation: wiggle 200ms 3;
+      -ms-animation: wiggle 200ms 3;
+      animation: wiggle 200ms 3;
+      opacity: 0.7; } }
 
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
@@ -146,24 +179,19 @@ h2, h3, h4 {
     -ms-transform: -ms-rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
-/*Liens non souligné*/
-.link-page_menu, .footer-link, .link-home {
-  text-decoration: none; }
-
 /*****************************************************/
 /***                 Ornements                    ***/
 /*****************************************************/
-/*Visible à partir de la tablette*/
+/*Visible à partir de la tablette min-width:768px */
 .img_deco {
-  width: 90%;
-  opacity: 0.7;
+  width: 80%;
   visibility: hidden;
-  margin: 5px; }
+  opacity: 0.7;
+  margin: 1em; }
+  @media all and (min-width: 768px) {
+    .img_deco {
+      visibility: initial; } }
 
-/*mediaqueries sur la visibilité des ornements*/
-@media all and (min-width: 768px) {
-  .img_deco {
-    visibility: initial; } }
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
 /*****************************************************/
@@ -175,8 +203,17 @@ h2, h3, h4 {
 
 /*Note en grand format*/
 .i_top {
-  margin-top: 1em;
-  font-size: 2.3em; }
+  margin: 1em;
+  font-size: 30px; }
+  @media all and (min-width: 768px) {
+    .i_top {
+      font-size: 70px; } }
+  @media all and (min-width: 1024px) {
+    .i_top {
+      font-size: 95px; } }
+  @media all and (min-width: 1440px) {
+    .i_top {
+      font-size: 140px; } }
 
 /*Points de suspension*/
 .fa-circle {
@@ -216,26 +253,60 @@ h2, h3, h4 {
 /***         Conteneurs en page d'accueil          ***/
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
+@media all and (min-width: 1024px) {
+  .main-container_index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between; } }
+@media all and (min-width: 1440px) {
+  .main-container_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; } }
+
 /*Dimension des visuels */
 .container_indexbox, .section-index_hover {
-  width: 33vw;
-  height: 45vw;
-  margin-top: 3.5vw;
-  margin-bottom: 3.5vw; }
+  width: 256px;
+  height: 358px;
+  margin: 20px; }
+  @media all and (min-width: 768px) {
+    .container_indexbox, .section-index_hover {
+      width: 615px;
+      height: 860px;
+      margin: 50px; } }
+  @media all and (min-width: 1024px) {
+    .container_indexbox, .section-index_hover {
+      width: 360px;
+      height: 510px;
+      margin: 70px; } }
+  @media all and (min-width: 1440px) {
+    .container_indexbox, .section-index_hover {
+      width: 530px;
+      height: 750px;
+      margin: 100px; } }
 
 /*Survol des visuels*/
 .section-index_hover {
-  font-size: 95%;
-  box-sizing: border-box;
   transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
-  .section-index_hover:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+  .section-index_hover:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     opacity: 0.8; }
+  @media all and (min-width: 1024px) {
+    .section-index_hover:hover {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      opacity: 0.8; } }
 
 /*Bouton prochainement*/
 .container-button_soon {
-  margin: 0; }
+  font-size: 1em;
+  margin: 20px;
+  margin-bottom: 32px; }
 
 /*****************************************************/
 /***        Conteneur des pages de menus           ***/
@@ -301,8 +372,8 @@ h2, h3, h4 {
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 32px;
   height: 2rem;
+  height: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -354,9 +425,9 @@ h2, h3, h4 {
 .li-legal {
   padding-left: 0.7rem; }
 
-/*Style des puces des listes*/
-.li-legal {
-  list-style: none; }
+/*ohmyfood en jaune dans les mentions légales*/
+.logo {
+  color: #fcca46; }
 
 /*Séparations des parties*/
 .hr-legal {
@@ -419,6 +490,7 @@ h2, h3, h4 {
 .h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
   color: #3d1319; }
 
+/*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
   background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
@@ -442,7 +514,7 @@ h2, h3, h4 {
 .section_chic_color3, .h3-menu_hover_chic3 {
   color: #8f5bfe; }
 
-/*Couleur de soulignement des entrées-plats-desserts*/
+/*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_chic1 {
   background: linear-gradient(to top, #db8528 0%, #db8528 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
