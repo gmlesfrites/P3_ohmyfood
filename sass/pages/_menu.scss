@@ -12,13 +12,21 @@
     text-align: center;
 }
 
-/*Animation sur les titres entrée/plat/desser au :hover*/
-
+.p-menu {
+    @media all and (min-width: 768px) {
+        text-align: left;
+        width: 80%;
+    }
+}
 
 /*Prix en gras*/
 .p-prix {
     font-weight: 700;
     padding-bottom: 1em;
+    @media all and (min-width: 768px) {
+        text-align: right;
+        width:20%
+    }
 }
 
 .h3-menu_hover {

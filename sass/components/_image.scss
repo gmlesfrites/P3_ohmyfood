@@ -3,11 +3,15 @@
 /*****************************************************/
 /*Visible à partir de la tablette*/
 .img_deco {
-    width: 30%;
-    margin: 20px;
+    width: 90%;
+    opacity: 0.7;
+    visibility: hidden;
+    margin: 5px;
 }
 
 /*mediaqueries sur la visibilité des ornements*/
 @media all and (min-width: 768px) {
-
+.img_deco {
+    visibility: initial;
+}
 }

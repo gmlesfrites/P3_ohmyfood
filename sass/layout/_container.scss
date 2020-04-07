@@ -35,7 +35,7 @@
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox {
+.article-container_menubox, .section-container_menubox , .container_deco {
     text-align: center;
 }
 
@@ -48,9 +48,16 @@
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.div-container_menubox {
+    display:block;
+    @media all and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 /*****************************************************/

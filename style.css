@@ -69,8 +69,7 @@ h4 {
   font-size: 1.25em; }
 
 h2, h3, h4 {
-  margin: 1em;
-  padding: 1em; }
+  margin: 1em; }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
@@ -156,10 +155,15 @@ h2, h3, h4 {
 /*****************************************************/
 /*Visible à partir de la tablette*/
 .img_deco {
-  width: 30%;
-  margin: 20px; }
+  width: 90%;
+  opacity: 0.7;
+  visibility: hidden;
+  margin: 5px; }
 
 /*mediaqueries sur la visibilité des ornements*/
+@media all and (min-width: 768px) {
+  .img_deco {
+    visibility: initial; } }
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
 /*****************************************************/
@@ -237,7 +241,7 @@ h2, h3, h4 {
 /***        Conteneur des pages de menus           ***/
 /*****************************************************/
 /*Texte centrés dans les conteneurs */
-.article-container_menubox, .section-container_menubox {
+.article-container_menubox, .section-container_menubox, .container_deco {
   text-align: center; }
 
 /*Mise en page entre header-footer*/
@@ -248,9 +252,15 @@ h2, h3, h4 {
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
   align-content: center;
   align-items: center; }
+
+.div-container_menubox {
+  display: block; }
+  @media all and (min-width: 768px) {
+    .div-container_menubox {
+      display: flex; } }
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
@@ -371,11 +381,19 @@ h2, h3, h4 {
 .h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
   text-align: center; }
 
-/*Animation sur les titres entrée/plat/desser au :hover*/
+@media all and (min-width: 768px) {
+  .p-menu {
+    text-align: left;
+    width: 80%; } }
+
 /*Prix en gras*/
 .p-prix {
   font-weight: 700;
   padding-bottom: 1em; }
+  @media all and (min-width: 768px) {
+    .p-prix {
+      text-align: right;
+      width: 20%; } }
 
 .h3-menu_hover {
   text-decoration: none;
