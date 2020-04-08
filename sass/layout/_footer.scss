@@ -6,10 +6,18 @@
     position:fixed;
     width: 100%;
     bottom: 0;
-    height: 2rem;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height: 55px;
+        @media  all and (min-width: 768px){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        @media  all and (min-width: 1024px) {
+            height: 90px;
+        }
+        @media  all and (min-width: 1440px) {
+            height: 135px;
+        }
 }

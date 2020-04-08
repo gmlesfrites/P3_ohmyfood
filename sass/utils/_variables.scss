@@ -41,31 +41,31 @@ $background-menu_palette: #fdfffd;
 /***            Polices de caractères              ***/
 /*****************************************************/
 /*Logo*/
-$logo-font: 'Montserrat', 'Helvetica', sans-serif;
+$main-font: 'Montserrat', 'Roboto', sans-serif;
 $logo-color: $color-secondary;
 
 /*Titre carte de chaque restaurant*/
-$global-title: $logo-font;
+$global-title: $main-font;
 
 /*Menu 1*/
 $ff-title-M1: 'devonshire', 'Zapf-Chancery', cursive;
-$ff-content-M1: 'segoepr', 'Open Sans', 'Helvetica', sans-serif;
+$ff-content-M1: 'segoepr', 'Open Sans', Roboto, sans-serif;
 
 /*Menu 2*/
 $ff-title-M2: 'Croissant One', 'Zapf-Chancery', cursive;
-$ff-content-M2:'Roboto Slab', 'Times', serif;
+$ff-content-M2:'Roboto Slab', Palatino, serif;
 
 /*Menu 3*/
-$ff-title-M3:'Dancing Script', 'Zapf-Chancery', cursive;
-$ff-content-M3: 'segoepr', 'Open Sans', 'Helvetica', Sans-serif;
+$ff-title-M3:"Dancing Script", 'Zapf-Chancery', cursive;
+$ff-content-M3: 'segoepr', 'Open Sans', Roboto, Sans-serif;
 
 /*Menu 4*/
-$ff-title-M4: 'Kaushan Script', 'Zapf-Chancery', cursive;
-$ff-content-M4: 'segoepr','Open Sans', 'Helvetica', sans-serif;
+$ff-title-M4: "Kaushan Script", "Zapf-Chancery", cursive;
+$ff-content-M4: 'segoepr',"Open Sans", Roboto, sans-serif;
 
 /*Mentions légales*/
-$ff-titre-legal: 'Montserrat', 'Helevetica', sans-serif;
-$ff-content-legal: 'Roboto Slab', 'Times', serif;
+$ff-titre-legal: 'Montserrat', Roboto, sans-serif;
+$ff-content-legal: 'Roboto Slab', Palatino, serif;
 
 /*****************************************************/
 /***            Taille de caractères               ***/

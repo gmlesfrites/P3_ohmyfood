@@ -26,7 +26,7 @@ html {
 /*LOGO dans le header*/
 h1, .h1_logo {
     font-size: $h1-font-size;
-    font-family: "Montserrat", cursive;
+    font-family: $main-font;
     text-align: center;
     letter-spacing: -1px;
 }
@@ -43,9 +43,4 @@ h3 {
 /*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
 h4 {
     font-size: $h4-font-size;
-}
-
-/*Marges généralisées après reset avec sélecteur universel*/
-h3, h4 {
-    margin: 1em;
 }

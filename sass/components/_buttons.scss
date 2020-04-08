@@ -2,10 +2,9 @@
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
 .button_soon {
-    text-align: center;
     width: 256px;
     height: 50px;
-    font-size: $h3-font-size;
+    font-size: $h4-font-size;
     background: $color-primary;
     color: $color-secondary;
     border:none;
@@ -17,6 +16,7 @@
         @media all and (min-width: 1024px) {
             width:445px;
             height: 85px;
+            font-size: $h3-font-size;
         }
         @media all and (min-width:1440px) {
             width: 650px;

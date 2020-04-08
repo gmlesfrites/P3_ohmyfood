@@ -1,6 +1,9 @@
 /*****************************************************/
 /***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/
+.body_index {
+    font-family: $main-font;
+}
 /*Particularités de l'écriture du mot menu Note*/
 .h3-menu_note {
     color: $gradient3_note;
@@ -23,3 +26,16 @@
     color: $gradient1_palette;
 }
 
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
+.article-container_menubox_note {
+    background-color: $background-menu_note;
+}
+.article-container_menubox_chic {
+    background-color: $background-menu_chic;
+}
+.article-container_menubox_delice {
+    background-color: $background-menu_delice;
+}
+.article-container_menubox_palette {
+    background-color: $background-menu_palette;
+}

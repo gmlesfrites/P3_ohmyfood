@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="body">
+    <body class="body_menu">
         <!--HEADER-->
         <!--Lien encadrant le header pour grandir la zone de clic-->
         <a href="index.html" class="link-home">
@@ -38,88 +38,96 @@
                 <h1 class="h1-logo logo">ohmyfood</h1>
             </header>
         </a>
-        <!--CONTENEUR PRINCPAL MENU 0 : NOM A DEFINIR-->
+        <!--CONTENEUR PRINCPAL MENU 0 : Menu générique-->
         <main class="main-container_menu">
             <!--Titre principal hors de la carte-->
-           <h2 class="h2-titre-menu">Le nom du menu</h2>
-            <!--conteneur du menu-->
-           <article class="article-container_menubox">
+            <h2 class="h2-titre-menu">Menu générique</h2>
+            <!--Conteneur du menu-->
+            <article class="article-container_menubox">
                 <!--Titre menu-->
-                <h2 class="h2-menu h2-menu_nomdemenu">Le nom du menu à l'intérieur de la carte</h2>
+                <h2 class="h2-menu">Menu générique</h2>
                 <!--Section entrées-->
                 <section class="section-container_menubox">
                     <!--Titre entrée-->
-                    <h3 class="h3-menu"><a href="#" class="h3-menu_hover">Entrées</a></h3>
-                    <!--hr class="hr-menu hr-menu_nomdemenu" data-content="Entrées"-->
-                    <!--Détail choix d'entrée 1-->
+                    <div class="container_deco">
+                        <p><img src="images/hr_note_gauche.svg" class="img_deco" alt="fioriture encadrant le titre"></p>
+                        <h3 class="h3-menu h3-menu_note"><a href="#" class="h3-menu_hover">Entrée</a></h3>
+                        <p><img src="images/hr_note_droite.svg" class="img_deco" alt="fioriture encadrant le titre"></p>
+                    </div>
+                    <!--Détail choix d'entrée-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Entree 1</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
-                     </div>
+                        <!--Détail choix d'entrée 1-->
+                        <p class="p-menu">Entrée 1</p>
+                        <p class="p-prix">-€</p>
+                    </div>
                     <!--Détail choix d'entrée 2-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Entree 2</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Entrée 2</p>
+                        <p class="p-prix">-€</p>
                     </div>
                     <!--Détail choix d'entrée 3-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Entree 3</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Entrée 3</p>
+                        <p class="p-prix">-€</p>
                     </div>
                     <!--Détail choix d'entrée 4-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Entree 4</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Entrée 4</p>
+                        <p class="p-prix ">-€</p>
                     </div>
                 </section>
                 <!--Section plats-->
-                <section class="section-container_menu">
-                    <!--Titre plats-->
-                    <h3 class="h3-menu"><a href="#" class="h3-menu_hover">Plats</a></h3>
-                    <!--hr class="hr-menu hr-menu_nomdemenu" data-content="plats"-->
+                <section class="section-container_menubox">
+                    <!--Titre Plats-->
+                    <div class="container_deco">
+                        <p><img src="images/hr_note_gauche.svg" class="img_deco" alt="fioriture encadrant le titre"></p>
+                        <h3 class="h3-menu"><a href="#" class="h3-menu_hover">Plats</a></h3>
+                        <p><img src="images/hr_note_droite.svg" class="img_deco" alt="fioriture encadrant le titre"></p>
+                    </div>
                     <!--Détail choix de plat 1-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Plat 1</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Plat 1</p>
+                        <p class="p-prix”>-€</p>
                     </div>
                     <!--Détail choix de plat 2-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Plat 2</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Plat 2</p>
+                        <p class="p-prix">-€</p>
                     </div>
                     <!--Détail choix de plat 3-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Plat 3</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Plat 3</p>
+                        <p class="p-prix">-€</p>
                     </div>
                 </section>
                 <!--Section desserts-->
-                <section>
+                <section class="section-container_menubox">
                     <!--Titre Desserts-->
-                    <h3 class="h3-menu"><a href="#" class="h3-menu_hover">Desserts</a></h3>
-                    <!--<hr class="hr-menu hr-menu_nomdemenu" data-content="Desserts"-->
+                    <div class="container_deco">
+                        <p><img src="images/hr_note_gauche.svg" class="img_deco" alt="fioriture encadrant le titre"></p>
+                        <h3 class="h3-menu"><a href="#" class="h3-menu_hover">Desserts</a></h3>
+                        <p><img src="images/hr_note_droite.svg" class="img_deco"  alt="fioriture encadrant le titre"></p>
+                    </div>
                     <!--Détail choix de dessert 1-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Dessert 1</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Dessert 1</p>
+                        <p class="p-prix"></p>
                     </div>
                     <!--Détail choix de dessert 2-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Dessert 2</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Dessert 2</p>
+                        <p class="p-prix"></p>
                     </div>
                     <!--Détail choix de dessert 3-->
                     <div class="div-container_menubox">
-                        <p class="p-menu p-menu_nomdemenu">Dessert 3</p>
-                        <p class="p-prix p-prix_nomdemenu">0 €</p>
+                        <p class="p-menu">Dessert 3</p>
+                        <p class="p-prix"></p>
                     </div>
                 </section>
             </article>
         </main>
-        <!--FOOTER-->
-        <footer class="footer">
-            <a href="mentions-legales.html" class="footer-link" target="_blank">Mentions légales</a>
-            <a href="mailto:ohmyfood@mail.com" class="footer-link">Contactez-nous</a>
-        </footer>
-    </body>
-</html>
+                <!--FOOTER-->
+                <footer class="footer">
+                    <a href="mentions-legales.html" class="footer-link link_legal" target="_blank">Mentions légales</a>
+                    <a href="mailto:ohmyfood@mail.com" class="footer-link link_contact">Contactez-nous</a>
+                </footer>
