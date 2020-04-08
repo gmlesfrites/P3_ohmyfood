@@ -4,7 +4,7 @@
 /*Selection de tout pour propriété mot-coupé*/
 * {
     word-wrap: break-word;
-    margin: auto;
+    margin: 0;
 }
 
 /*Determination de  la taille de police html*/
@@ -14,10 +14,7 @@ html {
 
  /*Determination de  la taille de police body*/
  .body {
-    font-size: 62.5%;
-        @media all and (min-width: 1024px) {
-        font-size: 75%;
-        }
+    font-size: 75%;
  }
 
 /*****************************************************/
