@@ -1,22 +1,27 @@
 /*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 23 of sass/layout/_footer.scss
+Error: Invalid CSS after "...  height: 90px;": expected "}", was ""
+        on line 20 of sass/layout/_footer.scss
         from line 18 of sass\main.scss
 
-18:             align-items: center;
-19:             height: 70px;
-20:         }
-21:         @media  all and (min-width: 1024px) {
-22:             height: 90px;
-23: }
+15:             align-items: center;
+16:             height: 70px;
+17:         }
+18:         @media  all and (min-width: 1024px) {
+19:             height: 90px;
 
 Backtrace:
-sass/layout/_footer.scss:23
+sass/layout/_footer.scss:20
 sass\main.scss:18
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
@@ -68,4 +73,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 23 of sass/layout/_footer.scss\A         from line 18 of sass\main.scss\A \A 18:             align-items: center;\A 19:             height: 70px;\A 20:         }\A 21:         @media  all and (min-width: 1024px) {\A 22:             height: 90px;\A 23: }"; }
+  content: "Error: Invalid CSS after \"...  height: 90px;\": expected \"}\", was \"\"\A         on line 20 of sass/layout/_footer.scss\A         from line 18 of sass\main.scss\A \A 15:             align-items: center;\A 16:             height: 70px;\A 17:         }\A 18:         @media  all and (min-width: 1024px) {\A 19:             height: 90px;"; }

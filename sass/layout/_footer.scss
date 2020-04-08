@@ -4,10 +4,7 @@
 .footer {
     background: $footer-color;
     position:fixed;
-    display:flex;
-    flex-direction: colomn;
-    justify-content: center;
-    align-content: flex-end;
+    display:block;
     width: 100%;
     bottom: 0;
     height: 55px;
@@ -20,4 +17,3 @@
         }
         @media  all and (min-width: 1024px) {
             height: 90px;
-}
