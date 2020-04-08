@@ -3,7 +3,11 @@
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-    @include dispocol;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     @media all and (min-width:1024px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -111,7 +115,7 @@
 /*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -124,7 +128,10 @@
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     width: 256px;
     @media all and (min-width:768px ) {
         width: 610px;
@@ -149,11 +156,15 @@
     text-align: center;
 }
 
+/*Mise en page de chaque section de menu : entrée, plat, dessert*/
+
+
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
     @media all and (min-width: 768px) {
         display: flex;
         justify-content: center;
+        flex-wrap: nowrap;
         align-content: center;
         align-items: center;
     }
