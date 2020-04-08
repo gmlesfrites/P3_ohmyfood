@@ -3,11 +3,7 @@
 /*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    @include dispocol;
     @media all and (min-width:1024px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -69,7 +65,7 @@
 }
 
 /*Marges communes de l'index*/
-.container_indexbox, .section-index_hover,  {
+.container_indexbox, .section-index_hover {
     margin: 20px;
         @media all and (min-width:768px) {
             margin: 50px;
@@ -115,11 +111,7 @@
 /*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    @include dispocol;
     margin-bottom: 90px;
     @media all and (min-width:768px ) {
         margin-bottom: 75px;
@@ -128,10 +120,7 @@
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include dispocol;
     width: 256px;
     @media all and (min-width:768px ) {
         width: 610px;
@@ -157,7 +146,14 @@
 }
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
-
+.div-container.menubox {
+    margin: 20px;
+    @media all and (min-width: 768px) {
+        display:flex;
+        flex-direction: row;
+        margin: 50px;
+    }
+}
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {

@@ -27,6 +27,9 @@
 /***           Ombres avec box-shadow              ***/
 /*****************************************************/
 /*****************************************************/
+/***                  Flexbox                      ***/
+/*****************************************************/
+/*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
 /*Pour éviter aux contenus de sortir du contenant*/
@@ -365,7 +368,7 @@ h4 {
 /*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
-  display: block;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -381,6 +384,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   width: 256px; }
   @media all and (min-width: 768px) {
     .article-container_menubox {
@@ -404,6 +408,14 @@ h4 {
   text-align: center; }
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
+.div-container.menubox {
+  margin: 20px; }
+  @media all and (min-width: 768px) {
+    .div-container.menubox {
+      display: flex;
+      flex-direction: row;
+      margin: 50px; } }
+
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 @media all and (min-width: 768px) {
   .container_deco {
