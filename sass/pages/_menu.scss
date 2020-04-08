@@ -33,9 +33,16 @@
     text-decoration: none;
     text-transform: initial;
     color: $gradientblack;
-    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
     transition: background-size .5s;
-    &:hover {
-        background-size: 100% 100%;
+    &:active {
+        background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10%) left bottom / 0 100%;
+        transition: background-size .2s;background-size: 100% 100%;
+        animation-fill-mode: forwards;
     }
+    @media all and (min-width: 1024px) {
+    &:hover {
+        background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10%) no-repeat left bottom / 0 100%;
+        transition: background-size .5s;background-size: 100% 100%;
+    }
+}
 }

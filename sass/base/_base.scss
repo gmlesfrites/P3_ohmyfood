@@ -7,9 +7,16 @@
    margin: 0;
    padding:0;
 }
-
+/*Annulation des médias pour utilisateurs nécessitant une accessibilité particulière*/
 @media (prefer-reduced-motion:reduce) {
-   .img_deco, .h3-menu_hover, .section-index_hover, .footer-link, .link_contact, .link_legal, .fa-circle, .fa-music {
+   .img_deco, .h3-menu_hover, .section-index_hover, .footer-link, .link_contact, .link_legal {
       animation: none;
+   }
+
+   $color-primary: #345549;
+   $color-secondary: white;
+
+   .fa-circle, .fa-music {
+      visibility: hidden;
    }
 }

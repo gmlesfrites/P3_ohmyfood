@@ -1,0 +1,14 @@
+@mixin dispocol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+@mixin marginmain {
+    margin-bottom: 70px;
+    @media all and (min-width: 768px) {
+        margin-bottom: 55px;
+    }
+}
