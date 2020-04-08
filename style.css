@@ -1,70 +1,593 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 23 of sass/layout/_footer.scss
-        from line 18 of sass\main.scss
+@charset "UTF-8";
+/*****************************************************/
+/***             Couleurs principales              ***/
+/*****************************************************/
+/*Couleurs du header et du footer*/
+/*La note enchantée*/
+/*Notes du menu 1*/
+/*Menu chic*/
+/*Menu délice*/
+/*Menu palette*/
+/*Variable générique pour la mixin linear-gradient*/
+/*Couleurs de fond*/
+/*****************************************************/
+/***            Polices de caractères              ***/
+/*****************************************************/
+/*Logo*/
+/*Titre carte de chaque restaurant*/
+/*Menu 1*/
+/*Menu 2*/
+/*Menu 3*/
+/*Menu 4*/
+/*Mentions légales*/
+/*****************************************************/
+/***            Taille de caractères               ***/
+/*****************************************************/
+/*****************************************************/
+/***           Ombres avec box-shadow              ***/
+/*****************************************************/
+/*****************************************************/
+/***                 Contenu global                ***/
+/*****************************************************/
+/*Pour éviter aux contenus de sortir du contenant*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-18:             align-items: center;
-19:             height: 70px;
-20:         }
-21:         @media  all and (min-width: 1024px) {
-22:             height: 90px;
-23: }
+@media (prefer-reduced-motion: reduce) {
+  .img_deco, .h3-menu_hover, .section-index_hover, .footer-link, .link_contact, .link_legal, .fa-circle, .fa-music {
+    animation: none; } }
+/*****************************************************/
+/***   Typographie applicable à chaque page        ***/
+/*****************************************************/
+/*Selection de tout pour propriété mot-coupé*/
+* {
+  word-wrap: break-word;
+  margin: auto; }
 
-Backtrace:
-sass/layout/_footer.scss:23
-sass\main.scss:18
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:23:in `load'
-C:/Ruby26-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 23 of sass/layout/_footer.scss\A         from line 18 of sass\main.scss\A \A 18:             align-items: center;\A 19:             height: 70px;\A 20:         }\A 21:         @media  all and (min-width: 1024px) {\A 22:             height: 90px;\A 23: }"; }
+/*Determination de  la taille de police html*/
+html {
+  font-size: 16px; }
+
+/*Determination de  la taille de police body*/
+.body {
+  font-size: 62.5%; }
+  @media all and (min-width: 1024px) {
+    .body {
+      font-size: 75%; } }
+
+/*****************************************************/
+/***     Taille de caractères généralisée          ***/
+/*****************************************************/
+/*LOGO dans le header*/
+h1, .h1_logo {
+  font-size: 3.125em;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: -1px; }
+
+/*Titre de toutes les pages menu et mentions légales*/
+h2 {
+  font-size: 2.375em; }
+
+/*Entrées, plats desserts dans les menus et grandes parties mentions légales*/
+h3 {
+  font-size: 1.75em; }
+
+/*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
+h4 {
+  font-size: 1.25em; }
+
+/*****************************************************/
+/***     Bouton prochainement - page d'accueil     ***/
+/*****************************************************/
+.button_soon {
+  width: 256px;
+  height: 50px;
+  font-size: 1.25em;
+  background: #579c87;
+  color: #fcca46;
+  border: none;
+  border-radius: 0.3em; }
+  @media all and (min-width: 768px) {
+    .button_soon {
+      width: 330px;
+      height: 65px; } }
+  @media all and (min-width: 1024px) {
+    .button_soon {
+      width: 445px;
+      height: 85px;
+      font-size: 1.75em; } }
+  @media all and (min-width: 1440px) {
+    .button_soon {
+      width: 650px;
+      height: 120px; } }
+
+/*Liens non soulignés*/
+.link-page_menu, .footer-link, .link-home {
+  text-decoration: none; }
+
+.link_contact:hover, .link_legal:hover {
+  -webkit-animation: wiggle 200ms 3;
+  -moz-animation: wiggle 200ms 3;
+  -ms-animation: wiggle 200ms 3;
+  animation: wiggle 200ms 3;
+  opacity: 0.7; }
+  @media all and (min-width: 1024px) {
+    .link_contact:hover, .link_legal:hover {
+      animation-play-state: paused;
+      animation-duration: 0s;
+      animation: none; } }
+
+/*Animation sur les liens*/
+.footer-link {
+  color: #fcca46;
+  margin: 0.3em;
+  opacity: 0.7; }
+  @media all and (min-width: 1024px) {
+    .footer-link {
+      -webkit-animation: wiggle 200ms 3;
+      -moz-animation: wiggle 200ms 3;
+      -ms-animation: wiggle 200ms 3;
+      animation: wiggle 200ms 3;
+      opacity: 0.7; } }
+
+/*Règles d'animation des liens du footer*/
+@keyframes wiggle {
+  0% {
+    -webkit-transform: -webkit-rotate(0deg); }
+  0% {
+    -moz-transform: -moz-rotate(0deg); }
+  0% {
+    -ms-transform: -ms-rotate(0deg); }
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    -webkit-transform: -webkit-rotate(-2deg); }
+  25% {
+    -moz-transform: -moz-rotate(-2deg); }
+  25% {
+    -ms-transform: -ms-rotate(-2deg); }
+  25% {
+    transform: rotate(-2deg); }
+  50% {
+    -webkit-transform: -webkit-rotate(0deg); }
+  50% {
+    -moz-transform: -moz-rotate(0deg); }
+  50% {
+    -ms-transform: -ms-rotate(0deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    -webkit-transform: -webkit-rotate(2deg); }
+  75% {
+    -moz-transform: -moz-rotate(2deg); }
+  75% {
+    -ms-transform: -ms-rotate(2deg); }
+  75% {
+    transform: rotate(2deg); }
+  100% {
+    -webkir-transform: -webkit-rotate(0deg); }
+  100% {
+    -moz-transform: -moz-rotate(0deg); }
+  100% {
+    -ms-transform: -ms-rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+/*****************************************************/
+/***                 Ornements                    ***/
+/*****************************************************/
+/*Visible à partir de la tablette min-width:768px */
+.img_deco {
+  width: 80%;
+  visibility: hidden;
+  opacity: 0.7;
+  margin: 1em; }
+  @media all and (min-width: 768px) {
+    .img_deco {
+      visibility: initial; } }
+
+/*****************************************************/
+/***              Icônes Font Awesome              ***/
+/*****************************************************/
+/*notes de musique*/
+.fa-music {
+  background: linear-gradient(120deg, #f05561, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*Note en grand format*/
+.i_top {
+  margin: 1em;
+  font-size: 30px; }
+  @media all and (min-width: 768px) {
+    .i_top {
+      font-size: 70px; } }
+  @media all and (min-width: 1024px) {
+    .i_top {
+      font-size: 95px; } }
+  @media all and (min-width: 1440px) {
+    .i_top {
+      font-size: 140px; } }
+
+/*Points de suspension*/
+.fa-circle {
+  font-size: 0.5em;
+  color: #fcca46;
+  animation: dotanim 2s infinite alternate;
+  opacity: 0.8; }
+
+.dot1 {
+  animation-delay: .1s; }
+
+.dot2 {
+  animation-delay: .4s; }
+
+.dot3 {
+  animation-delay: .7s; }
+
+@keyframes dotanim {
+  0% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(0.1); } }
+/*****************************************************/
+/***                   Header                      ***/
+/*****************************************************/
+.header {
+  background: #579c87;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 50px; }
+  @media all and (min-width: 768px) {
+    .header {
+      height: 120px; } }
+  @media all and (min-width: 1024px) {
+    .header {
+      height: 165px; } }
+  @media all and (min-width: 1440px) {
+    .header {
+      height: 240px; } }
+
+/*****************************************************/
+/***         Conteneurs en page d'accueil          ***/
+/*****************************************************/
+/*Mise en page partie main entre header-footer */
+@media all and (min-width: 1024px) {
+  .main-container_index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between; } }
+@media all and (min-width: 1440px) {
+  .main-container_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; } }
+
+/*Dimension des visuels */
+.container_indexbox, .section-index_hover {
+  width: 256px;
+  height: 358px; }
+  @media all and (min-width: 768px) {
+    .container_indexbox, .section-index_hover {
+      width: 615px;
+      height: 860px; } }
+  @media all and (min-width: 1024px) {
+    .container_indexbox, .section-index_hover {
+      width: 360px;
+      height: 510px; } }
+  @media all and (min-width: 1440px) {
+    .container_indexbox, .section-index_hover {
+      width: 530px;
+      height: 750px; } }
+
+/*Survol des visuels*/
+.section-index_hover {
+  transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
+  .section-index_hover:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.8; }
+  @media all and (min-width: 1024px) {
+    .section-index_hover:hover {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      opacity: 0.8; } }
+
+/*Marges communes de l'index*/
+.container_indexbox, .section-index_hover, .container-button_soon {
+  margin: 20px; }
+  @media all and (min-width: 768px) {
+    .container_indexbox, .section-index_hover, .container-button_soon {
+      margin: 50px; } }
+  @media all and (min-width: 1024px) {
+    .container_indexbox, .section-index_hover, .container-button_soon {
+      margin: 70px; } }
+  @media all and (min-width: 1440px) {
+    .container_indexbox, .section-index_hover, .container-button_soon {
+      margin: 100px; } }
+
+/*****************************************************/
+/***        Conteneur des pages de menus           ***/
+/*****************************************************/
+/*Texte centrés dans les conteneurs */
+.article-container_menubox, .section-container_menubox, .container_deco {
+  text-align: center; }
+
+/*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
+.main-container_menu {
+  margin: 20px 0; }
+  @media all and (min-width: 768px) {
+    .main-container_menu {
+      margin: 50px 0; } }
+  @media all and (min-width: 1024px) {
+    .main-container_menu {
+      margin: 70px 0; } }
+  @media all and (min-width: 1440px) {
+    .main-container_menu {
+      margin: 100px 0; } }
+
+/*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
+@media all and (min-width: 768px) {
+  .container_deco {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; } }
+
+.div-container_menubox {
+  display: block; }
+  @media all and (min-width: 768px) {
+    .div-container_menubox {
+      display: flex; } }
+
+/*****************************************************/
+/***    Propriétés communes à toutes les pages     ***/
+/*****************************************************/
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox, .section-index_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*Marges basses pour tous les éléments précédent le footer en position fixed*/
+.container-button_soon, .article-container_menubox, .article-container_legal {
+  margin-bottom: 55px; }
+  @media all and (min-width: 768px) {
+    .container-button_soon, .article-container_menubox, .article-container_legal {
+      margin-bottom: 70px; } }
+  @media all and (min-width: 1024px) {
+    .container-button_soon, .article-container_menubox, .article-container_legal {
+      margin-bottom: 90px; } }
+  @media all and (min-width: 1440px) {
+    .container-button_soon, .article-container_menubox, .article-container_legal {
+      margin-bottom: 135px; } }
+
+/*Ombre sous les menus et les boutons*/
+.article-container_menubox, .container_indexbox {
+  box-shadow: -3px -3px 3px #efefef; }
+
+/*****************************************************/
+/***                   Footer                      ***/
+/*****************************************************/
+.footer {
+  background: #579c87;
+  position: fixed;
+  display: flex;
+  flex-direction: colomn;
+  justify-content: center;
+  align-content: flex-end;
+  width: 100%;
+  bottom: 0;
+  height: 55px; }
+  @media all and (min-width: 768px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px; } }
+  @media all and (min-width: 1024px) {
+    .footer {
+      height: 90px; } }
+
+/*****************************************************/
+/***    Ecriture des Visuels page d'accueil        ***/
+/*****************************************************/
+.body_index {
+  font-family: "Montserrat", "Roboto", sans-serif; }
+
+/*Particularités de l'écriture du mot menu Note*/
+.h3-menu_note {
+  color: #3d1319;
+  text-transform: uppercase;
+  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+
+/*Particularités de l'écriture du mot menu Chic*/
+.h3-menu_chic {
+  font-family: "Roboto Slab", Palatino, serif;
+  color: #db8528; }
+
+/*Particularités de l'écriture du mot menu delice*/
+.h3-menu_delice {
+  font-family: "segoepr", "Open Sans", Roboto, Sans-serif;
+  color: #0670f3; }
+
+/*Particularités de l'écriture du mot menu palette*/
+.h3-menu_palette {
+  font-family: "segoepr", "Open Sans", Roboto, sans-serif;
+  color: #41963c; }
+
+/*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
+.article-container_menubox_note {
+  background-color: #fcdfdb; }
+
+.article-container_menubox_chic {
+  background-color: #fff5fe; }
+
+.article-container_menubox_delice {
+  background-color: #f9f9f9; }
+
+.article-container_menubox_palette {
+  background-color: #fdfffd; }
+
+/*****************************************************/
+/***     Particularités Mentions légales           ***/
+/*****************************************************/
+/*Famille de police*/
+.body_legal {
+  font-family: "Montserrat", "Roboto", sans-serif; }
+
+/*Titres centrés*/
+.h2-legal, .h3-legal, .h4-legal {
+  text-align: center; }
+
+/*Taille des contenus*/
+.p-legal {
+  font-family: "Roboto Slab", Palatino, serif; }
+
+/*ohmyfood en jaune dans les mentions légales*/
+.logo {
+  color: #fcca46; }
+
+/*Séparations des parties*/
+.hr-legal {
+  height: 0.01em;
+  border-style: dashed;
+  border-width: 0.02rem;
+  color: #fcca46; }
+
+/*Couleurs des liens*/
+.a-legal {
+  color: #579c87; }
+
+/*****************************************************/
+/***   Généralités applicable à chaque menu        ***/
+/*****************************************************/
+/*Titre carte de chaque restaurant*/
+.h2-titre-menu {
+  margin: 2rem 0; }
+
+/*Alignement des polices des titres*/
+.h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
+  text-align: center; }
+
+@media all and (min-width: 768px) {
+  .p-menu {
+    text-align: left;
+    width: 80%; } }
+
+/*Prix en gras*/
+.p-prix {
+  font-weight: 700;
+  padding-bottom: 1em; }
+  @media all and (min-width: 768px) {
+    .p-prix {
+      text-align: right;
+      width: 20%; } }
+
+.h3-menu_hover {
+  text-decoration: none;
+  text-transform: initial;
+  color: black;
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s; }
+  .h3-menu_hover:hover {
+    background-size: 100% 100%; }
+
+/*****************************************************/
+/***     Particularités La note enchantée          ***/
+/*****************************************************/
+.body_menu {
+  font-family: "Montserrat", "Roboto", sans-serif; }
+
+/*Titre 2 et titre 3 à l'intérieur de la carte*/
+.h2-menu_note, .h4-menu_note {
+  font-family: "devonshire", "Zapf-Chancery", cursive; }
+
+/*Contenu des menus*/
+.h3-menu_note, .p-menu_note, .p-prix_note {
+  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+
+/*Couleur de police*/
+.h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
+  color: #3d1319; }
+
+/*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
+.h3-menu_hover_note {
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+/*****************************************************/
+/***     Particularités Le chic à la française     ***/
+/*****************************************************/
+/*Titre à l'intérieur de la carte*/
+.h2-menu_chic {
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
+  background: linear-gradient(120deg, #db8528, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*Couleurs différentes entrées/plats/desserts*/
+.section_chic_color1, .h3-menu_hover_chic1 {
+  color: #db8528; }
+
+.section_chic_color2, .h3-menu_hover_chic2 {
+  color: #a56799; }
+
+.section_chic_color3, .h3-menu_hover_chic3 {
+  color: #8f5bfe; }
+
+/*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
+.h3-menu_hover_chic1 {
+  background: linear-gradient(to top, #db8528 0%, #db8528 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_chic2 {
+  background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_chic3 {
+  background: linear-gradient(to top, #8f5bfe 0%, #8f5bfe 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+/*Texte à l'intérieur des entrées plats et desserts*/
+.p-prix_chic, .p-menu_chic {
+  font-family: "Roboto Slab", Palatino, serif; }
+
+/*****************************************************/
+/***     Particularités Le délice des papilles     ***/
+/*****************************************************/
+/*Titre à l'intérieur de la carte*/
+.h2-menu_delice {
+  font-family: "Croissant One", "Zapf-Chancery", cursive;
+  background: linear-gradient(120deg, #0228dd, #229df9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.h2-menu_delice, .h3-menu_delice {
+  font-family: "Dancing Script", "Zapf-Chancery", cursive; }
+
+.p-prix_delice, .p-menu_delice {
+  font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
+
+/*****************************************************/
+/***     Particularités La palette du goût         ***/
+/*****************************************************/
+/*Titre à l'intérieur de la carte*/
+.h2-menu_palette {
+  font-family: "Kaushan Script", "Zapf-Chancery", cursive;
+  background: linear-gradient(120deg, #41963c, #b2f478);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*Texte des entrées, plats et desserts*/
+.h3-menu_palette, .p-prix_palette, .p-menu_palette {
+  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
