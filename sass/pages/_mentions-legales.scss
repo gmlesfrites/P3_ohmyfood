@@ -5,16 +5,27 @@
 .body_legal {
     font-family: $main-font;
 }
+
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
     text-align: center;
+    margin:2em;
 }
 
 /*Taille des contenus*/
 .p-legal {
     font-family: $ff-content-legal;
-}
+    padding-bottom: 20px;
 
+}
+/*Dernier texte de la page*/
+.p-last-legal {
+    font-family: $ff-content-legal;
+    margin-bottom: 70px;
+        @media all and (min-width: 768px) {
+            margin-bottom: 55px;
+        }
+}
 /*ohmyfood en jaune dans les mentions légales*/
 .logo {
     color: $logo-color;
@@ -22,10 +33,11 @@
 
 /*Séparations des parties*/
 .hr-legal {
-    height: 0.01em;
+    font-size: $p-font-size;
     border-style: dashed;
-    border-width: 0.02rem;
+    border-width: 1px;
     color: #fcca46;
+    margin: 20px;
 }
 
 /*Couleurs des liens*/
