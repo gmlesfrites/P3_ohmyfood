@@ -109,8 +109,7 @@ h4 {
     -webkit-animation: wiggle 200ms 3;
     -moz-animation: wiggle 200ms 3;
     -ms-animation: wiggle 200ms 3;
-    animation: wiggle 200ms 3;
-    opacity: 0.7; } }
+    animation: wiggle 200ms 3 0.7; } }
 
 /*Animation sur les liens*/
 .footer-link:active {
@@ -234,16 +233,10 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 50px; }
-  @media all and (min-width: 768px) {
-    .header {
-      height: 120px; } }
+  height: 120px; }
   @media all and (min-width: 1024px) {
     .header {
       height: 165px; } }
-  @media all and (min-width: 1440px) {
-    .header {
-      height: 240px; } }
 
 /*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
@@ -258,9 +251,14 @@ h4 {
     .main-container_index {
       flex-direction: row;
       flex-wrap: wrap; } }
-  @media all and (min-width: 1480px) {
+  @media all and (min-width: 1440px) {
     .main-container_index {
-      flex-wrap: nowrap; } }
+      flex-wrap: nowrap;
+      align-content: center; } }
+
+/*Légère bordure sur les encadrés*/
+.container_indexbox {
+  border: 1px solid #efefef; }
 
 /*Mise en page et dimension des visuels */
 .container_indexbox, .section-index_hover {
@@ -275,10 +273,18 @@ h4 {
     .container_indexbox, .section-index_hover {
       width: 615px;
       height: 860px; } }
-  @media all and (min-width: 1480px) {
+  @media all and (min-width: 1024px) {
     .container_indexbox, .section-index_hover {
       width: 360px;
       height: 510px; } }
+  @media all and (min-width: 1440px) {
+    .container_indexbox, .section-index_hover {
+      width: 260px;
+      height: 365px; } }
+  @media all and (min-width: 1900px) {
+    .container_indexbox, .section-index_hover {
+      width: 350px;
+      height: 490px; } }
 
 /*Survol des visuels*/
 .section-index_hover {
@@ -294,25 +300,32 @@ h4 {
       opacity: 0.8; } }
 
 /*Marges communes de l'index*/
-.container_indexbox, .section-index_hover, .container-button_soon {
+.container_indexbox, .section-index_hover {
   margin: 20px; }
   @media all and (min-width: 768px) {
-    .container_indexbox, .section-index_hover, .container-button_soon {
+    .container_indexbox, .section-index_hover {
       margin: 50px; } }
+
+/*Container du bouton*/
+.container-button_soon {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 90px 20px; }
+  @media all and (min-width: 768px) and (max-width: 1440px) {
+    .container-button_soon {
+      margin: 50px 50px  105px 50px; } }
+  @media all and (min-width: 1440px) {
+    .container-button_soon {
+      margin: 10px 20px 90px 20px; } }
 
 /*****************************************************/
 /***    Propriétés communes à toutes les pages     ***/
 /*****************************************************/
-/*Positionnement centré  sur la page*/
-.container-button_soon {
-  display: flex;
-  justify-content: center; }
-
 /*Marges pour tous les éléments proches du footer*/
-.container-button_soon, .main-container_menu, .main-container_legal {
+.main-container_menu, .main-container_legal {
   margin-bottom: 70px; }
   @media all and (min-width: 768px) {
-    .container-button_soon, .main-container_menu, .main-container_legal {
+    .main-container_menu, .main-container_legal {
       margin-bottom: 55px; } }
 
 /*Ombre sous les menus et les boutons*/
@@ -340,6 +353,12 @@ h4 {
       justify-content: space-between;
       align-items: center; } }
 
+/*annulation de la position fixed pour les grands desktop
+.footer_index {
+    @media all and (min-width: 1440px) {
+        position: initial;
+    }
+}*/
 /*****************************************************/
 /***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/

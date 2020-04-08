@@ -11,9 +11,15 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    @media all and (min-width:1480px) {
+    @media all and (min-width:1440px) {
         flex-wrap: nowrap;
+        align-content: center;
     }
+}
+
+/*Légère bordure sur les encadrés*/
+.container_indexbox {
+    border: 1px solid #efefef;
 }
 
 /*Mise en page et dimension des visuels */
@@ -29,9 +35,17 @@
             width: 615px;
             height:860px;
         }
-        @media all and (min-width: 1480px) {
+        @media all and (min-width: 1024px) {
             width: 360px;
             height: 510px;
+        }
+        @media all and (min-width: 1440px) {
+            width: 260px;
+            height: 365px;
+        }
+        @media all and (min-width: 1900px) {
+            width: 350px;
+            height: 490px;
         }
 }
 
@@ -53,24 +67,31 @@
 }
 
 /*Marges communes de l'index*/
-.container_indexbox, .section-index_hover, .container-button_soon {
+.container_indexbox, .section-index_hover,  {
     margin: 20px;
         @media all and (min-width:768px) {
             margin: 50px;
     }
 }
 
-/*****************************************************/
-/***    Propriétés communes à toutes les pages     ***/
-/*****************************************************/
-/*Positionnement centré  sur la page*/
+/*Container du bouton*/
 .container-button_soon {
     display: flex;
     justify-content: center;
+    margin:20px 20px 90px 20px;
+    @media all and (min-width: 768px) and (max-width:1440px) {
+        margin: 50px 50px  105px 50px;
+    }
+    @media all and (min-width: 1440px) {
+        margin: 10px 20px 90px 20px;
+    }
 }
 
+/*****************************************************/
+/***    Propriétés communes à toutes les pages     ***/
+/*****************************************************/
 /*Marges pour tous les éléments proches du footer*/
-.container-button_soon, .main-container_menu, .main-container_legal {
+.main-container_menu, .main-container_legal {
     margin-bottom: 70px;
         @media all and (min-width: 768px) {
             margin-bottom: 55px;
