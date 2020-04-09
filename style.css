@@ -29,14 +29,19 @@
 /*****************************************************/
 /***                  Flexbox                      ***/
 /*****************************************************/
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox, .section-index_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
 /*Pour éviter aux contenus de sortir du contenant*/
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 /*Annulation des médias pour utilisateurs nécessitant une accessibilité particulière*/
 @media (prefer-reduced-motion: reduce) {
@@ -45,6 +50,11 @@
 
   .fa-circle, .fa-music {
     visibility: hidden; } }
+/*Suppression des margin*/
+html, body, h1, footer, header {
+  margin: 0;
+  padding: 0; }
+
 /*****************************************************/
 /***   Typographie applicable à chaque page        ***/
 /*****************************************************/
@@ -55,11 +65,17 @@
 
 /*Determination de  la taille de police html*/
 html {
-  font-size: 62.5%; }
+  font-size: 16px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 24px; } }
 
 /*Determination de  la taille de police body*/
 body {
-  font-size: 16px; }
+  font-size: 75%; }
 
 /*****************************************************/
 /***     Taille de caractères généralisée          ***/
@@ -179,8 +195,8 @@ h4 {
 /*****************************************************/
 /*Visible à partir de la tablette min-width:768px */
 .img_deco {
-  width: auto;
-  margin: 30px;
+  border: 1px green solid;
+  text-align: center;
   visibility: hidden;
   opacity: 0.7; }
   @media all and (min-width: 768px) {
@@ -189,13 +205,16 @@ h4 {
       visibility: initial; } }
   @media all and (min-width: 1024px) {
     .img_deco {
-      width: 270px; } }
+      padding: 30px;
+      width: 250px; } }
   @media all and (min-width: 1440px) {
     .img_deco {
-      width: 380px; } }
+      padding: 40px;
+      width: 420px; } }
   @media all and (min-width: 1900px) {
     .img_deco {
-      width: 480px; } }
+      padding: 40px;
+      width: 580px; } }
 
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
@@ -208,7 +227,6 @@ h4 {
 
 /*Note en grand format*/
 .i_top {
-  margin: 1em;
   font-size: 30px; }
   @media all and (min-width: 768px) {
     .i_top {
@@ -383,8 +401,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
   width: 256px; }
   @media all and (min-width: 768px) {
     .article-container_menubox {
@@ -408,22 +425,27 @@ h4 {
   text-align: center; }
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
-.div-container.menubox {
-  margin: 20px; }
+.div-container_menubox {
+  display: block;
+  padding: 20px; }
   @media all and (min-width: 768px) {
-    .div-container.menubox {
+    .div-container_menubox {
       display: flex;
-      flex-direction: row;
-      margin: 50px; } }
+      justify-content: flex-start;
+      flex-direction: row; } }
+  @media all and (min-width: 1440px) {
+    .div-container_menubox {
+      padding: 50px; } }
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
-@media all and (min-width: 768px) {
-  .container_deco {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center; } }
+.container_deco {
+  display: block; }
+  @media all and (min-width: 768px) {
+    .container_deco {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      align-items: center; } }
 
 /*Ombre sous les menus et les boutons*/
 .article-container_menubox, .container_indexbox {
@@ -500,7 +522,7 @@ h4 {
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
   text-align: center;
-  margin: 2em; }
+  padding: 2em; }
 
 /*Taille des contenus*/
 .p-legal {
@@ -521,11 +543,14 @@ h4 {
 
 /*Séparations des parties*/
 .hr-legal {
-  font-size: 1.1em;
+  font-size: 1em;
   border-style: dashed;
   border-width: 1px;
   color: #fcca46;
   margin: 20px; }
+  @media all and (min-width: 1024px) {
+    .hr-legal {
+      margin: 50px; } }
 
 /*Couleurs des liens*/
 .a-legal {
@@ -536,12 +561,13 @@ h4 {
 /*****************************************************/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
-  margin: 2rem 0; }
+  padding: 2em 0; }
 
 /*Alignement des polices des titres*/
 .h2-menu, .h4-menu_note, .h2-titre-menu, .h3-menu {
   text-align: center; }
 
+/*Détail des menus */
 @media all and (min-width: 768px) {
   .p-menu {
     text-align: left;
@@ -558,7 +584,8 @@ h4 {
 
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-  margin: 100px;
+  border: 1px blue solid;
+  padding: 20px;
   text-decoration: none;
   text-transform: initial;
   color: black;

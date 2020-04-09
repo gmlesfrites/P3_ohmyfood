@@ -120,7 +120,10 @@
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {
-    @include dispocol;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
     width: 256px;
     @media all and (min-width:768px ) {
         width: 610px;
@@ -146,22 +149,26 @@
 }
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
-.div-container.menubox {
-    margin: 20px;
+.div-container_menubox {
+    display: block;
+    padding: 20px;
     @media all and (min-width: 768px) {
-        display:flex;
+        display: flex;
+        justify-content: flex-start;
         flex-direction: row;
-        margin: 50px;
+    }
+    @media all and (min-width:1440px) {
+        padding:50px;
     }
 }
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
+    display:block;
     @media all and (min-width: 768px) {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: nowrap;
-        align-content: center;
         align-items: center;
     }
 }

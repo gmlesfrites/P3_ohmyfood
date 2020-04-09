@@ -8,3 +8,23 @@
     align-content: center;
     align-items: center;
 }
+
+/*Positionnement centré de tous les éléments entre le header et le footer*/
+.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox, .section-index_hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin borred {
+border: 1px red solid;
+}
+
+@mixin borgreen {
+    border: 1px green solid;
+    }
+
+@mixin borblue {
+    border: 1px blue solid;
+}

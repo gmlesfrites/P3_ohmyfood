@@ -4,8 +4,6 @@
 /*Pour éviter aux contenus de sortir du contenant*/
 * {
    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
 }
 
 /*Annulation des médias pour utilisateurs nécessitant une accessibilité particulière*/
@@ -18,4 +16,10 @@
    .fa-circle, .fa-music {
       visibility: hidden;
    }
+}
+
+/*Suppression des margin*/
+html, body, h1, footer, header {
+   margin: 0;
+   padding:0;
 }

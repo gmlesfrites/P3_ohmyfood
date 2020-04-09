@@ -9,7 +9,7 @@
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
     text-align: center;
-    margin:2em;
+    padding: 2em;
 }
 
 /*Taille des contenus*/
@@ -38,6 +38,9 @@
     border-width: 1px;
     color: #fcca46;
     margin: 20px;
+    @media all and (min-width:1024px) {
+        margin: 50px;
+    }
 }
 
 /*Couleurs des liens*/
