@@ -26,16 +26,8 @@
 /*****************************************************/
 /***           Ombres avec box-shadow              ***/
 /*****************************************************/
-/*****************************************************/
-/***                  Flexbox                      ***/
-/*****************************************************/
-/*Positionnement centré de tous les éléments entre le header et le footer*/
-.main-container_index, .main-container_menu, .container-button_soon, .container_indexbox, .section-index_hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
+/*Dispotion en flexbox*/
+/*Encadrement et Ombres des menus*/
 /*****************************************************/
 /***                 Contenu global                ***/
 /*****************************************************/
@@ -99,9 +91,9 @@ h3 {
 h4 {
   font-size: 1.25em; }
 
-@media all and (max-width: 700px) {
-  p {
-    font-size: calc(16px *1.125); } }
+@media all and (max-width: 768px) {
+  p, .button_soon, .footer-link {
+    font-size: calc(16px *1.133); } }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
@@ -353,13 +345,14 @@ h4 {
 /*Container du bouton*/
 .container-button_soon {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin: 20px 20px 90px 20px; }
   @media all and (min-width: 768px) and (max-width: 1440px) {
     .container-button_soon {
-      margin: 50px 50px  105px 50px; } }
+      margin: 50px 50px 105px 50px; } }
   @media all and (min-width: 1440px) {
     .container-button_soon {
       margin: 10px 20px 90px 20px; } }
@@ -391,15 +384,10 @@ h4 {
 /*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 90px; }
+  margin-bottom: 105px; }
   @media all and (min-width: 768px) {
     .main_container_menu {
-      margin-bottom: 75px; } }
+      margin-bottom: 90px; } }
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {

@@ -72,11 +72,11 @@
 
 /*Container du bouton*/
 .container-button_soon {
-    display: flex;
+    @include dispocol;
     @include dispocenter;
     margin:20px 20px 90px 20px;
     @media all and (min-width: 768px) and (max-width:1440px) {
-        margin: 50px 50px  105px 50px;
+        margin: 50px 50px 105px 50px;
     }
     @media all and (min-width: 1440px) {
         margin: 10px 20px 90px 20px;
@@ -109,11 +109,9 @@
 /*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
-    @include dispocol;
-    @include dispocenter;
-    margin-bottom: 90px;
-    @media all and (min-width:768px ) {
-        margin-bottom: 75px;
+    margin-bottom: 105px;
+    @media all and (min-width:768px) {
+        margin-bottom: 90px;
     }
 }
 
@@ -132,7 +130,7 @@
 }
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
 .section-container_menubox {
-padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 /*Mise en page de chaque partie de menu : entrée, plat, dessert*/
