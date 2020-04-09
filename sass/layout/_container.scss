@@ -1,6 +1,6 @@
-/*****************************************************/
+//*****************************************************
 /***         Conteneurs en page d'accueil          ***/
-/*****************************************************/
+//*****************************************************
 /*Mise en page partie main entre header-footer */
 .main-container_index {
     @include dispocol;
@@ -82,18 +82,9 @@
         margin: 10px 20px 90px 20px;
     }
 }
-/*****************************************************/
+//*****************************************************
 /***       Propriétés des mentions légales         ***/
-/*****************************************************/
-/*Container principal des mentions légales*/
-.main-container_legal {
-    margin-bottom: 70px;
-    padding-bottom: 70px;
-    @media all and (min-width: 768px) {
-        margin-bottom: 55px;
-        padding-bottom: 55px;
-    }
-}
+//*****************************************************
 /*Container de chaque article*/
 .article-container_legal, .hr_legal {
     margin: 20px 30px;
@@ -104,23 +95,12 @@
         margin: 60px 100px;
     }
 }
-/*****************************************************/
+//*****************************************************
 /***          Propriétés des pages menus           ***/
-/*****************************************************
+//*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
-.main_container_menu {
-    margin-bottom: 105px;
-    @media all and (min-width:768px) {
-        margin-bottom: 90px;
-    }
-}
-
-/*Affichage de chaque carte dans chaque page*/
-.article-container_menubox {
+.main-container_menu {
     @include bordergray;
-    justify-content: center;
-    align-content: flex-start;
-    width: 80%;
 }
 
 /*Texte centrés dans les conteneurs*/
@@ -165,4 +145,17 @@
     @media all and (min-width: 1024px) {
         padding-top: 50px;
     }
+}
+
+//*****************************************************
+/***             Propriétés mutualisées            ***/
+//*****************************************************
+/*Dernier texte de la page*/
+.last-element_margin, .main-container_menu {
+    margin-bottom: 90px;
+    padding-bottom: 90px;
+        @media all and (min-width: 768px) {
+            margin-bottom: 75px;
+            padding-bottom: 75px;
+        }
 }

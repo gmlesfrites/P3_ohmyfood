@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/*****************************************************/
 /***             Couleurs principales              ***/
-/*****************************************************/
 /*Couleurs du header et du footer*/
 /*La note enchantée*/
 /*Notes du menu 1*/
@@ -10,9 +8,7 @@
 /*Menu palette*/
 /*Variable générique pour la mixin linear-gradient*/
 /*Couleurs de fond*/
-/*****************************************************/
 /***            Polices de caractères              ***/
-/*****************************************************/
 /*Logo*/
 /*Titre carte de chaque restaurant*/
 /*Menu 1*/
@@ -20,17 +16,9 @@
 /*Menu 3*/
 /*Menu 4*/
 /*Mentions légales*/
-/*****************************************************/
 /***            Taille de caractères               ***/
-/*****************************************************/
-/*****************************************************/
 /***           Ombres avec box-shadow              ***/
-/*****************************************************/
-/*Dispotion en flexbox*/
-/*Encadrement et Ombres des menus*/
-/*****************************************************/
 /***                 Contenu global                ***/
-/*****************************************************/
 /*Pour éviter aux contenus de sortir du contenant*/
 * {
   box-sizing: border-box; }
@@ -47,9 +35,7 @@ html, body, h1, footer, header {
   margin: 0;
   padding: 0; }
 
-/*****************************************************/
 /***   Typographie applicable à chaque page        ***/
-/*****************************************************/
 /*Selection de tout pour propriété mot-coupé*/
 * {
   word-wrap: break-word;
@@ -69,9 +55,7 @@ html {
 body {
   font-size: 75%; }
 
-/*****************************************************/
 /***     Taille de caractères généralisée          ***/
-/*****************************************************/
 /*LOGO dans le header*/
 h1, .h1_logo {
   font-size: 3.125em;
@@ -257,9 +241,7 @@ h4 {
     transform: scale(0.1, 0.1); }
   100% {
     transform: scale(0.8, 0.8); } }
-/*****************************************************/
 /***                   Header                      ***/
-/*****************************************************/
 .header {
   background: #579c87;
   width: 100%;
@@ -272,9 +254,7 @@ h4 {
     .header {
       height: 165px; } }
 
-/*****************************************************/
 /***         Conteneurs en page d'accueil          ***/
-/*****************************************************/
 /*Mise en page partie main entre header-footer */
 .main-container_index {
   display: flex;
@@ -358,18 +338,7 @@ h4 {
     .container-button_soon {
       margin: 10px 20px 90px 20px; } }
 
-/*****************************************************/
 /***       Propriétés des mentions légales         ***/
-/*****************************************************/
-/*Container principal des mentions légales*/
-.main-container_legal {
-  margin-bottom: 70px;
-  padding-bottom: 70px; }
-  @media all and (min-width: 768px) {
-    .main-container_legal {
-      margin-bottom: 55px;
-      padding-bottom: 55px; } }
-
 /*Container de chaque article*/
 .article-container_legal, .hr_legal {
   margin: 20px 30px; }
@@ -380,23 +349,11 @@ h4 {
     .article-container_legal, .hr_legal {
       margin: 60px 100px; } }
 
-/*****************************************************/
 /***          Propriétés des pages menus           ***/
-/*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
-.main_container_menu {
-  margin-bottom: 105px; }
-  @media all and (min-width: 768px) {
-    .main_container_menu {
-      margin-bottom: 90px; } }
-
-/*Affichage de chaque carte dans chaque page*/
-.article-container_menubox {
+.main-container_menu {
   border: 1px #efefef solid;
-  box-shadow: -3px -3px 3px #efefef;
-  justify-content: center;
-  align-content: flex-start;
-  width: 80%; }
+  box-shadow: -3px -3px 3px #efefef; }
 
 /*Texte centrés dans les conteneurs*/
 .article-container_menubox, .section-container_menubox, .container_deco {
@@ -439,9 +396,17 @@ h4 {
     .container_deco {
       padding-top: 50px; } }
 
-/*****************************************************/
+/***             Propriétés mutualisées            ***/
+/*Dernier texte de la page*/
+.last-element_margin, .main-container_menu {
+  margin-bottom: 90px;
+  padding-bottom: 90px; }
+  @media all and (min-width: 768px) {
+    .last-element_margin, .main-container_menu {
+      margin-bottom: 75px;
+      padding-bottom: 75px; } }
+
 /***                   Footer                      ***/
-/*****************************************************/
 .footer {
   background: #579c87;
   position: fixed;
@@ -460,9 +425,7 @@ h4 {
       justify-content: space-between;
       align-items: center; } }
 
-/*****************************************************/
 /***    Ecriture des Visuels page d'accueil        ***/
-/*****************************************************/
 .body_index {
   font-family: "Montserrat", "Roboto", sans-serif;
   font-size: 62.5%; }
@@ -501,9 +464,7 @@ h4 {
 .article-container_menubox_palette {
   background-color: #fdfffd; }
 
-/*****************************************************/
 /***     Particularités Mentions légales           ***/
-/*****************************************************/
 /*Famille de police*/
 .body_legal {
   font-family: "Montserrat", "Roboto", sans-serif; }
@@ -517,14 +478,6 @@ h4 {
 .p-legal {
   font-family: "Roboto Slab", Palatino, serif;
   padding-bottom: 20px; }
-
-/*Dernier texte de la page*/
-.p-last-legal {
-  font-family: "Roboto Slab", Palatino, serif;
-  margin-bottom: 90px; }
-  @media all and (min-width: 768px) {
-    .p-last-legal {
-      margin-bottom: 75px; } }
 
 /*ohmyfood en jaune dans les mentions légales*/
 .logo {
@@ -545,9 +498,7 @@ h4 {
 .a-legal {
   color: #579c87; }
 
-/*****************************************************/
 /***   Généralités applicable à chaque menu        ***/
-/*****************************************************/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu {
   padding: 2em 0; }
@@ -607,9 +558,7 @@ h4 {
       transition: background-size .5s;
       background-size: 100% 100%; } }
 
-/*****************************************************/
 /***     Particularités La note enchantée          ***/
-/*****************************************************/
 .body_menu {
   font-family: "Montserrat", "Roboto", sans-serif; }
 
@@ -632,9 +581,7 @@ h4 {
 .h4-menu_note {
   font-size: 1.75em; }
 
-/*****************************************************/
 /***     Particularités Le chic à la française     ***/
-/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
   font-family: "Croissant One", "Zapf-Chancery", cursive;
@@ -666,9 +613,7 @@ h4 {
 .p-prix_chic, .p-menu_chic {
   font-family: "Roboto Slab", Palatino, serif; }
 
-/*****************************************************/
 /***     Particularités Le délice des papilles     ***/
-/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
   font-family: "Croissant One", "Zapf-Chancery", cursive;
@@ -682,9 +627,7 @@ h4 {
 .p-prix_delice, .p-menu_delice {
   font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
 
-/*****************************************************/
 /***     Particularités La palette du goût         ***/
-/*****************************************************/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
   font-family: "Kaushan Script", "Zapf-Chancery", cursive;

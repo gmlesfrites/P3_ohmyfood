@@ -1,6 +1,6 @@
-/*****************************************************/
+//*****************************************************
 /***     Particularités Mentions légales           ***/
-/*****************************************************/
+//*****************************************************
 /*Famille de police*/
 .body_legal {
     font-family: $main-font;
@@ -18,14 +18,7 @@
     padding-bottom: 20px;
 
 }
-/*Dernier texte de la page*/
-.p-last-legal {
-    font-family: $ff-content-legal;
-    margin-bottom: 90px;
-        @media all and (min-width: 768px) {
-            margin-bottom: 75px;
-        }
-}
+
 /*ohmyfood en jaune dans les mentions légales*/
 .logo {
     color: $logo-color;

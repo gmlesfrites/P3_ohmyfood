@@ -1,4 +1,4 @@
-/*Dispotion en flexbox*/
+//*Dispotion en flexbox
 @mixin dispocol {
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-/*Encadrement et Ombres des menus*/
+//*Encadrement et Ombres des menus
 @mixin bordergray {
 border: 1px #efefef solid;
 box-shadow: $box-shadow;
