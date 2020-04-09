@@ -10,16 +10,8 @@
 
 /*Note en grand format*/
 .i_top {
-    font-size: 30px;
-        @media all and (min-width:768px) {
-            font-size: 70px;
-        }
-        @media all and (min-width:1024px) {
-            font-size: 95px;
-        }
-        @media all and (min-width: 1440px) {
-            font-size: 140px;
-        }
+    margin-top: 1em;
+    font-size: 4em;
 }
 
 /*Points de suspension*/
