@@ -100,7 +100,15 @@
 //*****************************************************
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main-container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.article-container_menubox {
     @include bordergray;
+    width:80%;
 }
 
 /*Texte centrés dans les conteneurs*/
