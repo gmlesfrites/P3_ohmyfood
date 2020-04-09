@@ -3,24 +3,21 @@
 /*****************************************************/
 /*Visible à partir de la tablette min-width:768px */
 .img_deco {
-    @include borgreen;
     text-align: center;
     visibility: hidden;
     opacity: 0.7;
     @media all and (min-width: 768px) {
-        width:200px;
+        width:30vw;
+        padding: 20px;
         visibility: initial;
     }
     @media all and (min-width: 1024px) {
-        padding: 30px;
-        width: 250px;
+        padding: 40px;
     }
     @media all and (min-width: 1440px) {
-        padding: 40px;
-        width: 420px;
+        padding: 50px;
     }
     @media all and (min-width: 1900px) {
-        padding: 40px;
-        width: 580px;
+        padding: 100px;
     }
 }

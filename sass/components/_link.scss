@@ -2,6 +2,7 @@
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
   font-size: $link-font-size;
+  font-weight: 500;
   margin: 0.5em;
   color: $color-secondary;
 }

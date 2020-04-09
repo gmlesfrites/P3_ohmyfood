@@ -4,6 +4,9 @@
 @mixin dispocol {
     display: flex;
     flex-direction: column;
+}
+
+@mixin dispocenter {
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -17,14 +20,7 @@
     align-items: center;
 }
 
-@mixin borred {
-border: 1px red solid;
-}
-
-@mixin borgreen {
-    border: 1px green solid;
-    }
-
-@mixin borblue {
-    border: 1px blue solid;
+@mixin bordergray {
+border: 1px #efefef solid;
+box-shadow: $box-shadow;
 }

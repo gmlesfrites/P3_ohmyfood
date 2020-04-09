@@ -69,7 +69,7 @@ html {
   @media screen and (min-width: 768px) {
     html {
       font-size: calc(16px *1.133); } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1440px) {
     html {
       font-size: calc(16px *1.618); } }
 
@@ -99,6 +99,10 @@ h3 {
 h4 {
   font-size: 1.25em; }
 
+@media all and (max-width: 700px) {
+  p {
+    font-size: calc(16px *1.125); } }
+
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
@@ -124,6 +128,7 @@ h4 {
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
   font-size: 1.25em;
+  font-weight: 500;
   margin: 0.5em;
   color: #fcca46; }
 
@@ -195,26 +200,23 @@ h4 {
 /*****************************************************/
 /*Visible à partir de la tablette min-width:768px */
 .img_deco {
-  border: 1px green solid;
   text-align: center;
   visibility: hidden;
   opacity: 0.7; }
   @media all and (min-width: 768px) {
     .img_deco {
-      width: 200px;
+      width: 30vw;
+      padding: 20px;
       visibility: initial; } }
   @media all and (min-width: 1024px) {
     .img_deco {
-      padding: 30px;
-      width: 250px; } }
+      padding: 40px; } }
   @media all and (min-width: 1440px) {
     .img_deco {
-      padding: 40px;
-      width: 420px; } }
+      padding: 50px; } }
   @media all and (min-width: 1900px) {
     .img_deco {
-      padding: 40px;
-      width: 580px; } }
+      padding: 100px; } }
 
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
@@ -298,7 +300,8 @@ h4 {
 
 /*Légère bordure sur les encadrés*/
 .container_indexbox {
-  border: 1px solid #efefef; }
+  border: 1px #efefef solid;
+  box-shadow: -3px -3px 3px #efefef; }
 
 /*Mise en page et dimension des visuels */
 .container_indexbox, .section-index_hover {
@@ -351,6 +354,8 @@ h4 {
 .container-button_soon {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   margin: 20px 20px 90px 20px; }
   @media all and (min-width: 768px) and (max-width: 1440px) {
     .container-button_soon {
@@ -400,57 +405,52 @@ h4 {
 .article-container_menubox {
   display: flex;
   flex-direction: column;
+  border: 1px #efefef solid;
+  box-shadow: -3px -3px 3px #efefef;
   justify-content: center;
   align-content: flex-start;
-  width: 256px; }
-  @media all and (min-width: 768px) {
-    .article-container_menubox {
-      width: 610px;
-      height: 860px; } }
-  @media all and (min-width: 1024px) {
-    .article-container_menubox {
-      width: 815px;
-      height: 1150px; } }
-  @media all and (min-width: 1440px) {
-    .article-container_menubox {
-      width: 1190px;
-      height: 1680px; } }
-  @media all and (min-width: 1900px) {
-    .article-container_menubox {
-      width: 1510px;
-      height: 2130px; } }
+  width: 80%; }
 
 /*Texte centrés dans les conteneurs*/
 .article-container_menubox, .section-container_menubox, .container_deco {
   text-align: center; }
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
+.section-container_menubox {
+  padding-bottom: 50px; }
+
+/*Mise en page de chaque partie de menu : entrée, plat, dessert*/
 .div-container_menubox {
   display: block;
-  padding: 20px; }
+  padding: 0 20px; }
   @media all and (min-width: 768px) {
     .div-container_menubox {
       display: flex;
       justify-content: flex-start;
       flex-direction: row; } }
+  @media all and (min-width: 1024px) {
+    .div-container_menubox {
+      padding: 0 40px; } }
   @media all and (min-width: 1440px) {
     .div-container_menubox {
-      padding: 50px; } }
+      padding: 0 50px; } }
+  @media all and (min-width: 1900px) {
+    .div-container_menubox {
+      padding: 0 100px; } }
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
-  border: 1px red solid;
-  display: block; }
+  display: block;
+  padding-top: 20px; }
   @media all and (min-width: 768px) {
     .container_deco {
       display: flex;
       justify-content: flex-start;
       flex-wrap: nowrap;
       align-items: center; } }
-
-/*Ombre sous les menus et les boutons*/
-.article-container_menubox, .container_indexbox {
-  box-shadow: -3px -3px 3px #efefef; }
+  @media all and (min-width: 1024px) {
+    .container_deco {
+      padding-top: 50px; } }
 
 /*****************************************************/
 /***                   Footer                      ***/
@@ -477,7 +477,8 @@ h4 {
 /***    Ecriture des Visuels page d'accueil        ***/
 /*****************************************************/
 .body_index {
-  font-family: "Montserrat", "Roboto", sans-serif; }
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 62.5%; }
 
 /*Particularités de l'écriture du mot menu Note*/
 .h3-menu_note {
@@ -580,12 +581,14 @@ h4 {
   padding-bottom: 1em; }
   @media all and (min-width: 768px) {
     .p-prix {
+      padding-bottom: 0;
       text-align: right;
       width: 20%; } }
 
 .h3-menu {
-  border: 1px blue solid;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: center; }
   @media all and (min-width: 768px) {
     .h3-menu {
       width: 250px; } }
@@ -601,7 +604,7 @@ h4 {
 
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-  padding: 20px;
+  margin: 20px;
   text-decoration: none;
   text-transform: initial;
   color: black;
@@ -638,6 +641,9 @@ h4 {
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
   background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h4-menu_note {
+  font-size: 1.75em; }
 
 /*****************************************************/
 /***     Particularités Le chic à la française     ***/

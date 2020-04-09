@@ -4,6 +4,7 @@
 /*Mise en page partie main entre header-footer */
 .main-container_index {
     @include dispocol;
+    @include dispocenter;
     @media all and (min-width:1024px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -16,16 +17,13 @@
 
 /*Légère bordure sur les encadrés*/
 .container_indexbox {
-    border: 1px solid #efefef;
+    @include bordergray;
 }
 
 /*Mise en page et dimension des visuels */
 .container_indexbox, .section-index_hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    @include dispocol;
+    @include dispocenter;
     width:256px;
     height: 358px;
         @media all and (min-width:768px) {
@@ -75,7 +73,7 @@
 /*Container du bouton*/
 .container-button_soon {
     display: flex;
-    justify-content: center;
+    @include dispocenter;
     margin:20px 20px 90px 20px;
     @media all and (min-width: 768px) and (max-width:1440px) {
         margin: 50px 50px  105px 50px;
@@ -112,6 +110,7 @@
 /*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
 .main_container_menu {
     @include dispocol;
+    @include dispocenter;
     margin-bottom: 90px;
     @media all and (min-width:768px ) {
         margin-bottom: 75px;
@@ -120,61 +119,53 @@
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {
-    display: flex;
-    flex-direction: column;
+    @include dispocol;
+    @include bordergray;
     justify-content: center;
     align-content: flex-start;
-    width: 256px;
-    @media all and (min-width:768px ) {
-        width: 610px;
-        height: 860px;
-    }
-    @media all and (min-width:1024px) {
-        width:815px;
-        height: 1150px;
-    }
-    @media all and (min-width: 1440px) {
-        width: 1190px;
-        height: 1680px;
-    }
-    @media all and (min-width: 1900px) {
-        width: 1510px;
-        height: 2130px;
-    }
+    width: 80%;
 }
 
 /*Texte centrés dans les conteneurs*/
 .article-container_menubox, .section-container_menubox, .container_deco {
     text-align: center;
 }
-
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
+.section-container_menubox {
+padding-bottom: 50px;
+}
+
+/*Mise en page de chaque partie de menu : entrée, plat, dessert*/
 .div-container_menubox {
     display: block;
-    padding: 20px;
+    padding: 0 20px;
     @media all and (min-width: 768px) {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
     }
+    @media all and (min-width: 1024px) {
+        padding:0 40px;
+    }
     @media all and (min-width:1440px) {
-        padding:50px;
+        padding:0 50px;
+    }
+    @media all and (min-width: 1900px) {
+        padding: 0 100px;
     }
 }
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
-    @include borred;
     display:block;
+    padding-top: 20px;
     @media all and (min-width: 768px) {
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;
         align-items: center;
     }
-}
-
-/*Ombre sous les menus et les boutons*/
-.article-container_menubox, .container_indexbox {
-    box-shadow: $box-shadow;
+    @media all and (min-width: 1024px) {
+        padding-top: 50px;
+    }
 }
