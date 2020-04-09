@@ -10,11 +10,11 @@
 /*Determination de  la taille de police html*/
 html {
     font-size: $base-font-size;
-    @media screen and (min-width: 320px) {
-        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    @media screen and (min-width: 768px) {
+        font-size: calc(#{$base-font-size} *1.133);
     }
-    @media screen and (min-width: 1000px) {
-        font-size: 24px;
+    @media screen and (min-width: 1024px) {
+        font-size: calc(#{$base-font-size} *1.618);
     }
 }
 

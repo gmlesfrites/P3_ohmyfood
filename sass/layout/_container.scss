@@ -164,6 +164,7 @@
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
+    @include borred;
     display:block;
     @media all and (min-width: 768px) {
         display: flex;

@@ -66,12 +66,12 @@ html, body, h1, footer, header {
 /*Determination de  la taille de police html*/
 html {
   font-size: 16px; }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
     html {
-      font-size: calc(16px + 6 * ((100vw - 320px) / 680)); } }
-  @media screen and (min-width: 1000px) {
+      font-size: calc(16px *1.133); } }
+  @media screen and (min-width: 1024px) {
     html {
-      font-size: 24px; } }
+      font-size: calc(16px *1.618); } }
 
 /*Determination de  la taille de police body*/
 body {
@@ -439,6 +439,7 @@ h4 {
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
+  border: 1px red solid;
   display: block; }
   @media all and (min-width: 768px) {
     .container_deco {
@@ -582,9 +583,24 @@ h4 {
       text-align: right;
       width: 20%; } }
 
+.h3-menu {
+  border: 1px blue solid;
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .h3-menu {
+      width: 250px; } }
+  @media all and (min-width: 1024px) {
+    .h3-menu {
+      width: 340px; } }
+  @media all and (min-width: 1440px) {
+    .h3-menu {
+      width: 480px; } }
+  @media all and (min-width: 1900px) {
+    .h3-menu {
+      width: 630px; } }
+
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-  border: 1px blue solid;
   padding: 20px;
   text-decoration: none;
   text-transform: initial;
