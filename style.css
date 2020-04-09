@@ -399,12 +399,12 @@ h4 {
 /***             Propriétés mutualisées            ***/
 /*Dernier texte de la page*/
 .last-element_margin, .main-container_menu {
-  margin-bottom: 90px;
-  padding-bottom: 90px; }
+  margin-bottom: 70px;
+  padding-bottom: 70px; }
   @media all and (min-width: 768px) {
     .last-element_margin, .main-container_menu {
-      margin-bottom: 75px;
-      padding-bottom: 75px; } }
+      margin-bottom: 55px;
+      padding-bottom: 55px; } }
 
 /***                   Footer                      ***/
 .footer {
