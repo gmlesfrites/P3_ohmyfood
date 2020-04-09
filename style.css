@@ -205,10 +205,12 @@ h4 {
       padding: 40px; } }
   @media all and (min-width: 1440px) {
     .img_deco {
-      padding: 50px; } }
+      padding: 40px;
+      width: 420px; } }
   @media all and (min-width: 1900px) {
     .img_deco {
-      padding: 100px; } }
+      padding: 40px;
+      width: 580px; } }
 
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
