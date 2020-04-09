@@ -6,13 +6,18 @@
   color: $color-secondary;
 }
 
+/*agrandissement de l'élément*/
+.link_contact, .link_legal {
+  margin: 5px 20px;
+}
+
 .link_contact:hover, .link_legal:hover {
   @media all and (min-width: 1024px) {
     -webkit-animation: wiggle 200ms 3;
     -moz-animation: wiggle 200ms 3;
     -ms-animation: wiggle 200ms 3;
     animation: wiggle 200ms 3;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 

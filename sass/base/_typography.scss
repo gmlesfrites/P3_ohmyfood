@@ -48,7 +48,7 @@ h4 {
     font-size: $h4-font-size;
 }
 
-p, .button_soon, .footer-link {
+.button_soon, .footer-link {
     @media all and (max-width: 768px) {
         font-size: calc(#{$base-font-size} *1.133);
     }
