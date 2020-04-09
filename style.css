@@ -391,8 +391,6 @@ h4 {
 
 /*Affichage de chaque carte dans chaque page*/
 .article-container_menubox {
-  display: flex;
-  flex-direction: column;
   border: 1px #efefef solid;
   box-shadow: -3px -3px 3px #efefef;
   justify-content: center;
