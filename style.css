@@ -57,7 +57,7 @@ body {
 
 /***     Taille de caractères généralisée          ***/
 /*LOGO dans le header*/
-h1, .h1_logo {
+.header {
   font-size: 3.125em;
   font-family: "Montserrat", "Roboto", sans-serif;
   text-align: center;
@@ -101,9 +101,8 @@ h4 {
       font-size: 1.75em; } }
 
 /*Liens non soulignés*/
-.link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
+.h1_logo, .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-size: 1.25em;
   font-weight: 500;
   color: #fcca46; }
 
@@ -408,8 +407,7 @@ h4 {
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
-  display: block;
-  padding-top: 20px; }
+  display: block; }
   @media all and (min-width: 768px) {
     .container_deco {
       display: flex;
@@ -452,7 +450,7 @@ h4 {
 /***    Ecriture des Visuels page d'accueil        ***/
 .body_index {
   font-family: "Montserrat", "Roboto", sans-serif;
-  font-size: 62.5%; }
+  font-size: 75%; }
 
 /*Particularités de l'écriture du mot menu Note*/
 .h3-menu_note {
@@ -531,7 +529,7 @@ h4 {
 /***   Généralités applicable à chaque menu        ***/
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu, .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-  margin: 1em 0; }
+  padding: 3em 0 1.5em 0; }
 
 .h2-menu {
   text-align: center; }
@@ -564,7 +562,6 @@ h4 {
 
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-  margin: 10px 0;
   text-decoration: none;
   color: black;
   text-transform: initial;
@@ -639,10 +636,10 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.h2-menu_delice, .h3-menu_delice {
+.h2-menu_delice {
   font-family: "Dancing Script", "Zapf-Chancery", cursive; }
 
-.p-prix_delice, .p-menu_delice {
+.p-prix_delice, .p-menu_delice .h3-menu_delice {
   font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
 
 /***     Particularités La palette du goût         ***/

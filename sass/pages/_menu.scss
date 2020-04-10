@@ -4,7 +4,7 @@
 //*****************************************************
 /*Titre carte de chaque restaurant*/
 .h2-titre-menu, .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-    margin: 1em 0;
+    padding: 3em 0 1.5em 0;
 }
 .h2-menu {
     text-align: center;
@@ -43,7 +43,6 @@
 
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-    margin:10px 0;
     text-decoration: none;
     color: $gradientblack;
     text-transform: initial;

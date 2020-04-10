@@ -9,10 +9,10 @@
     -webkit-text-fill-color: transparent;
 }
 
-.h2-menu_delice, .h3-menu_delice {
+.h2-menu_delice {
     font-family: $ff-title-M3;
 }
 
-.p-prix_delice, .p-menu_delice {
+.p-prix_delice, .p-menu_delice .h3-menu_delice {
     font-family: $ff-content-M3;
 }

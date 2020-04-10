@@ -27,7 +27,7 @@ body {
 /***     Taille de caractères généralisée          ***/
 //*****************************************************
 /*LOGO dans le header*/
-h1, .h1_logo {
+.header {
     font-size: $h1-font-size;
     font-family: $main-font;
     text-align: center;

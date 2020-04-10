@@ -143,7 +143,6 @@
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
     display:block;
-    padding-top: 20px;
     @media all and (min-width: 768px) {
         display: flex;
         justify-content: space-between;

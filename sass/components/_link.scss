@@ -1,7 +1,6 @@
 /*Liens non soulignés*/
-.link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
+.h1_logo, .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-size: $link-font-size;
   font-weight: 500;
   color: $color-secondary;
 }
