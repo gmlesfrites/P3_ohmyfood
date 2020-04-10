@@ -558,23 +558,10 @@ h4 {
       width: 20%; } }
 
 /*Titres encadrés des ornements*/
-/*.h3-menu {
-    width:100%;
-    display: flex;
-    justify-content: center;
-    @media all and (min-width: 768px) {
-        width: 240px;
-    }
-    @media all and (min-width : 1024px) {
-        width: 320px;
-    }
-    @media all and (min-width: 1440px) {
-        width: 480px;
-    }
-    @media all and (min-width: 1900px) {
-        width: 630px;
-    }
-}*/
+.h3-menu {
+  display: flex;
+  justify-content: center; }
+
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
   margin: 20px 0;
