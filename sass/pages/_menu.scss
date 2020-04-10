@@ -43,19 +43,17 @@
 
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
-    margin:20px 0;
+    margin:10px 0;
     text-decoration: none;
+    color: $gradientblack;
     text-transform: initial;
     transition: background-size .5s;
+    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) left bottom / 0 100%;
     &:active {
-        background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) left bottom / 0 100%;
-        transition: background-size .2s;
         background-size: 100% 100%;
     }
     @media all and (min-width: 1024px) {
     &:hover {
-        background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-        transition: background-size .5s;
         background-size: 100% 100%;
         }
     }
