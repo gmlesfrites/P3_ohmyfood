@@ -184,20 +184,40 @@ h4 {
   @media all and (min-width: 768px) {
     .img_deco {
       width: 180px;
-      padding: 20px;
       visibility: initial; } }
   @media all and (min-width: 1024px) {
     .img_deco {
-      padding: 40px;
-      width: 280px; } }
+      width: 220px; } }
   @media all and (min-width: 1440px) {
     .img_deco {
-      padding: 40px;
-      width: 400px; } }
+      width: 300px; } }
   @media all and (min-width: 1900px) {
     .img_deco {
-      padding: 90px;
-      width: 540px; } }
+      width: 500px; } }
+
+.img_decogauche {
+  padding-left: 20px; }
+  @media all and (min-width: 1024px) {
+    .img_decogauche {
+      padding-left: 40px; } }
+  @media all and (min-width: 1440px) {
+    .img_decogauche {
+      padding-left: 40px; } }
+  @media all and (min-width: 1900px) {
+    .img_decogauche {
+      padding-left: 90px; } }
+
+.img_decodroite {
+  padding-right: 20px; }
+  @media all and (min-width: 1024px) {
+    .img_decodroite {
+      padding-right: 40px; } }
+  @media all and (min-width: 1440px) {
+    .img_decodroite {
+      padding-right: 40px; } }
+  @media all and (min-width: 1900px) {
+    .img_decodroite {
+      padding-right: 90px; } }
 
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
@@ -538,23 +558,23 @@ h4 {
       width: 20%; } }
 
 /*Titres encadrés des ornements*/
-.h3-menu {
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-  @media all and (min-width: 768px) {
-    .h3-menu {
-      width: 240px; } }
-  @media all and (min-width: 1024px) {
-    .h3-menu {
-      width: 320px; } }
-  @media all and (min-width: 1440px) {
-    .h3-menu {
-      width: 480px; } }
-  @media all and (min-width: 1900px) {
-    .h3-menu {
-      width: 630px; } }
-
+/*.h3-menu {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: 768px) {
+        width: 240px;
+    }
+    @media all and (min-width : 1024px) {
+        width: 320px;
+    }
+    @media all and (min-width: 1440px) {
+        width: 480px;
+    }
+    @media all and (min-width: 1900px) {
+        width: 630px;
+    }
+}*/
 /*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
   margin: 20px 0;
