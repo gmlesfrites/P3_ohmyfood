@@ -223,7 +223,7 @@ h4 {
 /*****************************************************/
 /*notes de musique*/
 .fa-music {
-  background: linear-gradient(120deg, #f05561, #f6916a);
+  background: linear-gradient(130deg, #f05561, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -632,7 +632,7 @@ h4 {
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
   font-family: "Croissant One", "Zapf-Chancery", cursive;
-  background: linear-gradient(120deg, #0228dd, #229df9);
+  background: linear-gradient(to right, #0228dd, #229df9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -646,7 +646,7 @@ h4 {
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
   font-family: "Kaushan Script", "Zapf-Chancery", cursive;
-  background: linear-gradient(120deg, #41963c, #b2f478);
+  background: linear-gradient(to right, #41963c, #b2f478);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
