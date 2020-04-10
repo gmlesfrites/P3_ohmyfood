@@ -567,17 +567,16 @@ h4 {
   margin: 20px 0;
   text-decoration: none;
   text-transform: initial;
-  color: black;
-  transition: background-size 5ms; }
+  color: black; }
   .h3-menu_hover:active {
     background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-    transition: background-size 5ms;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    transition: background-size 5ms; }
   @media all and (min-width: 1024px) {
     .h3-menu_hover:hover {
       background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-      transition: background-size 5ms;
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      transition: background-size 5ms; } }
 
 /***     Particularités La note enchantée          ***/
 .body_menu {
