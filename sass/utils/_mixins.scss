@@ -32,3 +32,17 @@ box-shadow: $box-shadow;
     -ms-animation: wiggle 200ms 3;
     animation: wiggle 200ms 3;
 }
+
+@mixin animDelay($delay) {
+    -webkit-animation-delay: $delay;
+    -moz-animation-delay: $delay;
+    -ms-animation-delay: $delay;
+    animation-delay: $delay;
+}
+
+@mixin soon {
+    -webkit-animation: dotanim 5s infinite ease-in-out;
+    -moz-animation: dotanim 5s infinite ease-in-out;
+    -ms-animation: dotanim 5s infinite ease-in-out;
+    animation: dotanim 5s infinite ease-in-out;
+}

@@ -227,18 +227,33 @@ h4 {
 .fa-circle {
   font-size: 0.5em;
   color: #fcca46;
+  -webkit-animation: dotanim 5s infinite ease-in-out;
+  -moz-animation: dotanim 5s infinite ease-in-out;
+  -ms-animation: dotanim 5s infinite ease-in-out;
   animation: dotanim 5s infinite ease-in-out;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
   animation-delay: 2s;
   opacity: 0.8; }
 
 .dot1 {
-  animation-delay: .1s; }
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
 
 .dot2 {
-  animation-delay: .4s; }
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
 
 .dot3 {
-  animation-delay: .8s; }
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 @keyframes dotanim {
   0% {

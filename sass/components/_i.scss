@@ -15,18 +15,18 @@
 .fa-circle {
     font-size: 0.5em;
     color: $color-secondary;
-    animation: dotanim 5s infinite ease-in-out;
-    animation-delay: 2s;
+    @include soon;
+    @include animDelay(2s);
     opacity: 0.8;
 }
 .dot1 {
-    animation-delay: .1s;
+    @include animDelay(.1s);
 }
 .dot2 {
-    animation-delay:.4s;
+    @include animDelay(.4s);
 }
 .dot3 {
-    animation-delay:.8s;
+    @include animDelay(.8s);
 }
 
 @keyframes dotanim {
