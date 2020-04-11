@@ -126,43 +126,43 @@ h4 {
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
   0% {
-    -webkit-transform: -webkit-rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   0% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   0% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   0% {
     transform: rotate(0deg); }
   25% {
-    -webkit-transform: -webkit-rotate(-2deg); }
+    -webkit-transform: rotate(-2deg); }
   25% {
-    -moz-transform: -moz-rotate(-2deg); }
+    -moz-transform: rotate(-2deg); }
   25% {
-    -ms-transform: -ms-rotate(-2deg); }
+    -ms-transform: rotate(-2deg); }
   25% {
     transform: rotate(-2deg); }
   50% {
-    -webkit-transform: -webkit-rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   50% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   50% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   50% {
     transform: rotate(0deg); }
   75% {
-    -webkit-transform: -webkit-rotate(2deg); }
+    -webkit-transform: rotate(2deg); }
   75% {
-    -moz-transform: -moz-rotate(2deg); }
+    -moz-transform: rotate(2deg); }
   75% {
-    -ms-transform: -ms-rotate(2deg); }
+    -ms-transform: rotate(2deg); }
   75% {
     transform: rotate(2deg); }
   100% {
-    -webkir-transform: -webkit-rotate(0deg); }
+    -webkir-transform: rotate(0deg); }
   100% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   100% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
 /*****************************************************/
@@ -257,9 +257,27 @@ h4 {
 
 @keyframes dotanim {
   0% {
+    -webkit-transform: scale(0.8, 0.8); }
+  0% {
+    -moz-transform: scale(0.8, 0.8); }
+  0% {
+    -ms-transform: scale(0.8, 0.8); }
+  0% {
     transform: scale(0.8, 0.8); }
   50% {
+    -webkit-transform: scale(0.1, 0.1); }
+  50% {
+    -moz-transform: scale(0.1, 0.1); }
+  50% {
+    -ms-transform: scale(0.1, 0.1); }
+  50% {
     transform: scale(0.1, 0.1); }
+  100% {
+    -webkit-transform: scale(0.8, 0.8); }
+  100% {
+    -moz-transform: scale(0.8, 0.8); }
+  100% {
+    -ms-transform: scale(0.8, 0.8); }
   100% {
     transform: scale(0.8, 0.8); } }
 /***                   Header                      ***/

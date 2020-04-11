@@ -27,24 +27,24 @@
 }
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
-  0% {-webkit-transform: -webkit-rotate(0deg);}
-  0% {-moz-transform: -moz-rotate(0deg);}
-  0% {-ms-transform: -ms-rotate(0deg);}
+  0% {-webkit-transform: rotate(0deg);}
+  0% {-moz-transform: rotate(0deg);}
+  0% {-ms-transform: rotate(0deg);}
   0% {transform: rotate(0deg);}
-  25% {-webkit-transform: -webkit-rotate(-2deg);}
-  25% {-moz-transform: -moz-rotate(-2deg);}
-  25% {-ms-transform: -ms-rotate(-2deg);}
+  25% {-webkit-transform: rotate(-2deg);}
+  25% {-moz-transform: rotate(-2deg);}
+  25% {-ms-transform: rotate(-2deg);}
   25% {transform: rotate(-2deg);}
-  50% {-webkit-transform: -webkit-rotate(0deg);}
-  50% {-moz-transform: -moz-rotate(0deg);}
-  50% {-ms-transform: -ms-rotate(0deg);}
+  50% {-webkit-transform: rotate(0deg);}
+  50% {-moz-transform: rotate(0deg);}
+  50% {-ms-transform: rotate(0deg);}
   50% {transform: rotate(0deg);}
-  75% {-webkit-transform: -webkit-rotate(2deg);}
-  75% {-moz-transform: -moz-rotate(2deg);}
-  75% {-ms-transform: -ms-rotate(2deg);}
+  75% {-webkit-transform: rotate(2deg);}
+  75% {-moz-transform: rotate(2deg);}
+  75% {-ms-transform: rotate(2deg);}
   75% {transform: rotate(2deg);}
-  100% {-webkir-transform: -webkit-rotate(0deg);}
-  100% {-moz-transform: -moz-rotate(0deg);}
-  100% {-ms-transform: -ms-rotate(0deg);}
+  100% {-webkir-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(0deg);}
+  100% {-ms-transform: rotate(0deg);}
   100% {transform: rotate(0deg);}
 }
