@@ -189,25 +189,25 @@ h4 {
   padding-left: 20px; }
   @media all and (min-width: 1024px) {
     .img_decogauche {
-      padding-left: 40px; } }
+      margin-left: 40px; } }
   @media all and (min-width: 1440px) {
     .img_decogauche {
-      padding-left: 40px; } }
+      margin-left: 40px; } }
   @media all and (min-width: 1900px) {
     .img_decogauche {
-      padding-left: 90px; } }
+      margin-left: 90px; } }
 
 .img_decodroite {
   padding-right: 20px; }
   @media all and (min-width: 1024px) {
     .img_decodroite {
-      padding-right: 40px; } }
+      margin-right: 40px; } }
   @media all and (min-width: 1440px) {
     .img_decodroite {
-      padding-right: 40px; } }
+      margin-right: 40px; } }
   @media all and (min-width: 1900px) {
     .img_decodroite {
-      padding-right: 90px; } }
+      margin-right: 90px; } }
 
 /*****************************************************/
 /***              Icônes Font Awesome              ***/
