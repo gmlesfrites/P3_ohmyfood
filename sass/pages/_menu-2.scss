@@ -3,10 +3,7 @@
 //*****************************************************
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
-    font-family: $ff-title-M2;
-    background: linear-gradient($direction, $gradient1_chic, $gradient3_chic);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@include linearGradient($direction, $gradient1_chic, $gradient3_chic);
 }
 
 /*Couleurs différentes entrées/plats/desserts*/

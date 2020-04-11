@@ -14,3 +14,10 @@
 border: 1px #efefef solid;
 box-shadow: $box-shadow;
 }
+
+//Mixin linear-gradient
+@mixin linearGradient($degree, $gradient1, $gradient2) {
+    background: linear-gradient($degree, $gradient1, $gradient2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

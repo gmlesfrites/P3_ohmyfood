@@ -564,8 +564,8 @@ h4 {
   text-decoration: none;
   text-transform: initial;
   color: black;
-  transition: background-size .5s;
-  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left-bottom/0 100%; }
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s; }
   .h3-menu_hover:active {
     background-size: 100% 100%; }
   @media all and (min-width: 1024px) {
@@ -590,7 +590,7 @@ h4 {
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
-  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left-bottom/0 100%; }
+  background: linear-gradient(to top, #f05561 0%, #f05561 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 .h4-menu_note {
   font-size: 1.75em; }
@@ -598,7 +598,6 @@ h4 {
 /***     Particularités Le chic à la française     ***/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
-  font-family: "Croissant One", "Zapf-Chancery", cursive;
   background: linear-gradient(120deg, #db8528, #8f5bfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -641,6 +640,16 @@ h4 {
 .p-prix_delice, .p-menu_delice .h3-menu_delice {
   font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
 
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_delice1 {
+  background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_delice2 {
+  background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_delice3 {
+  background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
 /***     Particularités La palette du goût         ***/
 /*Titre à l'intérieur de la carte*/
 .h2-menu_palette {
@@ -652,5 +661,9 @@ h4 {
 /*Texte des entrées, plats et desserts*/
 .h3-menu_palette, .p-prix_palette, .p-menu_palette {
   font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_palette {
+  background: linear-gradient(to top, #b2f478 0%, #b2f478 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 /*# sourceMappingURL=style.css.map */

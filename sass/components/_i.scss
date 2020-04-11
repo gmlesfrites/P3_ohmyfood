@@ -3,9 +3,7 @@
 /*****************************************************/
 /*notes de musique*/
 .fa-music {
-    background: linear-gradient($direction, $gradient1_note, $gradient2_note);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include linearGradient($direction, $gradient1_note, $gradient2_note);
 }
 
 /*Note en grand format*/
