@@ -12,6 +12,7 @@
     bottom: 0;
     height: 70px;
         @media  all and (min-width: 768px){
+            @include regulFZ(120%);
             height: 55px;
             display: flex;
             flex-direction: row;

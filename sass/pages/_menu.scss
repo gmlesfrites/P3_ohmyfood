@@ -4,7 +4,6 @@
 //*****************************************************
 /*Titre carte de chaque restaurant*/
 .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-    border: 1px green solid;
     padding: 2em 0.5em;
 }
 
@@ -21,7 +20,12 @@
 .h3-menu {
     display: flex;
     justify-content: center;
+    @include regulFZ(90%);
+    @media all and (min-width: 768px) {
+        @include regulFZ(120%);
+    }
 }
+
 .h3-menu_hover {
     text-decoration: none;
     text-transform: initial;

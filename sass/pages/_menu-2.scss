@@ -3,7 +3,8 @@
 //*****************************************************
 /*Titre à l'intérieur de la carte*/
 .h2-menu_chic {
-@include linearGradient($direction, $gradient1_chic, $gradient3_chic);
+    font-family: $ff-title-M2;
+    @include linearGradient($direction, $gradient1_chic, $gradient3_chic);
 }
 
 /*Couleurs différentes entrées/plats/desserts*/

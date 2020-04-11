@@ -39,9 +39,9 @@ h4 {
 
 .main-container_menu {
     @media screen and (min-width: 768px) {
-        font-size: calc(#{$base-font-size} *1.133);
+        font-size: calc($base-font-size*1.133);
     }
     @media screen and (min-width: 1440px) {
-        font-size: calc(#{$base-font-size} *1.618);
+        font-size: calc($base-font-size*1.618);
     }
 }
