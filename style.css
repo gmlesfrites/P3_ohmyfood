@@ -585,7 +585,7 @@ h4 {
   font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
 
 /*Couleur de police*/
-.h2-menu_note, .h3-menu_note {
+.h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
   color: #3d1319; }
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
