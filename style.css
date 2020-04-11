@@ -560,13 +560,12 @@ h4 {
   display: flex;
   justify-content: center; }
 
-/*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
   text-decoration: none;
-  color: black;
   text-transform: initial;
+  color: black;
   transition: background-size .5s;
-  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) left bottom/0 100%; }
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left-bottom/0 100%; }
   .h3-menu_hover:active {
     background-size: 100% 100%; }
   @media all and (min-width: 1024px) {
@@ -586,12 +585,12 @@ h4 {
   font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
 
 /*Couleur de police*/
-.h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
+.h2-menu_note, .h3-menu_note {
   color: #3d1319; }
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
-  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left-bottom/0 100%; }
 
 .h4-menu_note {
   font-size: 1.75em; }

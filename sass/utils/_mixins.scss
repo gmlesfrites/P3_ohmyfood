@@ -21,3 +21,20 @@ box-shadow: $box-shadow;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+//Soulignement des titres au survol
+@mixin hoverGradient($color1, $color2) {
+    text-decoration: none;
+    text-transform: initial;
+    color: $gradientblack;
+    transition: background-size .5s;
+    background: linear-gradient(to top, $color1 0%, $color2 10%, transparent 10.01%) no-repeat left-bottom / 0 100%;
+        &:active {
+            background-size: 100% 100%;
+        }
+        @media all and (min-width: 1024px) {
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
+}

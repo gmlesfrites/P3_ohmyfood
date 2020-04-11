@@ -41,19 +41,18 @@
     justify-content: center;
 }
 
-/*Transition sur les titres entrées/plats/desserts*/
 .h3-menu_hover {
     text-decoration: none;
-    color: $gradientblack;
     text-transform: initial;
+    color: $gradientblack;
     transition: background-size .5s;
-    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) left bottom / 0 100%;
-    &:active {
-        background-size: 100% 100%;
-    }
-    @media all and (min-width: 1024px) {
-    &:hover {
-        background-size: 100% 100%;
+    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left-bottom / 0 100%;
+        &:active {
+            background-size: 100% 100%;
         }
-    }
+        @media all and (min-width: 1024px) {
+            &:hover {
+                background-size: 100% 100%;
+            }
+        }
 }
