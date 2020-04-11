@@ -14,3 +14,21 @@
 border: 1px #efefef solid;
 box-shadow: $box-shadow;
 }
+
+//Mixin linear-gradient
+@mixin linearGradient($degree, $gradient1, $gradient2) {
+    background: linear-gradient($degree, $gradient1, $gradient2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin regulFZ($fz) {
+    font-size: $fz;
+}
+
+@mixin wiggle {
+    -webkit-animation: wiggle 200ms 3;
+    -moz-animation: wiggle 200ms 3;
+    -ms-animation: wiggle 200ms 3;
+    animation: wiggle 200ms 3;
+}

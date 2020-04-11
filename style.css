@@ -44,40 +44,39 @@ html, body, h1, footer, header {
 /*Determination de  la taille de police html*/
 html {
   font-size: 16px; }
-  @media screen and (min-width: 768px) {
+  @media all and (min-width: 1024px) {
     html {
-      font-size: calc(16px *1.133); } }
-  @media screen and (min-width: 1440px) {
+      font-size: 18px; } }
+  @media all and (min-width: 1440px) {
     html {
-      font-size: calc(16px *1.618); } }
-
-/*Determination de  la taille de police body*/
-body {
-  font-size: 75%; }
+      font-size: 20px; } }
 
 /***     Taille de caractères généralisée          ***/
 /*LOGO dans le header*/
-h1, .h1_logo {
-  font-size: 3.125em;
+.header {
+  font-size: 2.115em;
   font-family: "Montserrat", "Roboto", sans-serif;
   text-align: center;
   letter-spacing: -1px; }
 
 /*Titre de toutes les pages menu et mentions légales*/
 h2 {
-  font-size: 2.375em; }
+  font-size: 1.867em; }
 
 /*Entrées, plats desserts dans les menus et grandes parties mentions légales*/
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.648em; }
 
 /*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
 h4 {
-  font-size: 1.25em; }
+  font-size: 1.454em; }
 
-@media all and (max-width: 768px) {
-  .button_soon, .footer-link {
-    font-size: calc(16px *1.133); } }
+@media screen and (min-width: 768px) {
+  .main-container_menu {
+    font-size: calc($base-font-size*1.133); } }
+@media screen and (min-width: 1440px) {
+  .main-container_menu {
+    font-size: calc($base-font-size*1.618); } }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
@@ -85,7 +84,7 @@ h4 {
 .button_soon {
   width: 256px;
   height: 50px;
-  font-size: 1.25em;
+  font-size: 1.454em;
   background: #579c87;
   color: #fcca46;
   border: none;
@@ -98,19 +97,19 @@ h4 {
     .button_soon {
       width: 445px;
       height: 85px;
-      font-size: 1.75em; } }
+      font-size: 1.648em; } }
 
 /*Liens non soulignés*/
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-size: 1.25em;
   font-weight: 500;
   color: #fcca46; }
 
 /*agrandissement de l'élément*/
 .link_contact, .link_legal {
-  margin: 5px 20px; }
+  margin: 0.3em; }
 
+/*Animation sur les liens du footer*/
 @media all and (min-width: 1024px) {
   .link_contact:hover, .link_legal:hover {
     -webkit-animation: wiggle 200ms 3;
@@ -119,7 +118,6 @@ h4 {
     animation: wiggle 200ms 3;
     opacity: 0.8; } }
 
-/*Animation sur les liens*/
 .footer-link:active {
   opacity: 0.7;
   -webkit-animation: wiggle 200ms 3;
@@ -129,8 +127,7 @@ h4 {
   @media all and (min-width: 1024px) {
     .footer-link:active {
       animation-play-state: paused;
-      animation-duration: 0s;
-      animation: none; } }
+      animation-duration: 0s; } }
 
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
@@ -183,14 +180,14 @@ h4 {
   opacity: 0.7; }
   @media all and (min-width: 768px) {
     .img_deco {
-      width: 180px;
+      width: 200px;
       visibility: initial; } }
   @media all and (min-width: 1024px) {
     .img_deco {
-      width: 220px; } }
+      width: 250px; } }
   @media all and (min-width: 1440px) {
     .img_deco {
-      width: 300px; } }
+      width: 320px; } }
   @media all and (min-width: 1900px) {
     .img_deco {
       width: 500px; } }
@@ -230,8 +227,7 @@ h4 {
 
 /*Note en grand format*/
 .i_top {
-  margin-top: 1em;
-  font-size: 4em; }
+  font-size: 2em; }
 
 /*Points de suspension*/
 .fa-circle {
@@ -265,7 +261,8 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 120px; }
+  height: 120px;
+  font-size: 95%; }
   @media all and (min-width: 1024px) {
     .header {
       height: 165px; } }
@@ -282,7 +279,7 @@ h4 {
     .main-container_index {
       flex-direction: row;
       flex-wrap: wrap; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1480px) {
     .main-container_index {
       flex-wrap: nowrap;
       align-content: center; } }
@@ -299,10 +296,12 @@ h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  font-size: 95%;
   width: 256px;
   height: 358px; }
   @media all and (min-width: 768px) {
     .container_indexbox, .section-index_hover {
+      font-size: 100%;
       width: 615px;
       height: 860px; } }
   @media all and (min-width: 1024px) {
@@ -311,8 +310,8 @@ h4 {
       height: 510px; } }
   @media all and (min-width: 1440px) {
     .container_indexbox, .section-index_hover {
-      width: 260px;
-      height: 365px; } }
+      width: 580px;
+      height: 810px; } }
   @media all and (min-width: 1900px) {
     .container_indexbox, .section-index_hover {
       width: 350px;
@@ -320,7 +319,6 @@ h4 {
 
 /*Survol des visuels*/
 .section-index_hover {
-  font-size: 80%;
   transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
   .section-index_hover:active {
     -webkit-transform: scale(1.1);
@@ -385,7 +383,7 @@ h4 {
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
 .section-container_menubox {
-  padding-bottom: 50px; }
+  padding-bottom: 1.5em; }
 
 /*Mise en page de chaque partie de menu : entrée, plat, dessert*/
 .div-container_menubox {
@@ -408,17 +406,14 @@ h4 {
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
-  display: block;
-  padding-top: 20px; }
+  display: block; }
   @media all and (min-width: 768px) {
     .container_deco {
+      padding: 1em;
       display: flex;
       justify-content: space-between;
       flex-wrap: nowrap;
       align-items: center; } }
-  @media all and (min-width: 1024px) {
-    .container_deco {
-      padding-top: 50px; } }
 
 /***             Propriétés mutualisées            ***/
 /*Dernier texte de la page*/
@@ -438,11 +433,12 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   height: 70px; }
   @media all and (min-width: 768px) {
     .footer {
+      font-size: 120%;
       height: 55px;
       display: flex;
       flex-direction: row;
@@ -452,7 +448,7 @@ h4 {
 /***    Ecriture des Visuels page d'accueil        ***/
 .body_index {
   font-family: "Montserrat", "Roboto", sans-serif;
-  font-size: 62.5%; }
+  font-size: 75%; }
 
 /*Particularités de l'écriture du mot menu Note*/
 .h3-menu_note {
@@ -491,12 +487,13 @@ h4 {
 /***     Particularités Mentions légales           ***/
 /*Famille de police*/
 .body_legal {
-  font-family: "Montserrat", "Roboto", sans-serif; }
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 90%; }
 
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
   text-align: center;
-  padding: 2em; }
+  padding: 1.5em; }
 
 /*Taille des contenus*/
 .p-legal {
@@ -530,16 +527,36 @@ h4 {
 
 /***   Généralités applicable à chaque menu        ***/
 /*Titre carte de chaque restaurant*/
-.h2-titre-menu, .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-  margin: 1em 0; }
+.h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
+  padding: 2em 0.5em; }
 
 .h2-menu {
   text-align: center; }
 
 /*Alignement des polices des titres*/
-.h4-menu_note, .h2-titre-menu, .h3-menu {
+.h4-menu_note, .h2-titre-menu {
   text-align: center;
   padding: 1.5em; }
+
+/*Titres encadrés des ornements*/
+.h3-menu {
+  display: flex;
+  justify-content: center; }
+  @media all and (min-width: 768px) {
+    .h3-menu {
+      font-size: 120%; } }
+
+.h3-menu_hover {
+  text-decoration: none;
+  text-transform: initial;
+  color: black;
+  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s; }
+  .h3-menu_hover:active {
+    background-size: 100% 100%; }
+  @media all and (min-width: 1024px) {
+    .h3-menu_hover:hover {
+      background-size: 100% 100%; } }
 
 /*Détail des menus */
 @media all and (min-width: 768px) {
@@ -557,30 +574,11 @@ h4 {
       text-align: right;
       width: 20%; } }
 
-/*Titres encadrés des ornements*/
-.h3-menu {
-  display: flex;
-  justify-content: center; }
-
-/*Transition sur les titres entrées/plats/desserts*/
-.h3-menu_hover {
-  margin: 10px 0;
-  text-decoration: none;
-  color: black;
-  text-transform: initial;
-  transition: background-size .5s;
-  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) left bottom/0 100%; }
-  .h3-menu_hover:active {
-    background-size: 100% 100%; }
-  @media all and (min-width: 1024px) {
-    .h3-menu_hover:hover {
-      background-size: 100% 100%; } }
-
 /***     Particularités La note enchantée          ***/
 .body_menu {
   font-family: "Montserrat", "Roboto", sans-serif; }
 
-/*Titre 2 et titre 3 à l'intérieur de la carte*/
+/*Titre à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
   font-family: "devonshire", "Zapf-Chancery", cursive; }
 
@@ -594,10 +592,10 @@ h4 {
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
-  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+  background: linear-gradient(to top, #f05561 0%, #f05561 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 .h4-menu_note {
-  font-size: 1.75em; }
+  font-size: 1.648em; }
 
 /***     Particularités Le chic à la française     ***/
 /*Titre à l'intérieur de la carte*/
@@ -627,6 +625,9 @@ h4 {
 .h3-menu_hover_chic3 {
   background: linear-gradient(to top, #8f5bfe 0%, #8f5bfe 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
+.h3-menu_hover_chic1, .h3-menu_hover_chic2, .h3-menu_hover_chic3 {
+  font-size: 95%; }
+
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic {
   font-family: "Roboto Slab", Palatino, serif; }
@@ -639,11 +640,21 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.h2-menu_delice, .h3-menu_delice {
+.h2-menu_delice {
   font-family: "Dancing Script", "Zapf-Chancery", cursive; }
 
-.p-prix_delice, .p-menu_delice {
+.p-prix_delice, .p-menu_delice .h3-menu_delice {
   font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
+
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_delice1 {
+  background: linear-gradient(to top, #0228dd 0%, #0228dd 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_delice2 {
+  background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_delice3 {
+  background: linear-gradient(to top, #229df9 0%, #229df9 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 /***     Particularités La palette du goût         ***/
 /*Titre à l'intérieur de la carte*/
@@ -656,5 +667,9 @@ h4 {
 /*Texte des entrées, plats et desserts*/
 .h3-menu_palette, .p-prix_palette, .p-menu_palette {
   font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_palette {
+  background: linear-gradient(to top, #b2f478 0%, #b2f478 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
 
 /*# sourceMappingURL=style.css.map */

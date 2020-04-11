@@ -4,15 +4,24 @@
 /*Titre à l'intérieur de la carte*/
 .h2-menu_delice {
     font-family: $ff-title-M2;
-    background: linear-gradient($direction, $gradient1_delice, $gradient3_delice);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include linearGradient($direction, $gradient1_delice, $gradient3_delice );
 }
 
-.h2-menu_delice, .h3-menu_delice {
+.h2-menu_delice {
     font-family: $ff-title-M3;
 }
 
-.p-prix_delice, .p-menu_delice {
+.p-prix_delice, .p-menu_delice .h3-menu_delice {
     font-family: $ff-content-M3;
+}
+
+/*Couleur de soulignement des entrées-plats-desserts*/
+.h3-menu_hover_delice1 {
+    background: linear-gradient(to top, $gradient1_delice 0%, $gradient1_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+.h3-menu_hover_delice2 {
+    background: linear-gradient(to top, $gradient2_delice 0%, $gradient2_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+.h3-menu_hover_delice3 {
+    background: linear-gradient(to top, $gradient3_delice 0%, $gradient3_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }

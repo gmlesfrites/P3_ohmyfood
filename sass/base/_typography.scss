@@ -10,24 +10,19 @@
 /*Determination de  la taille de police html*/
 html {
     font-size: $base-font-size;
-    @media screen and (min-width: 768px) {
-        font-size: calc(#{$base-font-size} *1.133);
+    @media all and (min-width:1024px) {
+        font-size: 18px;
     }
-    @media screen and (min-width: 1440px) {
-        font-size: calc(#{$base-font-size} *1.618);
+    @media all and (min-width: 1440px) {
+        font-size: 20px;
     }
-}
-
-/*Determination de  la taille de police body*/
-body {
-    font-size: 75%;
 }
 
 //*****************************************************
 /***     Taille de caractères généralisée          ***/
 //*****************************************************
 /*LOGO dans le header*/
-h1, .h1_logo {
+.header {
     font-size: $h1-font-size;
     font-family: $main-font;
     text-align: center;
@@ -48,8 +43,11 @@ h4 {
     font-size: $h4-font-size;
 }
 
-.button_soon, .footer-link {
-    @media all and (max-width: 768px) {
-        font-size: calc(#{$base-font-size} *1.133);
+.main-container_menu {
+    @media screen and (min-width: 768px) {
+        font-size: calc($base-font-size*1.133);
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: calc($base-font-size*1.618);
     }
 }

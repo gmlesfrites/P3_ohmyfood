@@ -5,7 +5,7 @@
     font-family: $main-font;
 }
 
-/*Titre 2 et titre 3 à l'intérieur de la carte*/
+/*Titre à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
     font-family:$ff-title-M1;
 }
@@ -22,7 +22,7 @@
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
-    background: linear-gradient(to top, $gradient3_note 0%, $gradient3_note 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    background: linear-gradient(to top, $gradient1_note 0%, $gradient1_note 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }
 
 .h4-menu_note {

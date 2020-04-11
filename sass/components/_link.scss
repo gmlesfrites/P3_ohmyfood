@@ -1,40 +1,30 @@
 /*Liens non soulignés*/
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-size: $link-font-size;
   font-weight: 500;
   color: $color-secondary;
 }
 
 /*agrandissement de l'élément*/
 .link_contact, .link_legal {
-  margin: 5px 20px;
+  margin: 0.3em;
 }
 
+/*Animation sur les liens du footer*/
 .link_contact:hover, .link_legal:hover {
   @media all and (min-width: 1024px) {
-    -webkit-animation: wiggle 200ms 3;
-    -moz-animation: wiggle 200ms 3;
-    -ms-animation: wiggle 200ms 3;
-    animation: wiggle 200ms 3;
+    @include wiggle;
     opacity: 0.8;
   }
 }
-
-/*Animation sur les liens*/
 .footer-link:active {
   opacity: 0.7;
-  -webkit-animation: wiggle 200ms 3;
-  -moz-animation: wiggle 200ms 3;
-  -ms-animation: wiggle 200ms 3;
-  animation: wiggle 200ms 3;
+  @include wiggle;
   @media all and (min-width: 1024px) {
     animation-play-state: paused;
     animation-duration: 0s;
-    animation: none;
   }
 }
-
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
   0% {-webkit-transform: -webkit-rotate(0deg);}
