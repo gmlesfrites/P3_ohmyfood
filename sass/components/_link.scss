@@ -1,13 +1,13 @@
 /*Liens non soulignés*/
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-weight: 500;
   color: $color-secondary;
 }
 
 /*agrandissement de l'élément*/
 .link_contact, .link_legal {
   margin: 0.3em;
+  font-weight: 500;
 }
 
 /*Animation sur les liens du footer*/
