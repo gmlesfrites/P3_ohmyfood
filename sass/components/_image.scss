@@ -6,17 +6,8 @@
     visibility: hidden;
     opacity: 0.7;
     @media all and (min-width: 768px) {
-        width: 130px;
+        width: 33%;
         visibility: initial;
-    }
-    @media all and (min-width: 1024px) {
-        width: 220px;
-    }
-    @media all and (min-width: 1440px) {
-        width: 300px;
-    }
-    @media all and (min-width: 1900px) {
-        width: 500px;
     }
 }
 .img_decogauche {

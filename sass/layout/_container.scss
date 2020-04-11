@@ -33,7 +33,6 @@
             height:860px;
         }
         @media all and (min-width: 1024px) {
-            @include regulFZ(120%);
             width: 360px;
             height: 510px;
         }
@@ -42,7 +41,6 @@
             height: 810px;
         }
         @media all and (min-width: 1900px) {
-            @include regulFZ(95%);
             width: 350px;
             height: 490px;
         }
@@ -58,8 +56,8 @@
     }
     @media all and (min-width: 1024px) {
         &:hover {
-    	    -webkit-transform: scale(1.3);
-	        transform: scale(1.3);
+    	    -webkit-transform: scale(1.2);
+	        transform: scale(1.2);
             opacity: 0.8;
         }
     }
