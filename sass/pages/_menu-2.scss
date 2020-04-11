@@ -16,6 +16,8 @@
 .section_chic_color3, .h3-menu_hover_chic3 {
     color: $gradient3_chic;
 }
+
+
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_chic1 {
     background: linear-gradient(to top, $gradient1_chic 0%, $gradient1_chic 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -27,6 +29,9 @@
     background: linear-gradient(to top, $gradient3_chic 0%, $gradient3_chic 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }
 
+.h3-menu_hover_chic1, .h3-menu_hover_chic2, .h3-menu_hover_chic3 {
+    @include regulFZ(95%);
+}
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic {
     font-family: $ff-content-M2;

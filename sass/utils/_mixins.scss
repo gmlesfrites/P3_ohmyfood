@@ -21,3 +21,7 @@ box-shadow: $box-shadow;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin regulFZ($fz) {
+    font-size: $fz;
+}

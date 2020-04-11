@@ -3,19 +3,40 @@
 /***   Généralités applicable à chaque menu        ***/
 //*****************************************************
 /*Titre carte de chaque restaurant*/
-.h2-titre-menu, .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-    padding: 3em 0 1.5em 0;
+.h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
+    border: 1px green solid;
+    padding: 2em 0.5em;
 }
+
 .h2-menu {
     text-align: center;
 }
 
 /*Alignement des polices des titres*/
-.h4-menu_note, .h2-titre-menu, .h3-menu {
+.h4-menu_note, .h2-titre-menu {
     text-align: center;
     padding: 1.5em;
 }
-
+/*Titres encadrés des ornements*/
+.h3-menu {
+    display: flex;
+    justify-content: center;
+}
+.h3-menu_hover {
+    text-decoration: none;
+    text-transform: initial;
+    color: $gradientblack;
+    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    &:active {
+        background-size: 100% 100%;
+    }
+    @media all and (min-width:1024px) {
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
 /*Détail des menus */
 .p-menu {
     @media all and (min-width: 768px) {
@@ -32,27 +53,5 @@
         padding-bottom: 0;
         text-align: right;
         width:20%
-    }
-}
-
-/*Titres encadrés des ornements*/
-.h3-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.h3-menu_hover {
-    text-decoration: none;
-    text-transform: initial;
-    color: $gradientblack;
-    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-    &:active {
-        background-size: 100% 100%;
-    }
-    @media all and (min-width:1024px) {
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
 }

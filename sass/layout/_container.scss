@@ -9,7 +9,7 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    @media all and (min-width:1440px) {
+    @media all and (min-width:1480px) {
         flex-wrap: nowrap;
         align-content: center;
     }
@@ -24,21 +24,25 @@
 .container_indexbox, .section-index_hover {
     @include dispocol;
     @include dispocenter;
+    @include regulFZ(95%);
     width:256px;
     height: 358px;
         @media all and (min-width:768px) {
+            @include regulFZ(100%);
             width: 615px;
             height:860px;
         }
         @media all and (min-width: 1024px) {
+            @include regulFZ(120%);
             width: 360px;
             height: 510px;
         }
         @media all and (min-width: 1440px) {
-            width: 260px;
-            height: 365px;
+            width: 580px;
+            height: 810px;
         }
         @media all and (min-width: 1900px) {
+            @include regulFZ(95%);
             width: 350px;
             height: 490px;
         }
@@ -46,7 +50,6 @@
 
 /*Survol des visuels*/
 .section-index_hover {
-    font-size: 80%;
     transition: .8s cubic-bezier(.68,.25,.53,.82);
     &:active {
         -webkit-transform: scale(1.1);
@@ -117,7 +120,8 @@
 }
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
 .section-container_menubox {
-    padding-bottom: 50px;
+    border: 1px solid red;
+    padding: 1em 0;
 }
 
 /*Mise en page de chaque partie de menu : entrée, plat, dessert*/
@@ -142,7 +146,9 @@
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
+    padding: 1em 0 0.5em 0;
     display:block;
+    align-content: center;
     @media all and (min-width: 768px) {
         display: flex;
         justify-content: space-between;

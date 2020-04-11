@@ -45,13 +45,6 @@ html, body, h1, footer, header {
 html {
   font-size: 16px; }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: calc(16px *1.133); } }
-@media screen and (min-width: 1440px) {
-  body {
-    font-size: calc(16px *1.618); } }
-
 /***     Taille de caractères généralisée          ***/
 /*LOGO dans le header*/
 .header {
@@ -72,9 +65,12 @@ h3 {
 h4 {
   font-size: 1.454em; }
 
-@media all and (max-width: 768px) {
-  .button_soon, .footer-link {
+@media screen and (min-width: 768px) {
+  .main-container_menu {
     font-size: calc(16px *1.133); } }
+@media screen and (min-width: 1440px) {
+  .main-container_menu {
+    font-size: calc(16px *1.618); } }
 
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
@@ -105,7 +101,7 @@ h4 {
 
 /*agrandissement de l'élément*/
 .link_contact, .link_legal {
-  margin: 5px 20px; }
+  margin: 5px; }
 
 @media all and (min-width: 1024px) {
   .link_contact:hover, .link_legal:hover {
@@ -226,8 +222,7 @@ h4 {
 
 /*Note en grand format*/
 .i_top {
-  margin-top: 1em;
-  font-size: 4em; }
+  font-size: 2em; }
 
 /*Points de suspension*/
 .fa-circle {
@@ -261,7 +256,8 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 120px; }
+  height: 120px;
+  font-size: 95%; }
   @media all and (min-width: 1024px) {
     .header {
       height: 165px; } }
@@ -278,7 +274,7 @@ h4 {
     .main-container_index {
       flex-direction: row;
       flex-wrap: wrap; } }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1480px) {
     .main-container_index {
       flex-wrap: nowrap;
       align-content: center; } }
@@ -295,28 +291,31 @@ h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  font-size: 95%;
   width: 256px;
   height: 358px; }
   @media all and (min-width: 768px) {
     .container_indexbox, .section-index_hover {
+      font-size: 100%;
       width: 615px;
       height: 860px; } }
   @media all and (min-width: 1024px) {
     .container_indexbox, .section-index_hover {
+      font-size: 120%;
       width: 360px;
       height: 510px; } }
   @media all and (min-width: 1440px) {
     .container_indexbox, .section-index_hover {
-      width: 260px;
-      height: 365px; } }
+      width: 580px;
+      height: 810px; } }
   @media all and (min-width: 1900px) {
     .container_indexbox, .section-index_hover {
+      font-size: 95%;
       width: 350px;
       height: 490px; } }
 
 /*Survol des visuels*/
 .section-index_hover {
-  font-size: 80%;
   transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
   .section-index_hover:active {
     -webkit-transform: scale(1.1);
@@ -381,7 +380,8 @@ h4 {
 
 /*Mise en page de chaque section de menu : entrée, plat, dessert*/
 .section-container_menubox {
-  padding-bottom: 50px; }
+  border: 1px solid red;
+  padding: 1em 0; }
 
 /*Mise en page de chaque partie de menu : entrée, plat, dessert*/
 .div-container_menubox {
@@ -404,7 +404,9 @@ h4 {
 
 /*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
 .container_deco {
-  display: block; }
+  padding: 1em 0 0.5em 0;
+  display: block;
+  align-content: center; }
   @media all and (min-width: 768px) {
     .container_deco {
       display: flex;
@@ -433,7 +435,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   height: 70px; }
   @media all and (min-width: 768px) {
@@ -486,12 +488,13 @@ h4 {
 /***     Particularités Mentions légales           ***/
 /*Famille de police*/
 .body_legal {
-  font-family: "Montserrat", "Roboto", sans-serif; }
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 90%; }
 
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
   text-align: center;
-  padding: 2em; }
+  padding: 1.5em; }
 
 /*Taille des contenus*/
 .p-legal {
@@ -525,32 +528,17 @@ h4 {
 
 /***   Généralités applicable à chaque menu        ***/
 /*Titre carte de chaque restaurant*/
-.h2-titre-menu, .h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
-  padding: 3em 0 1.5em 0; }
+.h2-menu_note, .h2-menu_chic, .h2-menu_delice, .h2-menu_palette {
+  border: 1px green solid;
+  padding: 2em 0.5em; }
 
 .h2-menu {
   text-align: center; }
 
 /*Alignement des polices des titres*/
-.h4-menu_note, .h2-titre-menu, .h3-menu {
+.h4-menu_note, .h2-titre-menu {
   text-align: center;
   padding: 1.5em; }
-
-/*Détail des menus */
-@media all and (min-width: 768px) {
-  .p-menu {
-    text-align: left;
-    width: 80%; } }
-
-/*Prix en gras*/
-.p-prix {
-  font-weight: 700;
-  padding-bottom: 1em; }
-  @media all and (min-width: 768px) {
-    .p-prix {
-      padding-bottom: 0;
-      text-align: right;
-      width: 20%; } }
 
 /*Titres encadrés des ornements*/
 .h3-menu {
@@ -569,11 +557,27 @@ h4 {
     .h3-menu_hover:hover {
       background-size: 100% 100%; } }
 
+/*Détail des menus */
+@media all and (min-width: 768px) {
+  .p-menu {
+    text-align: left;
+    width: 80%; } }
+
+/*Prix en gras*/
+.p-prix {
+  font-weight: 700;
+  padding-bottom: 1em; }
+  @media all and (min-width: 768px) {
+    .p-prix {
+      padding-bottom: 0;
+      text-align: right;
+      width: 20%; } }
+
 /***     Particularités La note enchantée          ***/
 .body_menu {
   font-family: "Montserrat", "Roboto", sans-serif; }
 
-/*Titre 2 et titre 3 à l'intérieur de la carte*/
+/*Titre à l'intérieur de la carte*/
 .h2-menu_note, .h4-menu_note {
   font-family: "devonshire", "Zapf-Chancery", cursive; }
 
@@ -618,6 +622,9 @@ h4 {
 
 .h3-menu_hover_chic3 {
   background: linear-gradient(to top, #8f5bfe 0%, #8f5bfe 10%, transparent 10.01%) no-repeat left bottom/0 100%; }
+
+.h3-menu_hover_chic1, .h3-menu_hover_chic2, .h3-menu_hover_chic3 {
+  font-size: 95%; }
 
 /*Texte à l'intérieur des entrées plats et desserts*/
 .p-prix_chic, .p-menu_chic {

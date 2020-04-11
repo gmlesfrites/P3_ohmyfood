@@ -4,12 +4,13 @@
 /*Famille de police*/
 .body_legal {
     font-family: $main-font;
+    @include regulFZ(90%);
 }
 
 /*Titres centrés*/
 .h2-legal, .h3-legal, .h4-legal {
     text-align: center;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 /*Taille des contenus*/

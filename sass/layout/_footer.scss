@@ -3,12 +3,12 @@
 //*****************************************************
 .footer {
     background: $footer-color;
-    position:fixed;
+    position: fixed;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
     height: 70px;
         @media  all and (min-width: 768px){
