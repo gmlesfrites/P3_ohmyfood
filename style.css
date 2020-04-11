@@ -39,7 +39,8 @@ html, body, h1, footer, header {
 /*Selection de tout pour propriété mot-coupé*/
 * {
   word-wrap: break-word;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5em; }
 
 /*Determination de  la taille de police html*/
 html {
@@ -71,13 +72,6 @@ h3 {
 h4 {
   font-size: 1.454em; }
 
-@media screen and (min-width: 768px) {
-  .main-container_menu {
-    font-size: calc($base-font-size*1.133); } }
-@media screen and (min-width: 1440px) {
-  .main-container_menu {
-    font-size: calc($base-font-size*1.618); } }
-
 /*****************************************************/
 /***     Bouton prochainement - page d'accueil     ***/
 /*****************************************************/
@@ -102,12 +96,12 @@ h4 {
 /*Liens non soulignés*/
 .link-page_menu, .footer-link, .link-home, .link_contact, .link_legal {
   text-decoration: none;
-  font-weight: 500;
   color: #fcca46; }
 
 /*agrandissement de l'élément*/
 .link_contact, .link_legal {
-  margin: 0.3em; }
+  margin: 0.3em;
+  font-weight: 500; }
 
 /*Animation sur les liens du footer*/
 @media all and (min-width: 1024px) {
@@ -126,49 +120,48 @@ h4 {
   animation: wiggle 200ms 3; }
   @media all and (min-width: 1024px) {
     .footer-link:active {
-      animation-play-state: paused;
-      animation-duration: 0s; } }
+      animation-play-state: paused; } }
 
 /*Règles d'animation des liens du footer*/
 @keyframes wiggle {
   0% {
-    -webkit-transform: -webkit-rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   0% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   0% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   0% {
     transform: rotate(0deg); }
   25% {
-    -webkit-transform: -webkit-rotate(-2deg); }
+    -webkit-transform: rotate(-2deg); }
   25% {
-    -moz-transform: -moz-rotate(-2deg); }
+    -moz-transform: rotate(-2deg); }
   25% {
-    -ms-transform: -ms-rotate(-2deg); }
+    -ms-transform: rotate(-2deg); }
   25% {
     transform: rotate(-2deg); }
   50% {
-    -webkit-transform: -webkit-rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   50% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   50% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   50% {
     transform: rotate(0deg); }
   75% {
-    -webkit-transform: -webkit-rotate(2deg); }
+    -webkit-transform: rotate(2deg); }
   75% {
-    -moz-transform: -moz-rotate(2deg); }
+    -moz-transform: rotate(2deg); }
   75% {
-    -ms-transform: -ms-rotate(2deg); }
+    -ms-transform: rotate(2deg); }
   75% {
     transform: rotate(2deg); }
   100% {
-    -webkir-transform: -webkit-rotate(0deg); }
+    -webkir-transform: rotate(0deg); }
   100% {
-    -moz-transform: -moz-rotate(0deg); }
+    -moz-transform: rotate(0deg); }
   100% {
-    -ms-transform: -ms-rotate(0deg); }
+    -ms-transform: rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
 /*****************************************************/
@@ -233,24 +226,57 @@ h4 {
 .fa-circle {
   font-size: 0.5em;
   color: #fcca46;
+  -webkit-animation: dotanim 5s infinite ease-in-out;
+  -moz-animation: dotanim 5s infinite ease-in-out;
+  -ms-animation: dotanim 5s infinite ease-in-out;
   animation: dotanim 5s infinite ease-in-out;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
   animation-delay: 2s;
   opacity: 0.8; }
 
 .dot1 {
-  animation-delay: .1s; }
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
 
 .dot2 {
-  animation-delay: .4s; }
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
 
 .dot3 {
-  animation-delay: .8s; }
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
 
 @keyframes dotanim {
   0% {
+    -webkit-transform: scale(0.8, 0.8); }
+  0% {
+    -moz-transform: scale(0.8, 0.8); }
+  0% {
+    -ms-transform: scale(0.8, 0.8); }
+  0% {
     transform: scale(0.8, 0.8); }
   50% {
+    -webkit-transform: scale(0.1, 0.1); }
+  50% {
+    -moz-transform: scale(0.1, 0.1); }
+  50% {
+    -ms-transform: scale(0.1, 0.1); }
+  50% {
     transform: scale(0.1, 0.1); }
+  100% {
+    -webkit-transform: scale(0.8, 0.8); }
+  100% {
+    -moz-transform: scale(0.8, 0.8); }
+  100% {
+    -ms-transform: scale(0.8, 0.8); }
   100% {
     transform: scale(0.8, 0.8); } }
 /***                   Header                      ***/
@@ -319,16 +345,23 @@ h4 {
 
 /*Survol des visuels*/
 .section-index_hover {
+  border: 1px solid transparent;
   transition: 0.8s cubic-bezier(0.68, 0.25, 0.53, 0.82); }
   .section-index_hover:active {
     -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
     opacity: 0.8; }
   @media all and (min-width: 1024px) {
-    .section-index_hover:hover {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-      opacity: 0.8; } }
+    .section-index_hover {
+      font-size: 95%; }
+      .section-index_hover:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 0.8; } }
 
 /*Marges communes de l'index*/
 .container_indexbox, .section-index_hover {
@@ -409,7 +442,7 @@ h4 {
   display: block; }
   @media all and (min-width: 768px) {
     .container_deco {
-      padding: 1em;
+      padding: 1.5em 0 1em 0;
       display: flex;
       justify-content: space-between;
       flex-wrap: nowrap;
@@ -454,7 +487,7 @@ h4 {
 .h3-menu_note {
   color: #3d1319;
   text-transform: uppercase;
-  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+  font-family: "segoe", "Open Sans", Roboto, sans-serif; }
 
 /*Particularités de l'écriture du mot menu Chic*/
 .h3-menu_chic {
@@ -463,12 +496,12 @@ h4 {
 
 /*Particularités de l'écriture du mot menu delice*/
 .h3-menu_delice {
-  font-family: "segoepr", "Open Sans", Roboto, Sans-serif;
+  font-family: "segoe", "Open Sans", Roboto, Sans-serif;
   color: #0670f3; }
 
 /*Particularités de l'écriture du mot menu palette*/
 .h3-menu_palette {
-  font-family: "segoepr", "Open Sans", Roboto, sans-serif;
+  font-family: "segoe", "Open Sans", Roboto, sans-serif;
   color: #41963c; }
 
 /*Couleur de fond personnalisée pour les menus et les visuels de menus page d'accueil*/
@@ -584,7 +617,7 @@ h4 {
 
 /*Contenu des menus*/
 .h3-menu_note, .p-menu_note, .p-prix_note {
-  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+  font-family: "segoe", "Open Sans", Roboto, sans-serif; }
 
 /*Couleur de police*/
 .h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
@@ -644,7 +677,7 @@ h4 {
   font-family: "Dancing Script", "Zapf-Chancery", cursive; }
 
 .p-prix_delice, .p-menu_delice .h3-menu_delice {
-  font-family: "segoepr", "Open Sans", Roboto, Sans-serif; }
+  font-family: "segoe", "Open Sans", Roboto, Sans-serif; }
 
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_delice1 {
@@ -666,7 +699,7 @@ h4 {
 
 /*Texte des entrées, plats et desserts*/
 .h3-menu_palette, .p-prix_palette, .p-menu_palette {
-  font-family: "segoepr", "Open Sans", Roboto, sans-serif; }
+  font-family: "segoe", "Open Sans", Roboto, sans-serif; }
 
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_palette {

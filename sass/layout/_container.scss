@@ -48,16 +48,16 @@
 
 /*Survol des visuels*/
 .section-index_hover {
+    border: 1px solid transparent;
     transition: .8s cubic-bezier(.68,.25,.53,.82);
     &:active {
-        -webkit-transform: scale(1.1);
-	    transform: scale(1.1);
+        @include zoomIndex(1.1);
         opacity: 0.8;
     }
     @media all and (min-width: 1024px) {
+        @include regulFZ(95%);
         &:hover {
-    	    -webkit-transform: scale(1.3);
-	        transform: scale(1.3);
+            @include zoomIndex(1.1);
             opacity: 0.8;
         }
     }
@@ -145,7 +145,7 @@
 .container_deco {
     display:block;
     @media all and (min-width: 768px) {
-        padding: 1em;
+        padding: 1.5em 0 1em 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
