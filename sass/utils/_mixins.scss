@@ -1,0 +1,55 @@
+//*Dispotion en flexbox
+@mixin dispocol {
+    display: flex;
+    flex-direction: column;
+}
+@mixin dispocenter {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+//*Encadrement et Ombres des menus
+@mixin bordergray {
+border: 1px #efefef solid;
+box-shadow: $box-shadow;
+}
+
+//Mixin linear-gradient
+@mixin linearGradient($degree, $gradient1, $gradient2) {
+    background: linear-gradient($degree, $gradient1, $gradient2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin regulFZ($fz) {
+    font-size: $fz;
+}
+
+@mixin wiggle {
+    -webkit-animation: wiggle 200ms 3;
+    -moz-animation: wiggle 200ms 3;
+    -ms-animation: wiggle 200ms 3;
+    animation: wiggle 200ms 3;
+}
+
+@mixin animDelay($delay) {
+    -webkit-animation-delay: $delay;
+    -moz-animation-delay: $delay;
+    -ms-animation-delay: $delay;
+    animation-delay: $delay;
+}
+
+@mixin soon {
+    -webkit-animation: dotanim 5s infinite ease-in-out;
+    -moz-animation: dotanim 5s infinite ease-in-out;
+    -ms-animation: dotanim 5s infinite ease-in-out;
+    animation: dotanim 5s infinite ease-in-out;
+}
+
+@mixin zoomIndex($zoom) {
+    -webkit-transform: scale($zoom);
+    -moz-transform: scale($zoom);
+    -ms-transform: scale($zoom);
+    transform: scale($zoom);
+}

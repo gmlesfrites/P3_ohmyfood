@@ -1,1 +1,21 @@
-
+/*****************************************************/
+/***     Bouton prochainement - page d'accueil     ***/
+/*****************************************************/
+.button_soon {
+    width: 256px;
+    height: 50px;
+    font-size: $h4-font-size;
+    background: $color-primary;
+    color: $color-secondary;
+    border:none;
+    border-radius: 0.3em;
+        @media all and (min-width: 768px) {
+            width: 330px;
+            height: 65px;
+        }
+        @media all and (min-width: 1024px) {
+            width:445px;
+            height: 85px;
+            font-size: $h3-font-size;
+        }
+}

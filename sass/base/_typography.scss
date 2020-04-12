@@ -1,9 +1,45 @@
-.h1-logo {
-    font-size: 24px;
+//*****************************************************
+/***   Typographie applicable à chaque page        ***/
+//*****************************************************
+/*Selection de tout pour propriété mot-coupé*/
+* {
+    word-wrap: break-word;
+    margin: 0;
+    line-height: 1.5em;
 }
 
-.logo {
-    color: $logo-color;
-    font-family: $logo-font;
-    font-weight: $logo-font-weight;
+/*Determination de  la taille de police html*/
+html {
+    font-size: $base-font-size;
+    @media all and (min-width:1024px) {
+        font-size: 18px;
+    }
+    @media all and (min-width: 1440px) {
+        font-size: 20px;
+    }
+}
+
+//*****************************************************
+/***     Taille de caractères généralisée          ***/
+//*****************************************************
+/*LOGO dans le header*/
+.header {
+    font-size: $h1-font-size;
+    font-family: $main-font;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/*Titre de toutes les pages menu et mentions légales*/
+h2 {
+    font-size: $h2-font-size;
+}
+/*Entrées, plats desserts dans les menus et grandes parties mentions légales*/
+h3 {
+    font-size: $h3-font-size;
+}
+
+/*Sous-parties mentions légales et rappel de titre dans le 1er menu*/
+h4 {
+    font-size: $h4-font-size;
 }

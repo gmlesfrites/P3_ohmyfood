@@ -1,0 +1,49 @@
+//*****************************************************
+/***     Particularités Mentions légales           ***/
+//*****************************************************
+/*Famille de police*/
+.body_legal {
+    font-family: $main-font;
+    @include regulFZ(90%);
+}
+
+/*Titres centrés*/
+.h2-legal, .h3-legal, .h4-legal {
+    text-align: center;
+    padding: 1.5em;
+}
+
+/*Taille des contenus*/
+.p-legal {
+    font-family: $ff-content-legal;
+    padding-bottom: 20px;
+
+}
+
+/*ohmyfood en jaune dans les mentions légales*/
+.logo {
+    color: $logo-color;
+}
+
+/*Séparations des parties*/
+.hr-legal {
+    font-size: $p-font-size;
+    border-style: dashed;
+    border-width: 1px;
+    color: #fcca46;
+    margin: 10px 30px;
+    @media all and (min-width: 768px) {
+        margin: 20px 70px;
+    }
+    @media all and (min-width: 1024px) {
+        margin: 25px 95px;
+    }
+    @media all and (min-width: 1440px) {
+        margin: 35px 100px;
+    }
+}
+
+/*Couleurs des liens*/
+.a-legal {
+    color: $color-primary;
+}

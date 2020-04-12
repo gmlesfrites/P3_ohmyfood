@@ -1,105 +1,125 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html >
+<html lang="fr" prefix="og: http://ogp.me/ns#">
     <head>
         <!--Balises Meta-->
         <meta charset="UTF-8">
+
+        <!---Balises meta description-->
+        <meta name="description" content="Ohmyfood! est un nouveau concept. Réduisez votre temps d’attente dans les
+        restaurants en choisissant à l’avance votre menu parmi les cartes présentées ici. Plus de perte de temps sur place !">
+        <meta name="author" content="Paul Lecto - Directeur technique, Fanny Luxe - Designer, Marc Poignon - Responsable commercial, Emilie GOURLIN - Web développeur">
+        <meta name="copyright" content="ohmyfood">
+
+        <!--Balises meta pour la compatibilté navigateurs et différents devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!--Liens Font Awesome-->
-        <script src="https://kit.fontawesome.com/6a89ea6dae.js" crossorigin="anonymous"></script>
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
-        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
-
         <!--Liens Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@700&family=Devonshire&family=Kaushan+Script&family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
 
         <!--Favicon-->
-        <link rel="icon" type="image/svg" href="images/fav.svg">
+        <link href="images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" >
 
+        <!--Titre page-->
         <title>Le délice des papilles - ohmyfood</title>
 
         <!--Lien Feuille de style-->
         <link rel="stylesheet" href="style.css">
     </head>
-
-    <body>
+    <body class="body body_menu">
         <!--HEADER-->
-        <header class="header">
-        	<h1 class="h1-logo logo">ohmyfood</h1>
-        </header>
-
-        <!--Titre principal hors de la carte-->
-        <h2 class="h2-titre-menu">Le délice des papilles</h2>
-
+        <!--Lien encadrant le header pour grandir la zone de clic-->
+        <a href="index.html" class="link-home">
+            <header class="header">
+                <h1 class="h1-logo logo">ohmyfood</h1>
+            </header>
+        </a>
         <!--CONTENEUR PRINCPAL MENU 3 : Le délice des papilles-->
-        <main class="main-menu">
-            <!--Titre menu-->
-            <h2 class="h2-menu h2-menu_delice">Le délice des papilles</h2>
-
-            <!--Titre entrée-->
-            <hr class="hr-menu hr-menu_delice" data-content="Pour bien commencer">
-
-            <!--Entrées-->
-            <div class="section-menu">
-                <!--Détail choix d'entrées-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_delice">Tartare de thon assaisonné au yuzu</li>
-                    <li class="li-menu li-menu_delice">Bouchée de homard croustillant et sa farandole de petits légumes</li>
-                    <li class="li-menu li-menu_delice">Velouté de cèpes aux truffes</li>
-                 </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_delice">55€</li>
-                    <li class="li-prix li-prix_delice">89€</li>
-                    <li class="li-prix li-prix_delice">56€</li>
-                </ul>
-            </div>
-
-            <!--Titre Plats-->
-            <hr class="hr-menu hr-menu_delice" data-content="Pour bien continuer">
-
-            <!--Plats-->
-            <div class="section-menu">
-                <!--Détail choix de plats-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_delice">Poulet rôti aux herbes de provence et sa crème de truffe</li>
-                    <li class="li-menu li-menu_delice">Langouste rôtie et ses légumes de saison</li>
-                    <li class="li-menu li-menu_delice">Côte de boeuf angus et sa purée de panais</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_delice">110€</li>
-                    <li class="li-prix li-prix_delice">225€</li>
-                    <li class="li-prix li-prix_delice">115€</li>
-                </ul>
-            </div>
-
-            <!--Titre Desserts-->
-            <hr class="hr-menu hr-menu_delice" data-content="Pour bien terminer">
-
-            <!--Desserts-->
-            <div class="section-menu">
-                <!--Détail choix de desserts-->
-                <ul class="ul-menu">
-                    <li class="li-menu li-menu_delice">Farandole de desserts du chef</li>
-                    <li class="li-menu li-menu_delice">Crème brûlée revisitée</li>
-                    <li class="li-menu li-menu_delice">Tiramisu à la noisette</li>
-                </ul>
-                <!--Détails prix-->
-                <ul class="ul-prix">
-                    <li class="li-prix li-prix_delice">55€</li>
-                    <li class="li-prix li-prix_delice">60€</li>
-                    <li class="li-prix li-prix_delice">55€</li>
-                </ul>
-            </div>
+        <main class="main-container_menu">
+        <!--Titre principal hors de la carte-->
+            <h2 class="h2-titre-menu">Le délice des papilles</h2>
+            <!--conteneur du menu-->
+            <article class="article-container_menubox article-container_menubox_delice">
+                <!--Titre menu-->
+                <h2 class="h2-menu h2-menu_delice">Le délice des papilles</h2>
+                <!--Section entrées-->
+                <section class="section-container_menubox">
+                    <!--Titre entrée-->
+                    <div class="container_deco">
+                        <img src="images/hr_delice_gauche.svg" class="img_deco img_decogauche" alt="fioriture encadrant le titre de l'entrée à gauche">
+                        <h3 class="h3-menu h3-menu_delice hr_delice"><a href="#" class="h3-menu_hover h3-menu_hover_delice1">Pour bien commencer</a></h3>
+                        <img src="images/hr_delice_droite.svg" class="img_deco img_decodroite"  alt="fioriture encadrant le titre de l'entrée à droite">
+                    </div>
+                    <!--Détail choix d'entrée 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Tartare de thon assaisonné au yuzu</p>
+                        <p class="p-prix p-prix_delice">55€</p>
+                    </div>
+                    <!--Détail choix d'entrée 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Bouchée de homard croustillant et sa farandole de petits légumes</p>
+                        <p class="p-prix p-prix_delice">89€</p>
+                    </div>
+                    <!--Détail choix d'entrée 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Velouté de cèpes aux truffes</p>
+                        <p class="p-prix p-prix_delice">56€</p>
+                    </div>
+                </section>
+                <!--Section Plats-->
+                <section class="section-container_menubox">
+                    <!--Titre Plats-->
+                    <div class="container_deco">
+                        <img src="images/hr_delice_gauche2.svg" class="img_deco img_decogauche" alt="fioriture encadrant le titre du plat à gauche">
+                        <h3 class="h3-menu h3-menu_delice hr_delice"><a href="#" class="h3-menu_hover h3-menu_hover_delice2">Pour bien continuer</a></h3>
+                        <img src="images/hr_delice_droite2.svg" class="img_deco img_decodroite"  alt="fioriture encadrant le titre du plat à droite">
+                    </div>
+                    <!--Détail choix de plat 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Poulet rôti aux herbes de provence et sa crème de truffe</p>
+                        <p class="p-prix p-prix_delice">110€</p>
+                    </div>
+                    <!--Détail choix de plat 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Langouste rôtie et ses légumes de saison</p>
+                        <p class="p-prix p-prix_delice">225€</p>
+                    </div>
+                    <!--Détail choix de plat 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Côte de boeuf angus et sa purée de panais</p>
+                        <p class="p-prix p-prix_delice">115€</p>
+                    </div>
+                </section>
+                <!--Section desserts-->
+                <section class="section-container_menubox">
+                    <!--Titre Desserts-->
+                    <div class="container_deco">
+                        <img src="images/hr_delice_gauche3.svg" class="img_deco img_decogauche" alt="fioriture encadrant le titre du dessert à gauche">
+                        <h3 class="h3-menu h3-menu_delice hr_delice"><a href="#" class="h3-menu_hover h3-menu_hover_delice3">Pour bien terminer</a></h3>
+                        <img src="images/hr_delice_droite3.svg" class="img_deco img_decodroite"  alt="fioriture encadrant le titre du dessert à droite">
+                    </div>
+                    <!--Détail choix de dessert 1-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Farandole de desserts du chef</p>
+                        <p class="p-prix p-prix_delice">55€</p>
+                </div>
+                    <!--Détail choix de dessert 2-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Crème brûlée revisitée</p>
+                        <p class="p-prix p-prix_delice">60€</p>
+                    </div>
+                    <!--Détail choix de dessert 3-->
+                    <div class="div-container_menubox">
+                        <p class="p-menu p-menu_delice">Tiramisu à la noisette</p>
+                        <p class="p-prix p-prix_delice last-element_margin">55€</p>
+                    </div>
+                </section>
+            </article>
         </main>
-
         <!--FOOTER-->
         <footer class="footer">
-            <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
-            <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
+            <a href="mentions-legales.html" class="footer-link link_legal" target="_blank">Mentions légales</a>
+            <a href="mailto:ohmyfood@mail.com" class="footer-link link_contact">Contactez-nous</a>
         </footer>
     </body>
 </html>

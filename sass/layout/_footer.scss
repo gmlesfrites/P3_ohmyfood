@@ -1,0 +1,22 @@
+//*****************************************************
+/***                   Footer                      ***/
+//*****************************************************
+.footer {
+    background: $footer-color;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100vw;
+    bottom: 0;
+    height: 70px;
+        @media  all and (min-width: 768px){
+            @include regulFZ(120%);
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+}

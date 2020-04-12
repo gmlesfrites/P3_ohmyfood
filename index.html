@@ -1,58 +1,117 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: http://ogp.me/ns#">
     <head>
-        <!--Balises Meta-->
+        <!--Balises meta-->
         <meta charset="UTF-8">
+
+        <!---Balises meta description-->
+        <meta name="description" content="Ohmyfood! est un nouveau concept. Réduisez votre temps d’attente dans les
+        restaurants en choisissant à l’avance votre menu parmi les cartes présentées ici. Plus de perte de temps sur place !">
+        <meta name="author" content="Paul Lecto - Directeur technique, Fanny Luxe - Designer, Marc Poignon - Responsable commercial, Emilie GOURLIN - Web développeur">
+        <meta name="copyright" content="ohmyfood">
+
+        <!--Balises meta opengraph-->
+        <meta property="og:url" content="https://gmlesfrites.github.io/ohmyfood/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ohmyfood - Sans attendre pour apprécier son repas !">
+        <meta property="og:description" content="Avec ohmyfood, choisissez votre menu à l’avance pour réduire votre attente au restaurant !">
+        <meta property="og:image" content="images/illustration_reseaux.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="225">
+        <meta property="og:image:height" content="225">
+        <meta property="og:image:alt" content="Une présentation d'assiette dans un restaurant gastronomique">
+        <meta property="fb:app_id" content="2994854247242223">
+
+        <!--Twitter Cards-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@gmlesfrites">
+        <meta name="twitter:title" content="ohmyfood - sans attendre pour apprécier son repas !">
+        <meta name="twitter:description" content="Choisissez votre menu à l'avance pour réduire votre temps d'attente au restaurant !">
+        <meta name="twitter:image" content="images/illustration_reseaux.jpg">
+        <meta name="twitter:url" content="https://gmlesfrites.github.io/ohmyfood/">
+
+
+        <!--Balises meta pour la compatibilté navigateurs et différents device-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!--Liens Google Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <!--Liens polcies de caractère Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@700&family=Devonshire&family=Kaushan+Script&family=Montserrat&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+        <!--Liens font awesome-->
+        <script src="https://kit.fontawesome.com/6a89ea6dae.js" crossorigin="anonymous"></script>
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+        <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 
         <!--Favicon-->
-        <link rel="icon" type="image/svg" href="images/fav.svg">
+        <link href="images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" >
 
+        <!--Titre page-->
         <title>Accueil - ohmyfood</title>
 
         <!--Lien Feuille de style-->
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body class="body body_index">
         <!--HEADER-->
         <header class="header">
             <h1 class="h1-logo logo">ohmyfood</h1>
         </header>
- 
+
         <!--CONTENEUR PRINCPAL-->
-        <main class="main-container">
+        <main class="main-container_index">
 
             <!--MENU 1-->
-            <div class="main-container__box">
-                <a href="menu-1.html" class="lien-page"><img class="img-menu" src="images/menu-1.png" alt="Couverture du menu 1 : La note enchantée"></a>
-            </div>
-
+            <!--Lien encadrant la section 1 pour grandir la zone de clic-->
+            <a href="menu-1.html" class="link-page_menu container_indexbox article-container_menubox_note">
+                <!--Conteneur pour les écrits-->
+                <section class="section-index_hover">
+                    <!-- écrits du menu-->
+                    <h2 class="h2-menu h2-menu_note "><i class="fas fa-music"></i><br>La note enchantée</h2>
+                    <h3 class="h3-menu h3-menu_note">Menu</h3>
+                </section>
+            </a>
             <!--MENU 2-->
-            <div class="main-container__box">
-                <a href="menu-2.html" class="lien-page"><img class="img-menu" src="images/menu-2.png" alt="Couverture du menu 2 : Le chic à la française"></a>
-            </div>
-
+            <!--Lien encadrant la section 2 pour grandir la zone de clic-->
+            <a href="menu-2.html" class="link-page_menu container_indexbox article-container_menubox_chic">
+                <!--Conteneur pour les écrits-->
+                <section class="section-index_hover">
+                    <!--écrits du menu-->
+                    <h2 class="h2-menu h2-menu_chic">Le chic à la française</h2>
+                    <h3 class="h3-menu h3-menu_chic">Menu</h3>
+                </section>
+            </a>
             <!--MENU 3-->
-            <div class="main-container__box">
-                <a href="menu-3.html" class="lien-page"><img class="img-menu" src="images/menu-3.png" alt="Couverture du menu 3 : Le délice des papilles"></a>
-            </div>
-
+            <!--Lien encadrant la section 3 pour grandir la zone de clic-->
+            <a href="menu-3.html" class="link-page_menu container_indexbox article-container_menubox_delice">
+                <!--Conteneur pour les écrits-->
+                <section class="section-index_hover">
+                    <!--écrits du menu-->
+                    <h2 class="h2-menu h2-menu_delice">Le délice des papilles</h2>
+                    <h3 class="h3-menu h3-menu_delice">Menu</h3>
+                </section>
+            </a>
             <!--MENU 4-->
-            <div class="main-container__box">
-                <a href="menu-4.html" class="lien-page"><img class="img-menu" src="images/menu-4.png" alt="Couverture du menu 4 : La palette du goût"></a>
-            </div>
+            <!--Lien encadrant la section 4 pour grandir la zone de clic-->
+            <a href="menu-4.html" class="link-page_menu container_indexbox article-container_menubox_palette">
+                <!--Conteneur pour les écrits-->
+                <section class="section-index_hover">
+                    <!--écrits du menu-->
+                    <h2 class="h2-menu h2-menu_palette">La palette du goût</h2>
+                    <h3 class="h3-menu h3-menu_palette">Menu</h3>
+                </section>
+            </a>
         </main>
-
+            <!--Bouton prochainement-->
+            <div class="container-button_soon">
+                <button class=" button_soon" type="button">Prochainement <i class="fas fa-circle dot1"></i> <i class="fas fa-circle dot2"></i> <i class="fas fa-circle dot3"></i> </button>
+            </div>
         <!--FOOTER-->
-        <footer class="footer">
-            <a class="footer-link" href="mentions-legales.html">Mentions légales</a>
-            <a class="footer-link" href="mailto:ohmyfood@mail.com">Contactez-nous</a>
+        <footer class="footer footer_index">
+            <a href="mentions-legales.html" class="footer-link link_legal" target="_blank">Mentions légales</a>
+            <a href="mailto:ohmyfood@mail.com" class="footer-link link_contact">Contactez-nous</a>
         </footer>
-
-</body>
+    </body>
 </html>

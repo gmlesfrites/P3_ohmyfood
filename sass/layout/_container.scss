@@ -1,1 +1,167 @@
+//*****************************************************
+/***         Conteneurs en page d'accueil          ***/
+//*****************************************************
+/*Mise en page partie main entre header-footer */
+.main-container_index {
+    @include dispocol;
+    @include dispocenter;
+    @media all and (min-width:1024px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media all and (min-width:1480px) {
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+}
 
+/*Légère bordure sur les encadrés*/
+.container_indexbox {
+    @include bordergray;
+}
+
+/*Mise en page et dimension des visuels */
+.container_indexbox, .section-index_hover {
+    @include dispocol;
+    @include dispocenter;
+    @include regulFZ(95%);
+    width:256px;
+    height: 358px;
+        @media all and (min-width:768px) {
+            @include regulFZ(100%);
+            width: 615px;
+            height:860px;
+        }
+        @media all and (min-width: 1024px) {
+            width: 360px;
+            height: 510px;
+        }
+        @media all and (min-width: 1440px) {
+            width: 580px;
+            height: 810px;
+        }
+        @media all and (min-width: 1900px) {
+            width: 350px;
+            height: 490px;
+        }
+}
+
+/*Survol des visuels*/
+.section-index_hover {
+    border: 1px solid transparent;
+    transition: .8s cubic-bezier(.68,.25,.53,.82);
+    &:active {
+        @include zoomIndex(1.1);
+        opacity: 0.8;
+    }
+    @media all and (min-width: 1024px) {
+        @include regulFZ(95%);
+        &:hover {
+            @include zoomIndex(1.1);
+            opacity: 0.8;
+        }
+    }
+}
+
+/*Marges communes de l'index*/
+.container_indexbox, .section-index_hover {
+    margin: 20px;
+        @media all and (min-width:768px) {
+            margin: 50px;
+    }
+}
+
+/*Container du bouton*/
+.container-button_soon {
+    @include dispocol;
+    @include dispocenter;
+    margin:20px 20px 90px 20px;
+    @media all and (min-width: 768px) and (max-width:1440px) {
+        margin: 50px 50px 105px 50px;
+    }
+    @media all and (min-width: 1440px) {
+        margin: 10px 20px 90px 20px;
+    }
+}
+//*****************************************************
+/***       Propriétés des mentions légales         ***/
+//*****************************************************
+/*Container de chaque article*/
+.article-container_legal, .hr_legal {
+    margin: 20px 30px;
+    @media all and (min-width: 768px) {
+        margin: 50px 70px;
+    }
+    @media all and (min-width: 1024px) {
+        margin: 60px 100px;
+    }
+}
+//*****************************************************
+/***          Propriétés des pages menus           ***/
+//*****************************************************
+/*Mise en page entre header-footer --attention pas de marge sur les côtés par rapport à l'index*/
+.main-container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.article-container_menubox {
+    @include bordergray;
+    width:80%;
+}
+
+/*Texte centrés dans les conteneurs*/
+.article-container_menubox, .section-container_menubox, .container_deco {
+    text-align: center;
+}
+/*Mise en page de chaque section de menu : entrée, plat, dessert*/
+.section-container_menubox {
+    padding-bottom: 1.5em;
+}
+
+/*Mise en page de chaque partie de menu : entrée, plat, dessert*/
+.div-container_menubox {
+    display: block;
+    padding: 0 20px;
+    @media all and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    @media all and (min-width: 1024px) {
+        padding:0 40px;
+    }
+    @media all and (min-width:1440px) {
+        padding:0 50px;
+    }
+    @media all and (min-width: 1900px) {
+        padding: 0 100px;
+    }
+}
+
+/*Pour la mise en ligne des fioritures encadrant les titres entrées-plats-desserts*/
+.container_deco {
+    display:block;
+    @media all and (min-width: 768px) {
+        padding: 1.5em 0 1em 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+//*****************************************************
+/***             Propriétés mutualisées            ***/
+//*****************************************************
+/*Dernier texte de la page*/
+.last-element_margin, .main-container_menu {
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+        @media all and (min-width: 768px) {
+            margin-bottom: 55px;
+            padding-bottom: 55px;
+        }
+}

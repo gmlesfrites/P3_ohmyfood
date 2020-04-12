@@ -1,0 +1,45 @@
+/*****************************************************/
+/***              Icônes Font Awesome              ***/
+/*****************************************************/
+/*notes de musique*/
+.fa-music {
+    @include linearGradient($direction, $gradient1_note, $gradient2_note);
+}
+
+/*Note en grand format*/
+.i_top {
+    font-size: 2em;
+}
+
+/*Points de suspension*/
+.fa-circle {
+    font-size: 0.5em;
+    color: $color-secondary;
+    @include soon;
+    @include animDelay(2s);
+    opacity: 0.8;
+}
+.dot1 {
+    @include animDelay(.1s);
+}
+.dot2 {
+    @include animDelay(.4s);
+}
+.dot3 {
+    @include animDelay(.8s);
+}
+
+@keyframes dotanim {
+    0% {-webkit-transform: scale(0.8, 0.8);}
+    0% {-moz-transform: scale(0.8, 0.8);}
+    0% {-ms-transform: scale(0.8, 0.8);}
+    0% {transform: scale(0.8, 0.8);}
+    50% {-webkit-transform: scale(0.1, 0.1);}
+    50% {-moz-transform: scale(0.1, 0.1);}
+    50% {-ms-transform: scale(0.1, 0.1);}
+    50% {transform: scale(0.1, 0.1);}
+    100% {-webkit-transform: scale(0.8, 0.8);}
+    100% {-moz-transform: scale(0.8, 0.8);}
+    100% {-ms-transform: scale(0.8, 0.8);}
+    100% {transform: scale(0.8, 0.8);}
+}

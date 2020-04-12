@@ -1,11 +1,86 @@
+//*****************************************************
+/***             Couleurs principales              ***/
+//*****************************************************
 $color-primary: #579c87;
 $color-secondary: #fcca46;
-$color-main-text: #000;
 
-$logo-font:'Montserrat', 'sans-serif';
-$logo-font-weight: bold;
+/*Couleurs du header et du footer*/
+$header-color: $color-primary;
+$footer-color:  $color-primary;
+$gradientblack : black;
+
+/*La note enchantée*/
+$gradient3_note: #3d1319;
+/*Notes du menu 1*/
+$gradient1_note: #f05561;
+$gradient2_note: #f6916a;
+
+/*Menu chic*/
+$gradient1_chic: #db8528;
+$gradient2_chic: #a56799;
+$gradient3_chic: #8f5bfe;
+
+/*Menu délice*/
+$gradient1_delice:  #0228dd;
+$gradient2_delice:  #0670f3;
+$gradient3_delice: #229df9;
+
+/*Menu palette*/
+$gradient1_palette: #41963c;
+$gradient2_palette: #b2f478;
+/*Variable générique pour la mixin linear-gradient*/
+$direction : 120deg;
+
+/*Couleurs de fond*/
+$background-menu_note: #fcdfdb;
+$background-menu_chic: #fff5fe;
+$background-menu_delice: #f9f9f9;
+$background-menu_palette: #fdfffd;
+
+//*****************************************************
+/***            Polices de caractères              ***/
+//*****************************************************
+/*Logo*/
+$main-font: 'Montserrat', 'Roboto', sans-serif;
 $logo-color: $color-secondary;
 
-/*$header-witdh: 100%;
-$header-height: 50px;*/
-$header-background-color: $color-primary;
+/*Titre carte de chaque restaurant*/
+$global-title: $main-font;
+
+/*Menu 1*/
+$ff-title-M1: 'devonshire', 'Zapf-Chancery', cursive;
+$ff-content-M1: 'segoe', 'Open Sans', Roboto, sans-serif;
+
+/*Menu 2*/
+$ff-title-M2: 'Croissant One', 'Zapf-Chancery', cursive;
+$ff-content-M2:'Roboto Slab', Palatino, serif;
+
+/*Menu 3*/
+$ff-title-M3:"Dancing Script", 'Zapf-Chancery', cursive;
+$ff-content-M3: 'segoe', 'Open Sans', Roboto, Sans-serif;
+
+/*Menu 4*/
+$ff-title-M4: "Kaushan Script", "Zapf-Chancery", cursive;
+$ff-content-M4: 'segoe',"Open Sans", Roboto, sans-serif;
+
+/*Mentions légales*/
+$ff-titre-legal: 'Montserrat', Roboto, sans-serif;
+$ff-content-legal: 'Roboto Slab', Palatino, serif;
+
+//*****************************************************
+/***            Taille de caractères               ***/
+//*****************************************************
+$base-font-size: 16px;
+$h1-font-size: 2.115em;
+$h2-font-size: 1.867em;
+$h3-font-size: 1.648em;
+$h4-font-size: 1.454em;
+$hr-font-size: 1em;
+$p-font-size: 1em;
+$link-font-size:1.25em;
+$line-height: 2em;
+
+//*****************************************************
+/***           Ombres avec box-shadow              ***/
+//*****************************************************
+$box-shadow: -3px -3px 3px #efefef;

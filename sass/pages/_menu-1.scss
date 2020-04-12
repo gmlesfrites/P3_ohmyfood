@@ -1,9 +1,30 @@
-/*La note enchantée*/
-$menu1-text: #3d1319;
-$menu1-background: #fcdfdb;
+//*****************************************************
+/***     Particularités La note enchantée          ***/
+//*****************************************************
+.body_menu {
+    font-family: $main-font;
+}
 
+/*Titre à l'intérieur de la carte*/
+.h2-menu_note, .h4-menu_note {
+    font-family:$ff-title-M1;
+}
 
-/*Titre   font-family: 'Ma Shan Zheng', cursive;*/
+/*Contenu des menus*/
+.h3-menu_note, .p-menu_note, .p-prix_note {
+    font-family: $ff-content-M1;
+}
 
-/*Texte  font-family: 'Short Stack', cursive; */
+/*Couleur de police*/
+.h2-menu_note, .h3-menu_note, .h3-menu_hover_note {
+    color: $gradient3_note;
+}
 
+/*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
+.h3-menu_hover_note {
+    background: linear-gradient(to top, $gradient1_note 0%, $gradient1_note 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
+
+.h4-menu_note {
+    font-size: $h3-font-size;
+}
