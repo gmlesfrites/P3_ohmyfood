@@ -1,11 +1,10 @@
-/*****************************************************/
+//*****************************************************
 /***              Icônes Font Awesome              ***/
-/*****************************************************/
+//*****************************************************
 /*notes de musique*/
 .fa-music {
     @include linearGradient($direction, $gradient1_note, $gradient2_note);
 }
-
 /*Note en grand format*/
 .i_top {
     font-size: 2em;
@@ -28,7 +27,6 @@
 .dot3 {
     @include animDelay(.8s);
 }
-
 @keyframes dotanim {
     0% {-webkit-transform: scale(0.8, 0.8);}
     0% {-moz-transform: scale(0.8, 0.8);}
