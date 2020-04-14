@@ -22,7 +22,7 @@
 
 /*Couleurs du souligenement lors de l'animation sur entrée-plat-dessert*/
 .h3-menu_hover_note {
-    background: linear-gradient(to top, $gradient1_note 0%, $gradient1_note 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient1_note, $gradient1_note);
 }
 
 .h4-menu_note {

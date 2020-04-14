@@ -22,34 +22,53 @@ box-shadow: $box-shadow;
     -webkit-text-fill-color: transparent;
 }
 
+//Pour jouer sur la taille de police
 @mixin regulFZ($fz) {
     font-size: $fz;
 }
 
+//Prefixes pour le secouement des liens du footer
 @mixin wiggle {
     -webkit-animation: wiggle 200ms 3;
     -moz-animation: wiggle 200ms 3;
     -ms-animation: wiggle 200ms 3;
     animation: wiggle 200ms 3;
 }
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
 
+//Prefixes pour l'animation des points de suspension
 @mixin animDelay($delay) {
     -webkit-animation-delay: $delay;
     -moz-animation-delay: $delay;
     -ms-animation-delay: $delay;
     animation-delay: $delay;
 }
-
 @mixin soon {
     -webkit-animation: dotanim 5s infinite ease-in-out;
     -moz-animation: dotanim 5s infinite ease-in-out;
     -ms-animation: dotanim 5s infinite ease-in-out;
     animation: dotanim 5s infinite ease-in-out;
 }
-
+@mixin dotanim($value1, $value2) {
+    -webkit-transform: scale($value1, $value2);
+    -moz-transform: scale($value1, $value2);
+    -ms-transform: scale($value1, $value2);
+    transform: scale($value1, $value2);
+}
+//Préfixes pour le zoom sur les cartes
 @mixin zoomIndex($zoom) {
     -webkit-transform: scale($zoom);
     -moz-transform: scale($zoom);
     -ms-transform: scale($zoom);
     transform: scale($zoom);
+}
+
+//Gradient pour les soulignements des titres
+@mixin underline($gradient1, $gradient2) {
+    background: linear-gradient(to top, $gradient1 0%, $gradient2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;;
 }

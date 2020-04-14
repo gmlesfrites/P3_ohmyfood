@@ -14,5 +14,5 @@
 
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_palette {
-    background: linear-gradient(to top, $gradient2_palette 0%, $gradient2_palette 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient2_palette, $gradient2_palette);
 }

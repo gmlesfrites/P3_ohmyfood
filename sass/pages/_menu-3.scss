@@ -17,11 +17,11 @@
 
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_delice1 {
-    background: linear-gradient(to top, $gradient1_delice 0%, $gradient1_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient1_delice, $gradient1_delice);
 }
 .h3-menu_hover_delice2 {
-    background: linear-gradient(to top, $gradient2_delice 0%, $gradient2_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient2_delice, $gradient2_delice);
 }
 .h3-menu_hover_delice3 {
-    background: linear-gradient(to top, $gradient3_delice 0%, $gradient3_delice 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient3_delice, $gradient3_delice);
 }

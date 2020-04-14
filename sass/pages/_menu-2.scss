@@ -21,13 +21,13 @@
 
 /*Couleur de soulignement des entrées-plats-desserts*/
 .h3-menu_hover_chic1 {
-    background: linear-gradient(to top, $gradient1_chic 0%, $gradient1_chic 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient1_chic, $gradient1_chic);
 }
 .h3-menu_hover_chic2 {
-    background: linear-gradient(to top, $gradient2_chic 0%, $gradient2_chic 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient2_chic, $gradient2_chic);
 }
 .h3-menu_hover_chic3 {
-    background: linear-gradient(to top, $gradient3_chic 0%, $gradient3_chic 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($gradient3_chic, $gradient3_chic);
 }
 
 .h3-menu_hover_chic1, .h3-menu_hover_chic2, .h3-menu_hover_chic3 {

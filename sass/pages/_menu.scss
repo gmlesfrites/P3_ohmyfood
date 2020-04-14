@@ -25,11 +25,12 @@
     }
 }
 
+/*Soulignement des entrées-plats-desserts*/
 .h3-menu_hover {
     text-decoration: none;
     text-transform: initial;
     color: $gradientblack;
-    background: linear-gradient(to top, $gradientblack 0%, $gradientblack 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline ($gradientblack, $gradientblack);
     transition: background-size .5s;
     &:active {
         background-size: 100% 100%;
@@ -40,6 +41,8 @@
         }
     }
 }
+
+
 /*Détail des menus */
 .p-menu {
     @media all and (min-width: 768px) {
