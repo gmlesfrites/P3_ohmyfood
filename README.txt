@@ -25,7 +25,7 @@ Ce projet a été construit en plusieurs phases :
 	Liens contact et mentions légales du footer qui se secouent au passage (dans la feuille _link.scss)
 	Zoom sur les visuels de menus dans la pages d'accueil (dans la feuille _index.scss)
 
--création d'une branche mediaqueries 
+-création d'une branche mediaqueries
 	Travail dès le début en mobile first
 	Breaktpoints : 768px, 1024px, 1440px et 1900px
 
@@ -35,8 +35,8 @@ Ce projet a été construit en plusieurs phases :
 
 
 Après travail sur les animations et les mediqueries, ces branches n'ont pas été actualisées.
-Les seules présentant le travail 'à jour' sont develop et gh-pages.
-	
+Les seules présentant le travail 'à jour' sont develop et gh-pages
+
 Travail régulièrement vérifié par le biais des sites :
 	https://validator.w3.org/
 	https://jigsaw.w3.org/
