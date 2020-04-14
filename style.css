@@ -279,9 +279,6 @@ h4 {
   @media all and (min-width: 1480px) {
     .main-container_index {
       align-content: center; } }
-  @media all and (min-width: 1900px) {
-    .main-container_index {
-      flex-wrap: nowrap; } }
 
 /*Légère bordure sur les encadrés*/
 .container_indexbox {
